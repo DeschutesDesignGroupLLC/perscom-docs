@@ -1,6 +1,6 @@
 # Roster Widget
 
-The roster widget outputs a table based list of your personnel, similiar to the roster within your PERSCOM Dashboard.
+The roster widget outputs a table-based list of your personnel, similar to the roster within your PERSCOM Dashboard.
 
 ### Code Snippet
 ::: info
