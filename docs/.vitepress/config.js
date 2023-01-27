@@ -3,7 +3,8 @@ export default {
     description: 'Documentation on how to use PERSCOM.io.',
     cleanUrls: 'with-subfolders',
     themeConfig: {
-        siteTitle: 'Documentation',
+        siteTitle: 'Docs',
+        logo: '/logo.svg',
         nav: [
             {
                 text: 'PERSCOM.io Home',
