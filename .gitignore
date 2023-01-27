@@ -3,3 +3,7 @@ node_modules
 
 # IDE
 .idea
+
+# Vitepress
+docs/.vitepress/dist
+docs/.vitepress/cache
