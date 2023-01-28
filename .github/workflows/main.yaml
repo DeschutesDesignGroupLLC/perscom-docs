@@ -46,6 +46,9 @@ jobs:
       - name: Deploy to S3
         run: aws s3 sync ./docs/.vitepress/dist/ s3://${{ secrets.AWS_BUCKET_NAME }} --delete
 
+      - name: Invalidate Cloudfront Cache
+        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_CLOUDFRONT_DISTRIBUTION_ID }}
+
       - name: Create Release
         uses: ncipollo/release-action@v1
         if: github.ref == 'refs/heads/master'
