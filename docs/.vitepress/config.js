@@ -63,7 +63,7 @@ export default {
             {
                 text: 'Support',
                 items: [
-                    {text: 'Community Forms', link: 'https://community.deschutesdesigngroup.com/'},
+                    {text: 'Community Forums', link: 'https://community.deschutesdesigngroup.com/'},
                     {text: 'Help Desk', link: 'https://support.deschutesdesigngroup.com/'},
                     {text: 'Submit A Ticket', link: 'https://support.deschutesdesigngroup.com/hc/en-us/requests/new'},
                     {text: 'Suggest A Feature', link: 'https://community.deschutesdesigngroup.com/forum/3-feedback-and-ideas/'},
