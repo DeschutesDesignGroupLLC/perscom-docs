@@ -26,13 +26,6 @@ jobs:
       - name: Build Application
         run: npm run docs:build
 
-      - name: Setup AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1
-
       - name: Bump Application Version and Tag
         id: tag_version
         uses: mathieudutour/github-tag-action@v6.0
@@ -44,10 +37,20 @@ jobs:
           pre_release_branches: prerelease
           append_to_pre_release_tag: prerelease
 
+      - name: Setup AWS Credentials
+        if: github.ref == 'refs/heads/master'
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
       - name: Deploy to S3
+        if: github.ref == 'refs/heads/master'
         run: aws s3 sync ./docs/.vitepress/dist/ s3://${{ secrets.AWS_BUCKET_NAME }} --delete
 
       - name: Invalidate Cloudfront Cache
+        if: github.ref == 'refs/heads/master'
         uses: chetan/invalidate-cloudfront-action@v2
         env:
           DISTRIBUTION: ${{ secrets.AWS_CLOUDFRONT_DISTRIBUTION_ID }}
