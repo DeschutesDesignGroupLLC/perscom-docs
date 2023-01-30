@@ -59,7 +59,7 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
-      - name: Create Release
+      - name: Create Staging Release
         uses: ncipollo/release-action@v1
         if: github.ref == 'refs/heads/prerelease'
         with:
@@ -68,7 +68,7 @@ jobs:
           body: ${{ steps.tag_version.outputs.changelog }}
           prerelease: true
 
-      - name: Create Release
+      - name: Create Production Release
         uses: ncipollo/release-action@v1
         if: github.ref == 'refs/heads/master'
         with:

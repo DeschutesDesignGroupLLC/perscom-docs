@@ -11,9 +11,9 @@ Make sure to replace APIKEY and PERSCOMID with the appropriate values.
 <!-- Place the code block where you would like the widget displayed on your website. !-->
 <!-- Replace APIKEY and PERSCOMID with your API key with the ‘access:widget' scope and PERSCOM Account ID, respectively. !-->
 
+<div id='perscom_roster' data-apikey='APIKEY' data-perscomid='PERSCOMID'></div>
 <link href="https://widget.perscom.io/widget.css" rel="stylesheet" />
 <script src="https://widget.perscom.io/widget.js"></script>
-<div id='perscom_roster' data-apikey='APIKEY' data-perscomid='PERSCOMID'></div>
 ```
 
 ### Example
