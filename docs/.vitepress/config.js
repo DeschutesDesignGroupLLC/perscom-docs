@@ -2,6 +2,7 @@ export default {
     title: 'PERSCOM Personnel Management System Documentation',
     description: 'Documentation on how to use PERSCOM.io.',
     cleanUrls: 'with-subfolders',
+    lastUpdated: true,
     themeConfig: {
         siteTitle: 'Docs',
         logo: '/logo.svg',
@@ -69,6 +70,16 @@ export default {
                     {text: 'Suggest A Feature', link: 'https://community.deschutesdesigngroup.com/forum/3-feedback-and-ideas/'},
                 ]
             },
-        ]
+        ],
+
+        editLink: {
+            pattern: 'https://github.com/DeschutesDesignGroupLLC/PERSCOM-3.0-Docs/edit/master/docs/:path',
+            text: 'Edit this page on GitHub'
+        },
+
+        footer: {
+            message: 'Released under the MIT License.',
+            copyright: 'Copyright © 2022 Deschutes Design Group LLC'
+        }
     }
 }
