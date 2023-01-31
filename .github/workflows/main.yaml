@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - master
-      - prerelease
+      - release/*
 
 jobs:
   build:
@@ -34,7 +34,7 @@ jobs:
           default_bump: patch
           default_prerelease_bump: prerelease
           release_branches: master
-          pre_release_branches: prerelease
+          pre_release_branches: release/*
           append_to_pre_release_tag: prerelease
 
       - name: Setup AWS Credentials
