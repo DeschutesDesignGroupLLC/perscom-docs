@@ -1,3 +1,5 @@
+/** @format */
+
 export default {
   lang: 'en-US',
   title: 'PERSCOM Personnel Management System Documentation',
@@ -56,7 +58,11 @@ export default {
           {
             text: 'Widgets',
             link: '/external-integration/widgets',
-            items: [{ text: 'Roster', link: '/external-integration/widgets/roster' }]
+            items: [
+              { text: 'Roster', link: '/external-integration/widgets/roster' },
+              { text: 'Awards', link: '/external-integration/widgets/awards' },
+              { text: 'Ranks', link: '/external-integration/widgets/ranks' }
+            ]
           }
         ]
       },
