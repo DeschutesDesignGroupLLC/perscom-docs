@@ -1,6 +1,6 @@
-# Roster Widget
+# Awards Widget
 
-The roster widget outputs a table-based list of your personnel, similar to the roster within your Dashboard.
+The awards widget outputs a table-based list of your awards as they are in your Dashboard.
 
 ## Code Snippet
 
@@ -13,13 +13,7 @@ Make sure to replace APIKEY and PERSCOMID with the appropriate values.
 <!-- Place the code block where you would like the widget displayed on your website. !-->
 <!-- Replace APIKEY and PERSCOMID with your API key with the ‘access:widget' scope and PERSCOM ID, respectively. !-->
 
-<div id="perscom_roster" data-apikey="APIKEY" data-perscomid="PERSCOMID"></div>
+<div id="perscom_awards" data-apikey="APIKEY" data-perscomid="PERSCOMID"></div>
 <link href="https://widget.perscom.io/widget.css" rel="stylesheet" />
 <script src="https://widget.perscom.io/widget.js"></script>
 ```
-
-## Example
-
-The following is an example of the Roster Widget being displayed within an Invision Community website.
-
-![Invision Widget Preview](https://assets.perscom.io/images/widget-invision-preview-2.png)
