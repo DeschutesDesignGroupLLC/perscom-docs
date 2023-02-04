@@ -60,6 +60,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
       - name: Trigger Algolia Crawler Index
+        if: github.ref == 'refs/heads/master'
         uses: algolia/algoliasearch-crawler-github-actions@v1.0.10
         with:
           crawler-user-id: ${{ secrets.CRAWLER_USER_ID }}
