@@ -9,13 +9,31 @@ Each widget integration requires your PERSCOM ID and the use of an API key with 
 PERSCOM ID can be found under the general settings of your Dashboard.
 :::
 
+## Choosing The Widget
+
+Each widget uses the same HTML code snippet to display the data. However, to set which widget you would like outputted, you must set the
+`data-widget` attribute to the intended widget. The available options are listed below.
+
+```html
+<div id="perscom_widget_wrapper">
+    <script
+        id="perscom_widget"
+        data-perscomid="PERSCOMID"
+        data-apikey="APIKEY"
+        data-widget="roster" // [!code focus]
+        src="https://widget.perscom.io/widget.js"
+        type="text/javascript"
+    ></script>
+</div>
+```
+
 ## Available Widgets
 
 The following widgets are currently available.
 
-1. [Roster](/external-integration/widgets/roster)
-2. [Awards](/external-integration/widgets/awards)
-3. [Ranks](/external-integration/widgets/ranks)
+1. [Roster](/external-integration/widgets/roster) `data-widget='roster'`
+2. [Awards](/external-integration/widgets/awards) `data-widget='awards'`
+3. [Ranks](/external-integration/widgets/ranks) `data-widget='ranks'`
 
 ## Authentication and Authorization
 
@@ -23,7 +41,7 @@ Each widget requires the creation of an API key with the `access:widget` scope a
 accomplished in your Dashboard. Creation and management of API keys require the `manage:api` permission. Contact your account administrator
 if you cannot access the API section within your Dashboard.
 
-Second, each widget requires your PERSCOM ID which can be found in the General Settings area of your Dashboard.
+Second, each widget requires your PERSCOM ID which can be found in the general settings area of your Dashboard.
 
 These two items will be inserted into the widget when you add them to your website. Failure to add these values with result in an
 authentication error when viewing the widget.
@@ -32,26 +50,46 @@ Click [here](/external-integration/api) for more documentation on the API.
 
 ## Customization
 
-Each widget may be customized using CSS by using the uniquely named DOM elements that comprise each widget. To get started, inspect the
-widget in your preferred browser so that you can see the HTML. Identify the element you would like to customize and make note of the `id`
-attribute. Using the HTML `<style>` tag, add your custom CSS above the widget HTML. You can view the example below for further explanation.
+The widgets are embedded within an `iframe` HTML element that prevents the host website from overriding and altering the styling of the
+widget. While this may seem like a disadvantage, it helps prevent the unwanted style changes to the widget that can happen by the hosting
+website. However, the widget is wrapped in a parent div that may be customized to alter how the `iframe` is embedded within your website.
+See the example below on how to customize the `perscom_widget_wrapper`.
 
 ### Example
 
-In the following example, we are going to center each table column header within the roster widget. The `id` of the `<th>` element that we
-are going to customize is `perscom_widget_table_header_column`. Making note of this, we have inserted the custom CSS above the widget.
+In the following example, we are going to adjust the height of the parent div to fit the widget appropriately. The CSS is added just above
+the code snippet for it to take affect.
 
 ```html
 <style>
-  #perscom_widget_table_header_column {
-    text-align: center;
+  #perscom_widget_wrapper {
+    height: 500px;
   }
 </style>
 
-<div id="perscom_roster" data-apikey="APIKEY" data-perscomid="PERSCOMID"></div>
-<link href="https://widget.perscom.io/widget.css" rel="stylesheet" />
-<script src="https://widget.perscom.io/widget.js"></script>
+<div id="perscom_widget_wrapper">
+  <script
+    id="perscom_widget"
+    data-perscomid="PERSCOMID"
+    data-apikey="APIKEY"
+    data-widget="roster"
+    src="https://widget.perscom.io/widget.js"
+    type="text/javascript"
+  ></script>
+</div>
 ```
+
+## Externally Accessing The Widget
+
+The PERSCOM.io widget can be accessed outside of the HTML code snippet that you used to post within your website. To see your widget live,
+without embedding it in a website, you can visit the URL's below. Make sure to set APIKEY and PERSCOMID to the correct values.
+
+Roster:
+[https://widget.perscom.io/roster?apikey=APIKEY&perscomid=PERSCOMID](https://widget.perscom.io/roster?apikey=APIKEY&perscomid=PERSCOMID)
+Awards:
+[https://widget.perscom.io/awards?apikey=APIKEY&perscomid=PERSCOMID](https://widget.perscom.io/awards?apikey=APIKEY&perscomid=PERSCOMID)
+Ranks:
+[https://widget.perscom.io/ranks?apikey=APIKEY&perscomid=PERSCOMID](https://widget.perscom.io/ranks?apikey=APIKEY&perscomid=PERSCOMID)
 
 ## Development
 

@@ -42,12 +42,12 @@ in each example with the correct values.
 
 ::: code-group
 
-```php [PHP]
+```php:line-numbers [PHP]
 use GuzzleHttp\Client;
 
 // Create a client with a base URI
 $client = new Client([
-    'base_uri' => 'https://api.perscom.io/v1',
+    'base_uri' => 'https://api.perscom.io/v1/',
     'timeout' => 2.0,
     'headers' => [
       'Accept' => 'application/json',
@@ -60,7 +60,7 @@ $client = new Client([
 $response = $client->request('GET', 'users');
 ```
 
-```js [Javascript (fetch)]
+```js:line-numbers [Javascript (fetch)]
 fetch('https//api.perscom.io/v1/users', {
   method: 'GET',
   headers: {
@@ -78,8 +78,8 @@ fetch('https//api.perscom.io/v1/users', {
   })
 ```
 
-```js [Javascript (axios)]
-var axios = require("axios");
+```js:line-numbers [Javascript (axios)]
+var axios = require('axios')
 
 axios
   .get('https://api.perscom.io/v1/users', {
