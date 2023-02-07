@@ -1,18 +1,12 @@
 # Widgets
 
 PERSCOM.io offers powerful widgets that allow the integration of your organizational data into another website for display. Each widget is a
-a snippet of HTML that can be injected into your website.
-
-<!-- prettier-ignore -->
-::: info
-Each widget integration requires your PERSCOM ID and the use of an API key with the `access:widget` scope assigned. Your
-PERSCOM ID can be found under the general settings of your Dashboard.
-:::
+snippet of HTML that can be injected into your website.
 
 ## Choosing The Widget
 
 Each widget uses the same HTML code snippet to display the data. However, to set which widget you would like outputted, you must set the
-`data-widget` attribute to the intended widget. The available options are listed below.
+`data-widget` attribute to the intended Widget ID. The available options are listed below.
 
 ```html
 <div id="perscom_widget_wrapper">
@@ -29,11 +23,12 @@ Each widget uses the same HTML code snippet to display the data. However, to set
 
 ## Available Widgets
 
-The following widgets are currently available.
+The following widgets are currently available. Each widget is identified by a Widget ID that is passed to the `data-widget` attribute.
 
 1. [Roster](/external-integration/widgets/roster) `data-widget='roster'`
 2. [Awards](/external-integration/widgets/awards) `data-widget='awards'`
-3. [Ranks](/external-integration/widgets/ranks) `data-widget='ranks'`
+3. [Qualifications](/external-integration/widgets/qualifications) `data-widget='qualifications'`
+4. [Ranks](/external-integration/widgets/ranks) `data-widget='ranks'`
 
 ## Authentication and Authorization
 
@@ -47,6 +42,49 @@ These two items will be inserted into the widget when you add them to your websi
 authentication error when viewing the widget.
 
 Click [here](/external-integration/api) for more documentation on the API.
+
+<!-- prettier-ignore -->
+::: info
+Each widget integration requires your PERSCOM ID and the use of an API key with the `access:widget` scope assigned. Your
+PERSCOM ID can be found under the general settings of your Dashboard.
+:::
+
+## Options
+
+The widget accepts several options to customize the output of the data.
+
+#### API Key (required)
+
+```html
+data-apikey="xxx"
+```
+
+The API key used to authenticate the request.
+
+#### Limit
+
+```html
+data-limit="10"
+```
+
+Adding the limit option will control how many results are returned from the widget. By default, the widget will return 15 results. When more
+than 15 results are present, the table will be presented with a pagination option. Increase or decrease the limit to fit your website needs.
+
+#### PERSCOM ID (required)
+
+```html
+data-perscomid="xxx"
+```
+
+The ID of your PERSCOM account used to authenticate the request.
+
+#### Widget ID (required)
+
+```html
+data-widget="[roster|awards|qualifications|ranks]"
+```
+
+The ID of the [widget](#available-widgets) you would like to output.
 
 ## Customization
 
@@ -84,12 +122,9 @@ the code snippet for it to take affect.
 The PERSCOM.io widget can be accessed outside of the HTML code snippet that you used to post within your website. To see your widget live,
 without embedding it in a website, you can visit the URL's below. Make sure to set APIKEY and PERSCOMID to the correct values.
 
-Roster:
-[https://widget.perscom.io/roster?apikey=APIKEY&perscomid=PERSCOMID](https://widget.perscom.io/roster?apikey=APIKEY&perscomid=PERSCOMID)
-Awards:
-[https://widget.perscom.io/awards?apikey=APIKEY&perscomid=PERSCOMID](https://widget.perscom.io/awards?apikey=APIKEY&perscomid=PERSCOMID)
-Ranks:
-[https://widget.perscom.io/ranks?apikey=APIKEY&perscomid=PERSCOMID](https://widget.perscom.io/ranks?apikey=APIKEY&perscomid=PERSCOMID)
+```html
+https://widget.perscom.io/{widgetId}?apikey={apiKey}&perscomid={perscomId}
+```
 
 ## Development
 
