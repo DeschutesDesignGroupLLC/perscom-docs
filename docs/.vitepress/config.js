@@ -61,6 +61,7 @@ export default {
             items: [
               { text: 'Roster', link: '/external-integration/widgets/roster' },
               { text: 'Awards', link: '/external-integration/widgets/awards' },
+              { text: 'Qualifications', link: '/external-integration/widgets/qualifications' },
               { text: 'Ranks', link: '/external-integration/widgets/ranks' }
             ]
           }
