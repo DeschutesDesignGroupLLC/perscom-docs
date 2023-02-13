@@ -39,10 +39,11 @@ export default {
         collapsed: false,
         items: [
           { text: 'About PERSCOM', link: '/about' },
+          { text: 'Find My Organization', link: '/find-my-organization' },
           { text: 'Getting Started', link: '/getting-started' },
           { text: 'Pricing', link: '/pricing' },
           { text: 'Registration', link: '/registration' },
-          { text: 'Find My Organization', link: '/find-my-organization' }
+          { text: 'Support', link: '/support' }
         ]
       },
       {
@@ -59,7 +60,7 @@ export default {
           { text: 'Statuses', link: '/components/statuses' },
           { text: 'Tasks', link: '/components/tasks' },
           { text: 'Units', link: '/components/units' },
-          { text: 'Users', link: '/components/users' },
+          { text: 'Users', link: '/components/users' }
         ]
       },
       {
