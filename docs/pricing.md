@@ -18,7 +18,7 @@ get started. You'll have the opportunity to try out all of our features and see 
 ## Subscriptions
 
 | Tier       |                                         Features                                          | Pricing |
-| ---------- |:-----------------------------------------------------------------------------------------:| ------: |
+| ---------- | :---------------------------------------------------------------------------------------: | ------: |
 | Basic      |    - Social login support<br/>- Application provided subdomain<br/>- Community support    |   $9/mo |
 | Pro        |       -Access to powerful API<br/>- Custom subdomain<br/>- Ticket and email support       |  $15/mo |
 | Enterprise | -Export and backup personnel data<br/>- Single sign-on integration<br/>- Priority support |  $39/mo |

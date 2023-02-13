@@ -60,7 +60,7 @@ export default {
           { text: 'Statuses', link: '/components/statuses' },
           { text: 'Tasks', link: '/components/tasks' },
           { text: 'Units', link: '/components/units' },
-          { text: 'Users', link: '/components/users' },
+          { text: 'Users', link: '/components/users' }
         ]
       },
       {
