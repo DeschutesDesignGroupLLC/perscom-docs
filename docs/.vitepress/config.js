@@ -47,6 +47,36 @@ export default {
         ]
       },
       {
+        text: 'Components',
+        collapsed: false,
+        items: [
+          { text: 'Announcements', link: '/components/announcements' },
+          { text: 'Awards', link: '/components/awards' },
+          { text: 'Documents', link: '/components/documents' },
+          { text: 'Positions', link: '/components/positions' },
+          { text: 'Qualifications', link: '/components/qualifications' },
+          { text: 'Ranks', link: '/components/ranks' },
+          { text: 'Specialties', link: '/components/specialties' },
+          { text: 'Statuses', link: '/components/statuses' },
+          { text: 'Tasks', link: '/components/tasks' },
+          { text: 'Units', link: '/components/units' },
+          { text: 'Users', link: '/components/users' },
+        ]
+      },
+      {
+        text: 'Records',
+        collapsed: false,
+        items: [
+          { text: 'Assignment', link: '/records/assignment' },
+          { text: 'Award', link: '/records/award' },
+          { text: 'Combat', link: '/records/combat' },
+          { text: 'Qualification', link: '/records/qualification' },
+          { text: 'Rank', link: '/records/rank' },
+          { text: 'Service', link: '/records/service' },
+          { text: 'Status', link: '/records/status' }
+        ]
+      },
+      {
         text: 'External Integration',
         collapse: false,
         items: [
@@ -70,6 +100,7 @@ export default {
       },
       {
         text: 'Support',
+        collapsed: true,
         items: [
           { text: 'Community Forums', link: 'https://community.deschutesdesigngroup.com/' },
           { text: 'Help Desk', link: 'https://support.deschutesdesigngroup.com/' },
