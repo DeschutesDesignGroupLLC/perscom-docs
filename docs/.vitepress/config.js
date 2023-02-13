@@ -39,10 +39,11 @@ export default {
         collapsed: false,
         items: [
           { text: 'About PERSCOM', link: '/about' },
+          { text: 'Find My Organization', link: '/find-my-organization' },
           { text: 'Getting Started', link: '/getting-started' },
           { text: 'Pricing', link: '/pricing' },
           { text: 'Registration', link: '/registration' },
-          { text: 'Find My Organization', link: '/find-my-organization' }
+          { text: 'Support', link: '/support' }
         ]
       },
       {
