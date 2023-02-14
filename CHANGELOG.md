@@ -1,6 +1,17 @@
 # Release Notes
 
-## [Unreleased](https://github.com/DeschutesDesignGroupLLC/PERSCOM-3.0-Docs/compare/v0.0.24...HEAD)
+## [Unreleased](https://github.com/DeschutesDesignGroupLLC/PERSCOM-3.0-Docs/compare/v0.0.25...HEAD)
+
+## [v0.0.25](https://github.com/DeschutesDesignGroupLLC/PERSCOM-3.0-Docs/compare/v0.0.24...v0.0.25) - 2023-02-14
+
+<!-- Release notes generated using configuration in .github/release.yml at v0.0.25 -->
+### What's Changed
+
+#### Added
+
+- Added a changelog by @JonErickson in https://github.com/DeschutesDesignGroupLLC/PERSCOM-3.0-Docs/pull/18
+
+**Full Changelog**: https://github.com/DeschutesDesignGroupLLC/PERSCOM-3.0-Docs/compare/v0.0.24...v0.0.25
 
 ## [v0.0.24](https://github.com/DeschutesDesignGroupLLC/PERSCOM-3.0-Docs/compare/v0.0.23...v0.0.24) - 2023-02-13
 
