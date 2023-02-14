@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - master
-      - staging
 
 jobs:
   build:
@@ -18,10 +17,11 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
+          cache: 'npm'
 
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build Application
         run: npm run docs:build
@@ -38,7 +38,6 @@ jobs:
           append_to_pre_release_tag: prerelease
 
       - name: Setup AWS Credentials
-        if: github.ref == 'refs/heads/master'
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
@@ -46,11 +45,9 @@ jobs:
           aws-region: us-east-1
 
       - name: Deploy to S3
-        if: github.ref == 'refs/heads/master'
         run: aws s3 sync ./docs/.vitepress/dist/ s3://${{ secrets.AWS_BUCKET_NAME }} --delete
 
       - name: Invalidate Cloudfront Cache
-        if: github.ref == 'refs/heads/master'
         uses: chetan/invalidate-cloudfront-action@v2
         env:
           DISTRIBUTION: ${{ secrets.AWS_CLOUDFRONT_DISTRIBUTION_ID }}
@@ -60,7 +57,6 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
       - name: Trigger Algolia Crawler Index
-        if: github.ref == 'refs/heads/master'
         uses: algolia/algoliasearch-crawler-github-actions@v1.0.10
         with:
           crawler-user-id: ${{ secrets.CRAWLER_USER_ID }}
@@ -72,8 +68,9 @@ jobs:
 
       - name: Create Release
         uses: ncipollo/release-action@v1
-        if: github.ref == 'refs/heads/master'
         with:
           tag: ${{ steps.tag_version.outputs.new_tag }}
           name: ${{ steps.tag_version.outputs.new_tag }}
-          body: ${{ steps.tag_version.outputs.changelog }}
+          generateReleaseNotes: true
+          makeLatest: true
+          token: ${{ secrets.RELEASE_TOKEN }}
