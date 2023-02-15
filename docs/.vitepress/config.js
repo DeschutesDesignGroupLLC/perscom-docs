@@ -39,6 +39,7 @@ export default {
         collapsed: false,
         items: [
           { text: 'About PERSCOM', link: '/about' },
+          { text: 'Features', link: '/features' },
           { text: 'Find My Organization', link: '/find-my-organization' },
           { text: 'Getting Started', link: '/getting-started' },
           { text: 'Pricing', link: '/pricing' },
