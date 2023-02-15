@@ -39,6 +39,7 @@ export default {
         collapsed: false,
         items: [
           { text: 'About PERSCOM', link: '/about' },
+          { text: 'Features', link: '/features' },
           { text: 'Find My Organization', link: '/find-my-organization' },
           { text: 'Getting Started', link: '/getting-started' },
           { text: 'Pricing', link: '/pricing' },
@@ -82,12 +83,14 @@ export default {
         items: [
           {
             text: 'API',
+            collapsed: true,
             link: '/external-integration/api',
             items: [{ text: 'Documentation', link: 'https://perscom.io/documentation/api' }]
           },
           { text: 'OAuth 2.0', link: '/external-integration/oauth' },
           {
             text: 'Widgets',
+            collapsed: true,
             link: '/external-integration/widgets',
             items: [
               { text: 'Roster', link: '/external-integration/widgets/roster' },
