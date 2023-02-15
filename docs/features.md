@@ -4,9 +4,16 @@ The following is a list of features available in PERSCOM.io.
 
 <!-- prettier-ignore -->
 ::: tip Suggest A Feature 
-We are always looking for advice and input regarding our features. 
-Pleae visit our [community forums](https://community.deschutesdesigngroup.com/forum/3-feedback-and-ideas/) 
+We are always looking for advice and input regarding our features. Pleae visit our 
+[community forums](https://community.deschutesdesigngroup.com/forum/3-feedback-and-ideas/) 
 to post a suggestion or comment on our future development. 
+:::
+
+<!-- prettier-ignore -->
+::: info Feature Development
+We have made our feature development roadmap publicly available. 
+Click [here](https://github.com/orgs/DeschutesDesignGroupLLC/projects/2/views/4) to see 
+the roadmap with anticipated release times and which version the new feature is available in.
 :::
 
 ## Feature List
