@@ -11,7 +11,7 @@ Make sure to replace APIKEY and PERSCOMID with the appropriate values.
 
 ```html
 <!-- Place the code block where you would like the widget displayed on your website. !-->
-<!-- Replace APIKEY and PERSCOMID with your API key with the ‘access:widget' scope and PERSCOM ID, respectively. !-->
+<!-- Replace APIKEY and PERSCOMID with your API key and PERSCOM Account ID, respectively. !-->
 
 <div id="perscom_widget_wrapper">
   <script
@@ -24,3 +24,9 @@ Make sure to replace APIKEY and PERSCOMID with the appropriate values.
   ></script>
 </div>
 ```
+
+## Scopes
+
+The following scopes will need to be added to your API key to properly display the data.
+
+- `view:rank` Can view a rank.
