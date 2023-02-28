@@ -31,6 +31,10 @@ export default {
       {
         text: 'Pricing',
         link: 'https://perscom.io/#pricing'
+      },
+      {
+        text: 'Status',
+        link: 'https://status.perscom.io/'
       }
     ],
     sidebar: [
@@ -44,6 +48,7 @@ export default {
           { text: 'Getting Started', link: '/getting-started' },
           { text: 'Pricing', link: '/pricing' },
           { text: 'Registration', link: '/registration' },
+          { text: 'Status', link: '/status' },
           { text: 'Support', link: '/support' }
         ]
       },
