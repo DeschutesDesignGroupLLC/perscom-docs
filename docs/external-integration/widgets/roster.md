@@ -27,11 +27,11 @@ Make sure to replace APIKEY and PERSCOMID with the appropriate values.
 
 ## Examples
 
-The following is an example of the Roster Widget being displayed within the PERSCOM Dashboard.
+The following is an example of the Roster Widget being displayed within the PERSCOM Application.
 
-![Widget Roster Preview](https://assets.perscom.io/images/widget-roster-preview.png)
+![Widget Roster Preview](https://perscom-cdn.s3.amazonaws.com/images/roster-preview-1.png)
 
-![Widget Roster User Preview](https://assets.perscom.io/images/widget-roster-user-preview.png)
+![Widget Roster User Preview](https://perscom-cdn.s3.amazonaws.com/images/roster-preview-2.png)
 
 ## Scopes
 

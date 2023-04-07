@@ -9,4 +9,4 @@ powerful.
 Our software is backed by a powerful API that allows integration with third-party software and other platforms to extend and enhance the
 functionality of your personnel data.
 
-![Dashboard Preview](https://assets.perscom.io/images/dashboard-preview.png)
+![Dashboard Preview](https://perscom-cdn.s3.amazonaws.com/images/dashboard-preview-1.png)

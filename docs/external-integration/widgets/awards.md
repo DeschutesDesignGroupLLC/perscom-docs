@@ -25,6 +25,12 @@ Make sure to replace APIKEY and PERSCOMID with the appropriate values.
 </div>
 ```
 
+## Examples
+
+The following is an example of the Awards Widget being displayed within the PERSCOM Application.
+
+![Widget Awards Preview](https://perscom-cdn.s3.amazonaws.com/images/awards-preview-1.png)
+
 ## Scopes
 
 The following scopes will need to be added to your API key to properly display the data.
