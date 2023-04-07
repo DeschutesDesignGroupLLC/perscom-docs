@@ -58,7 +58,9 @@ export default {
         items: [
           { text: 'Announcements', link: '/components/announcements' },
           { text: 'Awards', link: '/components/awards' },
+          { text: 'Calendars', link: '/components/calendars' },
           { text: 'Documents', link: '/components/documents' },
+          { text: 'Events', link: '/components/events' },
           { text: 'Positions', link: '/components/positions' },
           { text: 'Qualifications', link: '/components/qualifications' },
           { text: 'Ranks', link: '/components/ranks' },
