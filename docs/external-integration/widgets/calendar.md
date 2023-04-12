@@ -35,5 +35,4 @@ The following is an example of the Calendar Widget being displayed within the PE
 
 The following scopes will need to be added to your API key to properly display the data.
 
-- `view:calendar` Can view a calendar.
 - `view:event` Can view an event.

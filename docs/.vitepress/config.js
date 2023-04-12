@@ -3,9 +3,9 @@
 export default {
   lang: 'en-US',
   title: 'PERSCOM Personnel Management System Documentation',
-  description: 'Documentation on how to use PERSCOM.io.',
+  description: 'Documentation on the use and integration of PERSCOM.io. Available at https://perscom.io.',
 
-  head: [['meta', { name: 'theme-color', content: '#3c8772' }]],
+  head: [['meta', { name: 'theme-color', content: '#2563eb' }]],
 
   cleanUrls: 'with-subfolders',
   lastUpdated: true,
@@ -94,7 +94,12 @@ export default {
             link: '/external-integration/api',
             items: [{ text: 'Documentation', link: 'https://perscom.io/documentation/api' }]
           },
-          { text: 'OAuth 2.0', link: '/external-integration/oauth' },
+          {
+            text: 'OAuth 2.0',
+            collapsed: true,
+            link: '/external-integration/oauth',
+            items: [{ text: 'OpenID Connect', link: '/external-integration/oauth/oidc' }]
+          },
           {
             text: 'Widgets',
             collapsed: true,
