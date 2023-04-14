@@ -6,7 +6,7 @@ PERSCOM.io is a fully functioning, powerful, and robust personnel management sof
 PERSCOM.io is to enhance and provide common functionalities needed for organizations to run in a manner that is efficient, intuitive, and
 powerful.
 
-Our software is backed by a powerful API that allows integration with third-party software and other platforms to extend and enhance the
-functionality of your personnel data.
+Our software is backed by a powerful API, OAuth 2.0 and suite of Widgets that allows integration with third-party software and other
+platforms to extend and enhance the functionality of your personnel data.
 
-![Dashboard Preview](https://assets.perscom.io/images/dashboard-preview.png)
+![Dashboard Preview](https://perscom-cdn.s3.amazonaws.com/images/dashboard-preview-1.png)

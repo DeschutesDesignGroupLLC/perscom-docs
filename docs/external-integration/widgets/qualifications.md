@@ -25,6 +25,12 @@ Make sure to replace APIKEY and PERSCOMID with the appropriate values.
 </div>
 ```
 
+## Examples
+
+The following is an example of the Qualifications Widget being displayed within the PERSCOM Application.
+
+![Widget Qualifications Preview](https://perscom-cdn.s3.amazonaws.com/images/qualifications-preview-1.png)
+
 ## Scopes
 
 The following scopes will need to be added to your API key to properly display the data.

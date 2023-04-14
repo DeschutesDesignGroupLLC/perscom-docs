@@ -27,8 +27,9 @@ The following widgets are currently available. Each widget is identified by a Wi
 
 1. [Roster](/external-integration/widgets/roster) `data-widget='roster'`
 2. [Awards](/external-integration/widgets/awards) `data-widget='awards'`
-3. [Qualifications](/external-integration/widgets/qualifications) `data-widget='qualifications'`
-4. [Ranks](/external-integration/widgets/ranks) `data-widget='ranks'`
+3. [Calendar](/external-integration/widgets/calendar) `data-widget='calendar'`
+4. [Qualifications](/external-integration/widgets/qualifications) `data-widget='qualifications'`
+5. [Ranks](/external-integration/widgets/ranks) `data-widget='ranks'`
 
 ## Authentication and Authorization
 
@@ -75,10 +76,18 @@ data-perscomid="xxx"
 
 The ID of your PERSCOM account used to authenticate the request.
 
+#### Timezone
+
+```html
+data-timezone="UTC"
+```
+
+The timezone any date object should be translated to.
+
 #### Widget ID (required)
 
 ```html
-data-widget="[roster|awards|qualifications|ranks]"
+data-widget="[roster|awards|calendar|qualifications|ranks]"
 ```
 
 The ID of the [widget](#available-widgets) you would like to output.

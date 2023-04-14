@@ -3,9 +3,9 @@
 export default {
   lang: 'en-US',
   title: 'PERSCOM Personnel Management System Documentation',
-  description: 'Documentation on how to use PERSCOM.io.',
+  description: 'Documentation on the use and integration of PERSCOM.io. Available at https://perscom.io.',
 
-  head: [['meta', { name: 'theme-color', content: '#3c8772' }]],
+  head: [['meta', { name: 'theme-color', content: '#2563eb' }]],
 
   cleanUrls: 'with-subfolders',
   lastUpdated: true,
@@ -58,7 +58,9 @@ export default {
         items: [
           { text: 'Announcements', link: '/components/announcements' },
           { text: 'Awards', link: '/components/awards' },
+          { text: 'Calendars', link: '/components/calendars' },
           { text: 'Documents', link: '/components/documents' },
+          { text: 'Events', link: '/components/events' },
           { text: 'Positions', link: '/components/positions' },
           { text: 'Qualifications', link: '/components/qualifications' },
           { text: 'Ranks', link: '/components/ranks' },
@@ -92,7 +94,12 @@ export default {
             link: '/external-integration/api',
             items: [{ text: 'Documentation', link: 'https://perscom.io/documentation/api' }]
           },
-          { text: 'OAuth 2.0', link: '/external-integration/oauth' },
+          {
+            text: 'OAuth 2.0',
+            collapsed: true,
+            link: '/external-integration/oauth',
+            items: [{ text: 'OpenID Connect', link: '/external-integration/oauth/oidc' }]
+          },
           {
             text: 'Widgets',
             collapsed: true,
@@ -100,6 +107,7 @@ export default {
             items: [
               { text: 'Roster', link: '/external-integration/widgets/roster' },
               { text: 'Awards', link: '/external-integration/widgets/awards' },
+              { text: 'Calendar', link: '/external-integration/widgets/calendar' },
               { text: 'Qualifications', link: '/external-integration/widgets/qualifications' },
               { text: 'Ranks', link: '/external-integration/widgets/ranks' }
             ]

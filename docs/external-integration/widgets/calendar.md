@@ -1,6 +1,6 @@
-# Ranks Widget
+# Calendar Widget
 
-The ranks widget outputs a table-based list of your ranks as they are in your Dashboard.
+The calendar widget outputs a month-based calendar view with all the events listed.
 
 ## Code Snippet
 
@@ -18,7 +18,7 @@ Make sure to replace APIKEY and PERSCOMID with the appropriate values.
     id="perscom_widget"
     data-perscomid="PERSCOMID"
     data-apikey="APIKEY"
-    data-widget="ranks"
+    data-widget="calendar"
     src="https://widget.perscom.io/widget.js"
     type="text/javascript"
   ></script>
@@ -27,12 +27,12 @@ Make sure to replace APIKEY and PERSCOMID with the appropriate values.
 
 ## Examples
 
-The following is an example of the Ranks Widget being displayed within the PERSCOM Application.
+The following is an example of the Calendar Widget being displayed within the PERSCOM Application.
 
-![Widget Ranks Preview](https://perscom-cdn.s3.amazonaws.com/images/ranks-preview-1.png)
+![Widget Calendar Preview](https://perscom-cdn.s3.amazonaws.com/images/calendar-preview-1.png)
 
 ## Scopes
 
 The following scopes will need to be added to your API key to properly display the data.
 
-- `view:rank` Can view a rank.
+- `view:event` Can view an event.
