@@ -48,7 +48,6 @@ export default {
           { text: 'Getting Started', link: '/getting-started' },
           { text: 'Pricing', link: '/pricing' },
           { text: 'Registration', link: '/registration' },
-          { text: 'Status', link: '/status' },
           { text: 'Support', link: '/support' }
         ]
       },
@@ -89,6 +88,10 @@ export default {
         collapse: false,
         items: [
           {
+            text: 'Overview',
+            link: '/external-integration/overview'
+          },
+          {
             text: 'API',
             collapsed: true,
             link: '/external-integration/api',
@@ -99,6 +102,11 @@ export default {
             collapsed: true,
             link: '/external-integration/oauth',
             items: [{ text: 'OpenID Connect', link: '/external-integration/oauth/oidc' }]
+          },
+          {
+            text: 'Webhooks',
+            collapsed: true,
+            link: '/external-integration/webhooks'
           },
           {
             text: 'Widgets',

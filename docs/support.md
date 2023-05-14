@@ -16,3 +16,11 @@ reach out for support whenever you need it.
 ::: tip Support Ticket
 For those with a Pro or Enterprise subscription, you can submit a support ticket [here](https://support.deschutesdesigngroup.com/hc/en-us/requests/new).
 :::
+
+## Support by Subscription
+
+| Tier       |                   Support Level                   |
+| ---------- | :-----------------------------------------------: |
+| Basic      | Community support forums and online documentation |
+| Pro        |             Ticket and email support              |
+| Enterprise |                 Priority support                  |

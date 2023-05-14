@@ -1,11 +1,12 @@
 # OAuth 2.0
 
-OAuth 2.0 is an authorization protocol that enables third-party applications to access your organization's data without giving them your
-username and password. When you grant permission to an application using OAuth 2.0, you are essentially allowing it to access specific parts
-of your data on your behalf. This can be beneficial in several ways. For example, if you use an external timekeeping or scheduling software,
-you can use our OAuth 2.0 feature to allow that software to access your organization's personnel data. This can save you time and effort by
-automating the data transfer process and reducing manual data entry errors. With OAuth 2.0, you can have more control over which third-party
-applications can access your organization's data, and you can revoke their access at any time if needed.
+OAuth 2.0 is an authorization protocol, built on top of the PERSCOM.io API, that enables third-party applications to access your
+organization's data without giving them your username and password. When you grant permission to an application using OAuth 2.0, you are
+essentially allowing it to access specific parts of your data on your behalf. This can be beneficial in several ways. For example, if you
+use an external timekeeping or scheduling software, you can use our OAuth 2.0 feature to allow that software to access your organization's
+personnel data. This can save you time and effort by automating the data transfer process and reducing manual data entry errors. With OAuth
+2.0, you can have more control over which third-party applications can access your organization's data, and you can revoke their access at
+any time if needed.
 
 ## Grants
 
