@@ -18,7 +18,7 @@ authorize access to protected resources. The four main types of authorization gr
   application exchanging an authorization code for an access token.
 - Implicit grant: This grant type is similar to the authorization code grant, but is used for browser-based applications where the client
   secret cannot be kept secret. The access token is returned directly to the client instead of being exchanged for an authorization code.
-- Resource owner password credentials grant: This grant type is used when the client already has the user's username and password, and needs
+- Resource owner password credentials grant: This grant type is used when the client already has the user's username and password and needs
   to obtain an access token directly from the authorization server.
 - Client credentials grant: This grant type is used when the client needs to access its own resources, rather than a user's resources. It
   involves the client providing its own credentials to the authorization server to obtain an access token.
@@ -27,7 +27,7 @@ authorize access to protected resources. The four main types of authorization gr
 
 In the context of OAuth 2.0, scopes are used to specify the level of access that a client application has to a protected resource. When a
 client application requests authorization to access a protected resource, it specifies one or more scopes that it requires. The
-authorization server then grants an access token that has permissions to access only the specified scopes. Scopes provide a way to limit the
+authorization server then grants an access token that has permission to access only the specified scopes. Scopes provide a way to limit the
 access granted to a client application, reducing the risk of unauthorized access to sensitive data. For example, an application that needs
 to read a user's email address may request access to the "view:user" scope, but not to other sensitive scopes such as "update:user" or
 "delete:user".

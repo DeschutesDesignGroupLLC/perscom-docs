@@ -2,16 +2,16 @@
 
 OIDC stands for OpenID Connect, which is a widely-used authentication protocol built on top of OAuth 2.0. While OAuth 2.0 is primarily
 designed for granting access to APIs, OIDC focuses on user authentication. OIDC allows a user to authenticate with a provider (e.g., Google,
-Facebook, or your own identity provider), and then receive an ID token that contains information about the user. This information can be
-used to log the user into a web application, among other things.
+Facebook, or your identity provider) and then receive an ID token containing information about the user. This information can be used to log
+the user into a web application, among other things.
 
-OIDC defines a set of standard [endpoints](#endpoints) that the client application can use to interact with the identity provider to
-authenticate a user and receive the ID token. These endpoints include a discovery endpoint, an authorization endpoint, and a token endpoint.
-The discovery endpoint allows the client to discover the endpoints and configuration of the provider, while the authorization endpoint is
-used to initiate the authentication process. Finally, the token endpoint is used to exchange an authorization code for an ID token.
+OIDC defines a set of standard [endpoints](#endpoints) that the client application can use to authenticate a user and receive the ID token
+to interact with the identity provider. These endpoints include a discovery endpoint, an authorization endpoint, and a token endpoint. The
+discovery endpoint allows the client to discover the endpoints and configuration of the provider, while the authorization endpoint is used
+to initiate the authentication process. Finally, the token endpoint is used to exchange an authorization code for an ID token.
 
 In summary, OIDC provides a standardized way to authenticate users and obtain information about them, making it easier to build secure and
-scalable web applications as well as implmenent Single Sign-On (SSO) with third-party applications.
+scalable web applications as well as implement Single Sign-On (SSO) with third-party applications.
 
 ## Endpoints
 
@@ -60,7 +60,7 @@ curl -X GET \
 Returns information about the currently signed-in user.
 
 The `access token` must have the `openid` scope. The endpoint also excepts the `profile` and `email` scope that will return the respective
-fields in the response, but is not required. The best practice would be to include all three scopes when requesting an access token.
+fields in the response but is not required. The best practice would be to include all three scopes when requesting an access token.
 
 ```vb
 curl -X GET \
