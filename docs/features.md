@@ -103,6 +103,10 @@ PERSCOM.io enables organizations to assign roles and permissions to their person
 
 PERSCOM.io provides an API for external integration and uses OAuth 2.0 to ensure secure access to the application.
 
+## Webhooks
+
+Set up web hooks to enable real-time notifications and data updates for external applications.
+
 ## Widgets
 
 PERSCOM.io offers widgets for displaying data on an external website, such as the organization's structure, personnel list, or task

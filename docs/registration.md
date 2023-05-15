@@ -7,6 +7,5 @@ Once you've completed the registration form, your account will be set up immedia
 account details. With your account set up, you'll have access to our comprehensive personnel management tools, including records management,
 qualification tracking, and much more.
 
-Whether you're a small organization just starting out or a larger operation looking to streamline your processes, PERSCOM.io has everything
-you need to get started and grow. So what are you waiting for? [Sign up](https://perscom.io/register) today and start managing your
-personnel with ease!
+PERSCOM.io has everything you need to get started and grow, whether you're a small organization or a larger operation looking to streamline
+your processes. So what are you waiting for? [Sign up](https://perscom.io/register) today and start managing your personnel with ease!

@@ -1,7 +1,18 @@
 # API
 
 The PERSCOM.io API is the backbone that allows PERSCOM.io to function and deliver the services you've come to enjoy. The API also allow you
-to integrate your PERSCOM.io data with third-party services.
+to integrate your PERSCOM.io data with third-party services and applications.
+
+An API, or Application Programming Interface, is a set of protocols, tools, and standards for building software applications. APIs define
+how different software components should interact with each other and enable developers to integrate their own software with existing
+applications and services.
+
+In other words, an API provides a standardized way for different software systems to communicate and exchange data. This allows developers
+to build new applications that can "talk" to existing software without needing to understand the details of how that software is
+implemented.
+
+The PERSCOM.io API is built using the `REST` interface. A request to the PERSCOM.io API requires a `GET`, `POST`, `PUT`, or `DELETE` HTTP
+request along with an API key and your PERSCOM ID to an available URL endpoint. Details on how to perform those requests are outlined below.
 
 ## API Keys
 
