@@ -1,9 +1,10 @@
 # Webhooks
 
-For PERSCOM.io, webhooks can be used to enable real-time notifications and data updates for external applications, such as a messaging
-platform or a custom reporting tool. This means that any changes made within PERSCOM.io, such as new personnel records or updated
-qualifications, can be automatically communicated to other systems in real-time, without the need for manual data entry or synchronization.
-This can improve data accuracy and save time for personnel managers and other staff who rely on the system for critical information.
+For PERSCOM.io, webhooks can be used to enable real-time notifications and data updates for third-party services, such as a messaging
+platform, an external database or a custom reporting tool. This means that any changes made within PERSCOM.io, such as new personnel records
+or updated qualifications, can be automatically communicated to other systems in real-time, without the need for manual data entry or
+synchronization. This can improve data accuracy and save time for personnel managers and other staff who rely on the system for critical
+information.
 
 ## Creating A Webhook
 

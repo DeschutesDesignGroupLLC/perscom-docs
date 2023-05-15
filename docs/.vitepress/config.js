@@ -105,7 +105,6 @@ export default {
           },
           {
             text: 'Webhooks',
-            collapsed: true,
             link: '/external-integration/webhooks'
           },
           {
