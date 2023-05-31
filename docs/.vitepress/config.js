@@ -115,6 +115,7 @@ export default {
               { text: 'Roster', link: '/external-integration/widgets/roster' },
               { text: 'Awards', link: '/external-integration/widgets/awards' },
               { text: 'Calendar', link: '/external-integration/widgets/calendar' },
+              { text: 'Forms', link: '/external-integration/widgets/forms' },
               { text: 'Qualifications', link: '/external-integration/widgets/qualifications' },
               { text: 'Ranks', link: '/external-integration/widgets/ranks' }
             ]

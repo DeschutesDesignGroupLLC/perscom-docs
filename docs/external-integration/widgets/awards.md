@@ -4,14 +4,11 @@ The awards widget outputs a table-based list of your awards as they are in your 
 
 ## Code Snippet
 
-<!-- prettier-ignore -->
-::: info 
-Make sure to replace APIKEY and PERSCOMID with the appropriate values. 
-:::
+Below is an example HTML code snippet that will output your awards.
 
 ```html
 <!-- Place the code block where you would like the widget displayed on your website. !-->
-<!-- Replace APIKEY and PERSCOMID with your API key and PERSCOM Account ID, respectively. !-->
+<!-- Replace APIKEY and PERSCOMID with your API key and PERSCOM ID, respectively. !-->
 
 <div id="perscom_widget_wrapper">
   <script
@@ -27,7 +24,7 @@ Make sure to replace APIKEY and PERSCOMID with the appropriate values.
 
 ## Examples
 
-The following is an example of the Awards Widget being displayed within the PERSCOM Application.
+The following is an example of the awards widget being displayed within the PERSCOM.io application.
 
 ![Widget Awards Preview](https://perscom-cdn.s3.amazonaws.com/images/awards-preview-1.png)
 
