@@ -4,14 +4,11 @@ The roster widget outputs a table-based list of your personnel, similar to the r
 
 ## Code Snippet
 
-<!-- prettier-ignore -->
-::: info 
-Make sure to replace APIKEY and PERSCOMID with the appropriate values. 
-:::
+Below is an example HTML code snippet that will output your roster.
 
 ```html
 <!-- Place the code block where you would like the widget displayed on your website. !-->
-<!-- Replace APIKEY and PERSCOMID with your API key and PERSCOM Account ID, respectively. !-->
+<!-- Replace APIKEY and PERSCOMID with your API key and PERSCOM ID, respectively. !-->
 
 <div id="perscom_widget_wrapper">
   <script
@@ -27,7 +24,7 @@ Make sure to replace APIKEY and PERSCOMID with the appropriate values.
 
 ## Examples
 
-The following is an example of the Roster Widget being displayed within the PERSCOM Application.
+The following is an example of the roster widget being displayed within the PERSCOM.io application.
 
 ![Widget Roster Preview](https://perscom-cdn.s3.amazonaws.com/images/roster-preview-1.png)
 

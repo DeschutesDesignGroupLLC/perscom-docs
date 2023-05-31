@@ -4,14 +4,11 @@ The ranks widget outputs a table-based list of your ranks as they are in your Da
 
 ## Code Snippet
 
-<!-- prettier-ignore -->
-::: info 
-Make sure to replace APIKEY and PERSCOMID with the appropriate values. 
-:::
+Below is an example HTML code snippet that will output your ranks.
 
 ```html
 <!-- Place the code block where you would like the widget displayed on your website. !-->
-<!-- Replace APIKEY and PERSCOMID with your API key and PERSCOM Account ID, respectively. !-->
+<!-- Replace APIKEY and PERSCOMID with your API key and PERSCOM ID, respectively. !-->
 
 <div id="perscom_widget_wrapper">
   <script
@@ -27,7 +24,7 @@ Make sure to replace APIKEY and PERSCOMID with the appropriate values.
 
 ## Examples
 
-The following is an example of the Ranks Widget being displayed within the PERSCOM Application.
+The following is an example of the ranks widget being displayed within the PERSCOM.io application.
 
 ![Widget Ranks Preview](https://perscom-cdn.s3.amazonaws.com/images/ranks-preview-1.png)
 

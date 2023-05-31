@@ -4,14 +4,11 @@ The qualifications widget outputs a table-based list of your qualifications as t
 
 ## Code Snippet
 
-<!-- prettier-ignore -->
-::: info 
-Make sure to replace APIKEY and PERSCOMID with the appropriate values. 
-:::
+Below is an example HTML code snippet that will output your qualifications.
 
 ```html
 <!-- Place the code block where you would like the widget displayed on your website. !-->
-<!-- Replace APIKEY and PERSCOMID with your API key and PERSCOM Account ID, respectively. !-->
+<!-- Replace APIKEY and PERSCOMID with your API key and PERSCOM ID, respectively. !-->
 
 <div id="perscom_widget_wrapper">
   <script
@@ -27,7 +24,7 @@ Make sure to replace APIKEY and PERSCOMID with the appropriate values.
 
 ## Examples
 
-The following is an example of the Qualifications Widget being displayed within the PERSCOM Application.
+The following is an example of the qualifications widget being displayed within the PERSCOM.io application.
 
 ![Widget Qualifications Preview](https://perscom-cdn.s3.amazonaws.com/images/qualifications-preview-1.png)
 

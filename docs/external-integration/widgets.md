@@ -28,8 +28,9 @@ The following widgets are currently available. Each widget is identified by a Wi
 1. [Roster](/external-integration/widgets/roster) `data-widget='roster'`
 2. [Awards](/external-integration/widgets/awards) `data-widget='awards'`
 3. [Calendar](/external-integration/widgets/calendar) `data-widget='calendar'`
-4. [Qualifications](/external-integration/widgets/qualifications) `data-widget='qualifications'`
-5. [Ranks](/external-integration/widgets/ranks) `data-widget='ranks'`
+4. [Forms](/external-integration/widgets/forms) `data-widget='forms'`
+5. [Qualifications](/external-integration/widgets/qualifications) `data-widget='qualifications'`
+6. [Ranks](/external-integration/widgets/ranks) `data-widget='ranks'`
 
 ## Authentication and Authorization
 
@@ -51,46 +52,19 @@ Click [here](/external-integration/api) for more documentation on the API.
 
 The widget accepts several options to customize the output of the data.
 
-#### API Key (required)
+| Option    | Required |  Type   | Description                                                                                                                                                                                                                                                                              |
+| --------- | :------: | :-----: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| apikey    |   yes    | string  | The API key used to authenticate the request.                                                                                                                                                                                                                                            |
+| limit     |    no    | integer | Adding the limit option will control how many results are returned from the widget. By default, the widget will return 15 results. When morethan 15 results are present, the table will be presented with a pagination option. Increase or decrease the limit to fit your website needs. |
+| perscomid |   yes    | integer | The ID of your PERSCOM.io account used to authenticate the request.                                                                                                                                                                                                                      |
+| resource  |    no    | integer | The ID of a specific resource that will be returned such as a specific form. The API key used to authenticate the request.                                                                                                                                                               |
+| timezone  |    no    | string  | The timezone any date object should be translated to. The ID of a specific resource that will be returned such as a specific form. The API key used to authenticate the request.                                                                                                         |
+| widget    |    no    | string  | The ID of the [widget](#available-widgets) you would like to output. The ID of a specific resource that will be returned such as a specific form. The API key used to authenticate the request.                                                                                          |
 
-```html
-data-apikey="xxx"
-```
-
-The API key used to authenticate the request.
-
-#### Limit
-
-```html
-data-limit="10"
-```
-
-Adding the limit option will control how many results are returned from the widget. By default, the widget will return 15 results. When more
-than 15 results are present, the table will be presented with a pagination option. Increase or decrease the limit to fit your website needs.
-
-#### PERSCOM ID (required)
-
-```html
-data-perscomid="xxx"
-```
-
-The ID of your PERSCOM account used to authenticate the request.
-
-#### Timezone
-
-```html
-data-timezone="UTC"
-```
-
-The timezone any date object should be translated to.
-
-#### Widget ID (required)
-
-```html
-data-widget="[roster|awards|calendar|qualifications|ranks]"
-```
-
-The ID of the [widget](#available-widgets) you would like to output.
+<!-- prettier-ignore -->
+::: info Including An Option
+Each option must be prefixed with `data-` within the HTML snippet. For example, to specify the `apikey` option, the parameter must be set as `data-apikey="xxx"`. See [Choosing The Widget](#choosing-the-widget) for an example.
+:::
 
 ## Customization
 
