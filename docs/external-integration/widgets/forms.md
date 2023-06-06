@@ -63,3 +63,4 @@ The following scopes will need to be added to your API key to properly display t
 
 - `view:form` Can view a form.
 - `create:submission` Can create a form submission.
+- `view:submission` Can view a form submission.
