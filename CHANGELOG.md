@@ -1,6 +1,17 @@
 # Release Notes
 
-## [Unreleased](https://github.com/DeschutesDesignGroupLLC/PERSCOM-3.0-Docs/compare/v1.0.8...HEAD)
+## [Unreleased](https://github.com/DeschutesDesignGroupLLC/PERSCOM-3.0-Docs/compare/v1.0.9...HEAD)
+
+## [v1.0.9](https://github.com/DeschutesDesignGroupLLC/PERSCOM-3.0-Docs/compare/v1.0.8...v1.0.9) - 2023-06-06
+
+<!-- Release notes generated using configuration in .github/release.yml at v1.0.9 -->
+### What's Changed
+
+#### Fixed
+
+- Add missing required scope to form widget by @JonErickson in https://github.com/DeschutesDesignGroupLLC/PERSCOM-3.0-Docs/pull/27
+
+**Full Changelog**: https://github.com/DeschutesDesignGroupLLC/PERSCOM-3.0-Docs/compare/v1.0.8...v1.0.9
 
 ## [v1.0.8](https://github.com/DeschutesDesignGroupLLC/PERSCOM-3.0-Docs/compare/v1.0.7...v1.0.8) - 2023-05-31
 
