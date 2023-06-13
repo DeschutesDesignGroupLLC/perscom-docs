@@ -61,6 +61,7 @@ The following is an example of the forms widget being displayed within the PERSC
 
 The following scopes will need to be added to your API key to properly display the data.
 
-- `view:form` Can view a form.
 - `create:submission` Can create a form submission.
+- `update:field` Can update a custom field.
+- `view:form` Can view a form.
 - `view:submission` Can view a form submission.
