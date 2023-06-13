@@ -37,8 +37,11 @@ The following scopes will need to be added to your API key to properly display t
 - `view:assignmentrecord` Can view an assignment record.
 - `view:awardrecord` Can view an award record.
 - `view:combatrecord` Can view a combat record.
+- `view:field` Can view a custom field.
+- `view:position` Can view a position.
 - `view:qualificationrecord` Can view a qualification record.
 - `view:rankrecord` Can view a rank record.
 - `view:servicerecord` Can view a service record.
+- `view:specialty` Can view a specialty.
 - `view:unit` Can view a unit.
 - `view:user` Can view a user.
