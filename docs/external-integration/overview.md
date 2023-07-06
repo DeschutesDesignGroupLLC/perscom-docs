@@ -71,8 +71,10 @@ database or a custom reporting tool. Here are some common use cases for webhooks
 Widgets provide a way to display your personnel data within another third-party service via HTML and Javascript. PERSCOM.io offers the
 following embeddable widgets:
 
-1. Roster and Personnel Files
-2. Awards
-3. Ranks
-4. Qualifications
-5. Calendar and Events
+1. [Roster](/external-integration/widgets/roster)
+2. [Awards](/external-integration/widgets/awards)
+3. [Calendar](/external-integration/widgets/calendar)
+4. [Forms](/external-integration/widgets/forms)
+5. [Newsfeed](/external-integration/widgets/newsfeed)
+6. [Qualifications](/external-integration/widgets/qualifications)
+7. [Ranks](/external-integration/widgets/ranks)

@@ -1,5 +1,26 @@
 # Award Records
 
+Award records provide administrators and managers a way to recognize personnel for their achievements. They help to outline a persons
+contributions to the organization over their tenure.
+
+## External Integration
+
+### API
+
+The feature does not have any API endpoints at this time however records may be accessed via the [Users API endpoint](/components/users).
+
+### Webhooks
+
+The feature triggers the following events.
+
+- awardrecord.created
+- awardrecord.updated
+- awardrecord.deleted
+
+### Widgets
+
+The feature does not integrate with any widgets at this time.
+
 ## Permissions
 
 The following permissions are related to managing award records.

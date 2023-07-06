@@ -48,6 +48,9 @@ The following is a list of events that a webhook may subscribe to.
 - servicerecord.created
 - servicerecord.updated
 - servicerecord.deleted
+- submission.created
+- submission.updated
+- submission.deleted
 - user.created
 - user.updated
 - user.deleted
@@ -159,8 +162,9 @@ end
 
 ## Third-Party Services
 
-There are many third-party services that can be used to consume webhooks and boost your workflow.
+There are many third-party services that can be used to consume webhooks and boost your workflow. These services will allow you to build
+automated workflows based on webhook events to perform custom tasks needed within your organization.
 
-- [Zapier](https://zapier.com/apps/webhook/integrations?utm_source=google&utm_medium=cpc&utm_campaign=gaw-usa-nua-search-desktop-brand-long_tail&utm_adgroup=brand_webhooks&utm_term=zapier%20webhooks&utm_content=_pcrid_608807048130_pkw_zapier%20webhooks_pmt_p_pdv_c_slid__pgrid_139730155338_ptaid_kwd-791619834414_&gad=1&gclid=CjwKCAjwjYKjBhB5EiwAiFdSfi6Vipyao0gBfuRIx445ZmVPfJSmZBQX0qK9XEIMlDg5zcukzFtnUxoCp4gQAvD_BwE):
-  Zapier lets you connect Webhooks by Zapier with thousands of the most popular apps, so you can automate your work and have more time for
-  what matters most—no code required.
+- [Make](https://www.make.com/en/help/tools/webhooks)
+- [Work OS](https://workos.com/blog/building-webhooks-into-your-application-guidelines-and-best-practices)
+- [Zapier](https://zapier.com/apps/webhook/integrations?utm_source=google&utm_medium=cpc&utm_campaign=gaw-usa-nua-search-desktop-brand-long_tail&utm_adgroup=brand_webhooks&utm_term=zapier%20webhooks&utm_content=_pcrid_608807048130_pkw_zapier%20webhooks_pmt_p_pdv_c_slid__pgrid_139730155338_ptaid_kwd-791619834414_&gad=1&gclid=CjwKCAjwjYKjBhB5EiwAiFdSfi6Vipyao0gBfuRIx445ZmVPfJSmZBQX0qK9XEIMlDg5zcukzFtnUxoCp4gQAvD_BwE)

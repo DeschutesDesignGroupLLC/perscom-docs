@@ -1,18 +1,18 @@
-# Events
+# Submissions
 
 ## External Integration
 
 ### API
 
-The feature exposes the following API [endpoints](https://perscom.io/documentation/api/#/Events).
+The feature exposes the following API [endpoints](https://perscom.io/documentation/api/#/Submissions).
 
 ### Webhooks
 
 The feature triggers the following events.
 
-- event.created
-- event.updated
-- event.deleted
+- submission.created
+- submission.updated
+- submission.deleted
 
 ### Widgets
 

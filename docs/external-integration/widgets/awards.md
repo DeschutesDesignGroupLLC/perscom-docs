@@ -2,6 +2,8 @@
 
 The awards widget outputs a table-based list of your awards as they are in your Dashboard.
 
+**Widget ID**: `awards`
+
 ## Code Snippet
 
 Below is an example HTML code snippet that will output your awards.

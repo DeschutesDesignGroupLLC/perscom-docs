@@ -1,6 +1,9 @@
 # Forms Widget
 
-The forms widget outputs a table-based list of your forms with a link to submit the form.
+The forms widget outputs a table-based list of your forms with a link to submit the form. The widget also supports outputting one specific
+form.
+
+**Widget ID**: `forms`
 
 ## Authentication and Authorization
 

@@ -2,6 +2,8 @@
 
 The calendar widget outputs a month-based calendar view with all the events listed.
 
+**Widget ID**: `calendar`
+
 ## Code Snippet
 
 Below is an example HTML code snippet that will output your calendar.

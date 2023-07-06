@@ -1,13 +1,21 @@
 # Documents
 
-The Documents feature in our service provides organizations with a centralized document library to store and manage important files. With
-this feature, organizations can upload and store documents, such as manuals, policies, procedures, and forms, in a secure and easily
-accessible location. The Documents feature also enables organizations to assign documents to other components of the service, such as
-personnel, tasks, and and service records. This makes it easy to ensure that personnel have access to the most up-to-date versions of
-important files and that records are properly documented. The Documents feature provides organizations with a convenient and organized way
-to store and manage their most critical information, making it easy to find the information you need, when you need it. Whether you need to
-store and organize internal documents or share information with your personnel, our Documents feature gives you the tools you need to stay
-organized and efficient.
+The documents feature provides organizations with a centralized document library to store and manage important files. With this feature,
+organizations can upload and store documents, such as manuals, policies, procedures, and forms, in a secure and easily accessible location.
+
+## External Integration
+
+### API
+
+The feature does not have any API endpoints at this time.
+
+### Webhooks
+
+The feature does not trigger any webhook events at this time.
+
+### Widgets
+
+The feature does not integrate with any widgets at this time.
 
 ## Permissions
 

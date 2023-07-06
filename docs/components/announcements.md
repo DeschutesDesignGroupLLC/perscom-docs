@@ -1,9 +1,21 @@
 # Announcements
 
-You can use the announcements feature in PERSCOM.io to communicate with your personnel in real-time. This feature allows you to post global
-messages directly to your dashboard, ensuring that all of your personnel have access to the most up-to-date information. This feature is
-especially useful for para-military organizations that need to communicate with personnel across multiple locations, as it provides a quick
-and efficient way to share information with all of your personnel, no matter where they are.
+The announcements feature allows administrators to communicate with personnel in real-time. This feature allows you to post global messages
+directly to your dashboard, ensuring that all of your personnel have access to the most up-to-date information.
+
+## External Integration
+
+### API
+
+The feature exposes the following API [endpoints](https://perscom.io/documentation/api/#/Announcements).
+
+### Webhooks
+
+The feature does not trigger any webhook events at this time.
+
+### Widgets
+
+The feature does not integrate with any widgets at this time.
 
 ## Permissions
 

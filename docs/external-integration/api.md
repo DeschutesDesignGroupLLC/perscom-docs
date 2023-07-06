@@ -1,6 +1,6 @@
 # API
 
-The PERSCOM.io API is the backbone that allows PERSCOM.io to function and deliver the services you've come to enjoy. The API also allow you
+The PERSCOM.io API is the backbone that allows PERSCOM.io to function and deliver the services you've come to enjoy. The API also allows you
 to integrate your PERSCOM.io data with third-party services and applications.
 
 An API, or Application Programming Interface, is a set of protocols, tools, and standards for building software applications. APIs define
@@ -16,9 +16,9 @@ request along with an API key and your PERSCOM ID to an available URL endpoint. 
 
 ## API Keys
 
-API keys can be created and managed from within the External Integration section of your Dashboard. Each API key is a JSON Web Token (JWT)
-that contains critical information that is used to authenticate and authorize each request. For debugging, you may use the link below to
-decode your JWT to view its contents and verify your API key has the necessary claims (scopes) to make each request you intend to make.
+API keys can be created and managed from within the `System -> API` section of your Dashboard. Each API key is a JSON Web Token (JWT) that
+contains critical information that is used to authenticate and authorize each request. For debugging, you may use the link below to decode
+your JWT to view its contents and verify your API key has the necessary claims (scopes) to make each request you intend to make.
 
 To read more about JWT's, visit [JWT.io](http://jwt.io).
 
@@ -336,5 +336,5 @@ Click [here](https://perscom.io/documentation/api) to view the API documentation
 
 ## Development
 
-The PERSCOM.io API can be imported into Postman for testing and development. To use Postman, click Import -> Link and paste the following
-link to import the API spec. <br><br> [https://api.perscom.io/v1/spec.yaml](https://api.perscom.io/v1/spec.yaml)
+The PERSCOM.io API can be imported into Postman for testing and development. To use Postman, click `Import -> Link` and paste the following
+link to import the API specification. <br><br> [https://api.perscom.io/v1/spec.yaml](https://api.perscom.io/v1/spec.yaml)

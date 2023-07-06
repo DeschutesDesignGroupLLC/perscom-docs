@@ -43,7 +43,6 @@ export default {
         collapsed: false,
         items: [
           { text: 'About PERSCOM', link: '/about' },
-          { text: 'Features', link: '/features' },
           { text: 'Find My Organization', link: '/find-my-organization' },
           { text: 'Getting Started', link: '/getting-started' },
           { text: 'Pricing', link: '/pricing' },
@@ -52,27 +51,50 @@ export default {
         ]
       },
       {
-        text: 'Components',
-        collapsed: false,
+        text: 'Calendar',
+        collapsed: true,
+        items: [
+          { text: 'Calendars', link: '/components/calendars' },
+          { text: 'Events', link: '/components/events' }
+        ]
+      },
+      {
+        text: 'Communications',
+        collapsed: true,
+        items: [{ text: 'Newsfeed Items', link: '/components/newsfeed-items' }]
+      },
+      {
+        text: 'Forms',
+        collapsed: true,
+        items: [
+          { text: 'Forms', link: '/components/forms' },
+          { text: 'Submissions', link: '/components/submissions' }
+        ]
+      },
+      {
+        text: 'Organization',
+        collapsed: true,
         items: [
           { text: 'Announcements', link: '/components/announcements' },
           { text: 'Awards', link: '/components/awards' },
-          { text: 'Calendars', link: '/components/calendars' },
           { text: 'Documents', link: '/components/documents' },
-          { text: 'Events', link: '/components/events' },
           { text: 'Positions', link: '/components/positions' },
           { text: 'Qualifications', link: '/components/qualifications' },
           { text: 'Ranks', link: '/components/ranks' },
           { text: 'Specialties', link: '/components/specialties' },
           { text: 'Statuses', link: '/components/statuses' },
           { text: 'Tasks', link: '/components/tasks' },
-          { text: 'Units', link: '/components/units' },
-          { text: 'Users', link: '/components/users' }
+          { text: 'Units', link: '/components/units' }
         ]
       },
       {
+        text: 'Personnel',
+        collapsed: true,
+        items: [{ text: 'Users', link: '/components/users' }]
+      },
+      {
         text: 'Records',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: 'Assignment', link: '/records/assignment' },
           { text: 'Award', link: '/records/award' },
@@ -85,7 +107,7 @@ export default {
       },
       {
         text: 'External Integration',
-        collapse: false,
+        collapsed: true,
         items: [
           {
             text: 'Overview',
@@ -116,6 +138,7 @@ export default {
               { text: 'Awards', link: '/external-integration/widgets/awards' },
               { text: 'Calendar', link: '/external-integration/widgets/calendar' },
               { text: 'Forms', link: '/external-integration/widgets/forms' },
+              { text: 'Newsfeed', link: '/external-integration/widgets/newsfeed' },
               { text: 'Qualifications', link: '/external-integration/widgets/qualifications' },
               { text: 'Ranks', link: '/external-integration/widgets/ranks' }
             ]

@@ -2,6 +2,8 @@
 
 The ranks widget outputs a table-based list of your ranks as they are in your Dashboard.
 
+**Widget ID**: `ranks`
+
 ## Code Snippet
 
 Below is an example HTML code snippet that will output your ranks.
