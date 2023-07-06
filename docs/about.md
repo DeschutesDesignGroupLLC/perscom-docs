@@ -1,16 +1,17 @@
 # About
 
 PERSCOM.io is the ultimate solution for organizations looking to manage their personnel more efficiently and effectively. Our platform
-offers a comprehensive suite of tools to help you keep track of all aspects of personnel management, from records and qualification
-tracking, calendar and event management, and external application integration to personnel organization and custom data management.
+offers a comprehensive suite of tools to help you keep track of all aspects of personnel management. The PERSCOM.io suite features various
+record and qualification tracking, calendar and event management, custom forms and data collection, various suite of communication tools, as
+well as the ability to integrate your personnel data into any third-party system.
 
-With PERSCOM.io, you can easily manage personnel information, track their qualifications, and monitor their performance. Our software also
-allows you to create custom positions and specialties and define your organization structure with units.
+With PERSCOM.io, you can easily manage personnel information, track their progress, and monitor their performance. Our software allows you
+to create positions and specialties and define your unique organizational structure.
 
 We understand the importance of integrating your data with other systems, which is why we offer the ability to integrate with any
 third-party service through our [API](/external-integration/api), [OAuth 2.0](/external-integration/oauth),
-[Webhooks](/external-integration/webhooks), or the library of [Widgets](/external-integration/widgets). Additionally, our platform offers
-the ability to create custom forms and track submissions, making it easy for you to collect data and manage your personnel information.
+[OpenID Connect (OIDC)](/external-integration/oauth/oidc), [Webhooks](/external-integration/webhooks), or the library of
+[Widgets](/external-integration/widgets).
 
 PERSCOM.io is designed to be user-friendly and accessible from anywhere, so you can manage your personnel from the office, the field, or on
 the go. With our comprehensive platform, you can simplify your personnel management processes and focus on what's truly important - your

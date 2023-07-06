@@ -1,5 +1,23 @@
 # Users
 
+## External Integration
+
+### API
+
+The feature exposes the following API [endpoints](https://perscom.io/documentation/api/#/Users).
+
+### Webhooks
+
+The feature triggers the following events.
+
+- user.created
+- user.updated
+- user.deleted
+
+### Widgets
+
+The feature can be embedded into a third-party service using the [Roster Widget](/external-integration/widgets/roster).
+
 ## Permissions
 
 The following permissions are related to managing users.

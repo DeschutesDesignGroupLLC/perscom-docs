@@ -1,10 +1,24 @@
 # Ranks
 
-The Ranks feature in our service provides organizations with the ability to manage their chain of command structure. This feature allows
-organizations to create custom ranks, define the criteria for promotions and demotions, and assign ranks to personnel based on their
-performance and achievements. With this feature, organizations can clearly define the hierarchy of their personnel, maintain accountability,
-and promote a sense of structure and organization. Whether you are managing a small unit or a large organization, our Ranks feature gives
-you the tools you need to establish and maintain your chain of command.
+The ranks feature provides organizations with the ability to manage their chain of command structure. This feature allows organizations to
+create custom ranks, define the criteria for promotions and demotions, and assign ranks to personnel based on their performance and
+achievements. With this feature, organizations can clearly define the hierarchy of their personnel, maintain accountability, and promote a
+sense of structure and organization. Whether you are managing a small unit or a large organization, our Ranks feature gives you the tools
+you need to establish and maintain your chain of command.
+
+## External Integration
+
+### API
+
+The feature exposes the following API [endpoints](https://perscom.io/documentation/api/#/Ranks).
+
+### Webhooks
+
+The feature does not trigger any webhook events at this time.
+
+### Widgets
+
+The feature can be embedded into a third-party service using the [Ranks Widget](/external-integration/widgets/ranks).
 
 ## Permissions
 

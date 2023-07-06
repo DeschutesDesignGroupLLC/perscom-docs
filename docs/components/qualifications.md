@@ -1,11 +1,25 @@
 # Qualifications
 
-The Qualifications feature in our service enables organizations to establish and manage their own training and certification programs. This
-feature allows organizations to create custom qualifications, define requirements for earning these qualifications, and track the progress
-of their personnel. With this feature, organizations can ensure their personnel meet established policies and procedures and are equipped
-with the necessary skills and knowledge to perform their duties effectively. Whether you need to track certifications, licenses, or in-house
+The qualifications feature enables organizations to establish and manage their own training and certification programs. This feature allows
+organizations to create custom qualifications, define requirements for earning these qualifications, and track the progress of their
+personnel. With this feature, organizations can ensure their personnel meet established policies and procedures and are equipped with the
+necessary skills and knowledge to perform their duties effectively. Whether you need to track certifications, licenses, or in-house
 training, our Qualifications feature provides a flexible and comprehensive solution to manage your organization's training and development
 programs.
+
+## External Integration
+
+### API
+
+The feature exposes the following API [endpoints](https://perscom.io/documentation/api/#/Qualifications).
+
+### Webhooks
+
+The feature does not trigger any webhook events at this time.
+
+### Widgets
+
+The feature can be embedded into a third-party service using the [Qualifications Widget](/external-integration/widgets/qualifications).
 
 ## Permissions
 

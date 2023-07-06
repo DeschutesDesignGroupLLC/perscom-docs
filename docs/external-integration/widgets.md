@@ -29,8 +29,9 @@ The following widgets are currently available. Each widget is identified by a Wi
 2. [Awards](/external-integration/widgets/awards) `data-widget='awards'`
 3. [Calendar](/external-integration/widgets/calendar) `data-widget='calendar'`
 4. [Forms](/external-integration/widgets/forms) `data-widget='forms'`
-5. [Qualifications](/external-integration/widgets/qualifications) `data-widget='qualifications'`
-6. [Ranks](/external-integration/widgets/ranks) `data-widget='ranks'`
+5. [Newsfeed](/external-integration/widgets/newsfeed) `data-widget='newsfeed'`
+6. [Qualifications](/external-integration/widgets/qualifications) `data-widget='qualifications'`
+7. [Ranks](/external-integration/widgets/ranks) `data-widget='ranks'`
 
 ## Authentication and Authorization
 
@@ -52,14 +53,14 @@ Click [here](/external-integration/api) for more documentation on the API.
 
 The widget accepts several options to customize the output of the data.
 
-| Option    | Required |  Type   | Description                                                                                                                                                                                                                                                                              |
-| --------- | :------: | :-----: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| apikey    |   yes    | string  | The API key used to authenticate the request.                                                                                                                                                                                                                                            |
-| limit     |    no    | integer | Adding the limit option will control how many results are returned from the widget. By default, the widget will return 15 results. When morethan 15 results are present, the table will be presented with a pagination option. Increase or decrease the limit to fit your website needs. |
-| perscomid |   yes    | integer | The ID of your PERSCOM.io account used to authenticate the request.                                                                                                                                                                                                                      |
-| resource  |    no    | integer | The ID of a specific resource that will be returned such as a specific form. The API key used to authenticate the request.                                                                                                                                                               |
-| timezone  |    no    | string  | The timezone any date object should be translated to. The ID of a specific resource that will be returned such as a specific form. The API key used to authenticate the request.                                                                                                         |
-| widget    |    no    | string  | The ID of the [widget](#available-widgets) you would like to output. The ID of a specific resource that will be returned such as a specific form. The API key used to authenticate the request.                                                                                          |
+| Option    | Required |  Type   | Description                                                                                                                                                                                                                                                                               |
+| --------- | :------: | :-----: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| apikey    |   yes    | string  | The API key used to authenticate the request.                                                                                                                                                                                                                                             |
+| limit     |    no    | integer | Adding the limit option will control how many results are returned from the widget. By default, the widget will return 15 results. When more than 15 results are present, the table will be presented with a pagination option. Increase or decrease the limit to fit your website needs. |
+| perscomid |   yes    | integer | The ID of your PERSCOM.io account used to authenticate the request.                                                                                                                                                                                                                       |
+| resource  |    no    | integer | The ID of a specific resource that will be returned such as a specific form.                                                                                                                                                                                                              |
+| timezone  |    no    | string  | The timezone any date object should be translated to. The ID of a specific resource that will be returned such as a specific form.                                                                                                                                                        |
+| widget    |    no    | string  | The ID of the [widget](#available-widgets) you would like to output. The ID of a specific resource that will be returned such as a specific form.                                                                                                                                         |
 
 <!-- prettier-ignore -->
 ::: info Including An Option
@@ -100,7 +101,8 @@ the code snippet for it to take affect.
 ## Externally Accessing The Widget
 
 The PERSCOM.io widget can be accessed outside of the HTML code snippet that you used to post within your website. To see your widget live,
-without embedding it in a website, you can visit the URL's below. Make sure to set APIKEY and PERSCOMID to the correct values.
+without embedding it in a website, you can visit the URL's below. The `widgetId` corresponds with the [ID](#choosing-the-widget) of the
+widget you intend to view. Make sure to set `apiKey` and `perscomId` to the correct values.
 
 ```html
 https://widget.perscom.io/{widgetId}?apikey={apiKey}&perscomid={perscomId}
