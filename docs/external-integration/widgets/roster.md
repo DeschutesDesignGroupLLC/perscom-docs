@@ -40,6 +40,7 @@ The following scopes will need to be added to your API key to properly display t
 - `view:awardrecord` Can view an award record.
 - `view:combatrecord` Can view a combat record.
 - `view:field` Can view a custom field.
+- `view:group` Can view a group.
 - `view:position` Can view a position.
 - `view:qualificationrecord` Can view a qualification record.
 - `view:rankrecord` Can view a rank record.
