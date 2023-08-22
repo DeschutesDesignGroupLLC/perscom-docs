@@ -15,13 +15,13 @@ scalable web applications as well as implement Single Sign-On (SSO) with third-p
 
 ## Endpoints
 
-| Endpoint                                  |                                 URL                                 | Method |
-| ----------------------------------------- | :-----------------------------------------------------------------: | -----: |
-| [Discovery Endpoint](#discovery-endpoint) | https://{your-dashboard-url}/oauth/.well-known/openid-configuration |    GET |
-| Authorization Endpoint                    |            https://{your-dashboard-url}/oauth/authorize             |    GET |
-| Token Endpoint                            |              https://{your-dashboard-url}/oauth/token               |   POST |
-| Logout Endpoint                           |              https://{your-dashboard-url}/oauth/logout              |   POST |
-| [User Info Endpoint](#user-info-endpoint) |             https://{your-dashboard-url}/oauth/userinfo             |    GET |
+| Endpoint                                  |                              URL                              | Method |
+| ----------------------------------------- | :-----------------------------------------------------------: | -----: |
+| [Discovery Endpoint](#discovery-endpoint) | https://{your-dashboard-url}/.well-known/openid-configuration |    GET |
+| Authorization Endpoint                    |         https://{your-dashboard-url}/oauth/authorize          |    GET |
+| Token Endpoint                            |           https://{your-dashboard-url}/oauth/token            |   POST |
+| Logout Endpoint                           |           https://{your-dashboard-url}/oauth/logout           |   POST |
+| [User Info Endpoint](#user-info-endpoint) |          https://{your-dashboard-url}/oauth/userinfo          |    GET |
 
 ### Discovery Endpoint
 
