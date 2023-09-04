@@ -32,7 +32,7 @@ access granted to a client application, reducing the risk of unauthorized access
 to read a user's email address may request access to the "view:user" scope, but not to other sensitive scopes such as "update:user" or
 "delete:user".
 
-For a list of available scopes, visit the Permissions section of your Dashboard. In the context of PERSCOM.io, the word Scope and Permission
+For a list of available scopes, visit the Permissions section of your dashboard. In the context of PERSCOM.io, the word Scope and Permission
 are interchangeable.
 
 ## Access Token
@@ -68,14 +68,16 @@ scope(s) that were requested when the access token was initially obtained.
 
 First, make an authorization request to obtain an authorization code:
 
-::: code-group
+**cURL**:
 
-```vb:line-numbers [cURL]
+```vb
 curl -X GET \
   'https://DASHBOARD_URL/oauth/authorize?response_type=code&client_id=CLIENT_ID&redirect_uri=REDIRECT_URI&scope=SCOPES&state=STATE'
 ```
 
-```http:line-numbers [HTTP]
+**HTTP**:
+
+```http
 GET /authorize?
 response_type=code&
 client_id=CLIENT_ID&
@@ -86,25 +88,25 @@ nonce=NONCE HTTP/1.1
 Host: DASHBOARD_URL
 ```
 
-:::
-
-Replace `DASHBOARD_URL` with your actual Dashboard URL, and `CLIENT_ID`, `REDIRECT_URI`, `SCOPES`, and `STATE` with your actual values. Note
+Replace `DASHBOARD_URL` with your actual dashboard URL, and `CLIENT_ID`, `REDIRECT_URI`, `SCOPES`, and `STATE` with your actual values. Note
 that the specific parameters and endpoint URLs may vary depending on the OAuth 2.0 implementation.
 
 ### Token Request
 
 After the user approves the request, exchange the authorization code for an access token:
 
-::: code-group
+**cURL**:
 
-```vb:line-numbers [cURL]
+```vb
 curl -X POST \
   'https://DASHBOARD_URL/oauth/token' \
   -H 'Content-Type: application/x-www-form-urlencoded' \
   -d 'grant_type=authorization_code&code=AUTHORIZATION_CODE&redirect_uri=REDIRECT_URI&client_id=CLIENT_ID&client_secret=CLIENT_SECRET'
 ```
 
-```http:line-numbers [HTTP]
+**HTTP**:
+
+```http
 POST /token HTTP/1.1
 Host: DASHBOARD_URL
 Content-Type: application/x-www-form-urlencoded
@@ -116,25 +118,25 @@ client_id=CLIENT_ID&
 client_secret=CLIENT_SECRET
 ```
 
-:::
-
-Replace `DASHBOARD_URL` with your actual Dashboard URL, and `AUTHORIZATION_CODE`, `REDIRECT_URI`, `CLIENT_ID`, and `CLIENT_SECRET` with your
+Replace `DASHBOARD_URL` with your actual dashboard URL, and `AUTHORIZATION_CODE`, `REDIRECT_URI`, `CLIENT_ID`, and `CLIENT_SECRET` with your
 actual values. Note that the specific parameters and endpoint URLs may vary depending on the OAuth 2.0 implementation.
 
 ### Refresh Token Request
 
 To refresh your access token after it expires:
 
-::: code-group
+**cURL**:
 
-```vb:line-numbers [cURL]
+```vb
 curl -X POST \
   'https://DASHBOARD_URL/oauth/token' \
   -H 'Content-Type: application/x-www-form-urlencoded' \
   -d 'grant_type=refresh_token&refresh_token=REFRESH_TOKEN&client_id=CLIENT_ID&client_secret=CLIENT_SECRET&scope=SCOPES'
 ```
 
-```http:line-numbers [HTTP]
+**HTTP**:
+
+```http
 POST /token HTTP/1.1
 Host: DASHBOARD_URL
 Content-Type: application/x-www-form-urlencoded
@@ -146,7 +148,5 @@ client_secret=CLIENT_SECRET&
 scope=SCOPES
 ```
 
-:::
-
-Replace `DASHBOARD_URL` with your actual Dashboard URL, and `REFRESH_TOKEN`, `CLIENT_ID`, `CLIENT_SECRET`, and `SCOPES` with your actual
+Replace `DASHBOARD_URL` with your actual dashboard URL, and `REFRESH_TOKEN`, `CLIENT_ID`, `CLIENT_SECRET`, and `SCOPES` with your actual
 values. Note that the specific parameters and endpoint URLs may vary depending on the OAuth 2.0 implementation.

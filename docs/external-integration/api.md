@@ -16,9 +16,9 @@ request along with an API key and your PERSCOM ID to an available URL endpoint. 
 
 ## API Keys
 
-API keys can be created and managed from within the `System -> API` section of your Dashboard. Each API key is a JSON Web Token (JWT) that
-contains critical information that is used to authenticate and authorize each request. For debugging, you may use the link below to decode
-your JWT to view its contents and verify your API key has the necessary claims (scopes) to make each request you intend to make.
+API keys can be created and managed from within the `System -> API -> Keys` section of your dashboard. Each API key is a JSON Web Token
+(JWT) that contains critical information that is used to authenticate and authorize each request. For debugging, you may use the link below
+to decode your JWT to view its contents and verify your API key has the necessary claims (scopes) to make each request you intend to make.
 
 To read more about JWT's, visit [JWT.io](http://jwt.io).
 
@@ -33,14 +33,14 @@ You must have the `manage:api` permission assigned to your account to manage API
 ## PERSCOM ID
 
 Your account is assigned a PERSCOM ID when you first register that helps identify your organization when making a request to an API
-endpoint. You may view your PERSCOM ID from the Settings menu within your Dashboard. Your PERSCOM ID will need to be included with each
+endpoint. You may view your PERSCOM ID from the Settings menu within your dashboard. Your PERSCOM ID will need to be included with each
 request to an API endpoint utilizing the `X-Perscom-Id` header. This can be seen in the examples below.
 
 ## Scopes
 
 Each API key can be assigned scopes that define what the API key is allowed to access. The API keys scopes are an exact replica of the
-permissions that can be assigned to users within your Dashboard. For a complete list of scopes, visit the permissions section of your
-Dashboard.
+permissions that can be assigned to users within your dashboard. For a complete list of scopes, visit the permissions section of your
+dashboard.
 
 You may also visit each component listed within this documentation to view the necessary permissions/scopes needed to interact with the
 component.
@@ -60,9 +60,9 @@ The following example will show making a request to the `/users` endpoint which 
 will need the `view:user` scope assigned to make the following request. The `perscomId` and `apiKey` variables will also need to be replaced
 in each example with the correct values.
 
-::: code-group
+**cURL**:
 
-```vb:line-numbers [cURL]
+```vb
 curl -X GET \
      -H "Authorization: Bearer apiKey" \
      -H "Accept: application/json" \
@@ -70,7 +70,9 @@ curl -X GET \
      https://api.perscom.io/v1/users
 ```
 
-```go:line-numbers [Go]
+**Go**:
+
+```go
 package main
 
 import (
@@ -101,7 +103,9 @@ func main() {
 }
 ```
 
-```http:line-numbers [HTTP]
+**HTTP**:
+
+```http
 GET /v1/users HTTP/1.1
 Host: api.perscom.io
 Authorization: Bearer apiKey
@@ -109,7 +113,9 @@ Accept: application/json
 X-Perscom-Id: perscomId
 ```
 
-```java:line-numbers [Java]
+**Java**:
+
+```java
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
@@ -143,40 +149,47 @@ public class HttpExample {
 }
 ```
 
-```js:line-numbers [Javascript (fetch)]
+**Javascript via fetch**:
+
+```js
 fetch('https://api.perscom.io/v1/users', {
   method: 'GET',
   headers: {
-    'Authorization': 'Bearer apiKey',
-    'Accept': 'application/json',
+    Authorization: 'Bearer apiKey',
+    Accept: 'application/json',
     'X-Perscom-Id': 'perscomId'
   }
 })
-  .then(response => {
-    console.log('Status code:', response.status);
+  .then((response) => {
+    console.log('Status code:', response.status)
   })
-  .catch(error => {
-    console.error('Error:', error);
-  });
+  .catch((error) => {
+    console.error('Error:', error)
+  })
 ```
 
-```js:line-numbers [Javascript (axios)]
-axios.get('https://api.perscom.io/v1/users', {
-  headers: {
-    'Authorization': 'Bearer apiKey',
-    'Accept': 'application/json',
-    'X-Perscom-Id': 'perscomId'
-  }
-})
-  .then(response => {
-    console.log('Status code:', response.status);
+**Javascript via axios**:
+
+```js
+axios
+  .get('https://api.perscom.io/v1/users', {
+    headers: {
+      Authorization: 'Bearer apiKey',
+      Accept: 'application/json',
+      'X-Perscom-Id': 'perscomId'
+    }
   })
-  .catch(error => {
-    console.error('Error:', error);
-  });
+  .then((response) => {
+    console.log('Status code:', response.status)
+  })
+  .catch((error) => {
+    console.error('Error:', error)
+  })
 ```
 
-```php:line-numbers [PHP (cURL)]
+**PHP via cURL**:
+
+```php
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, "https://api.perscom.io/v1/users");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -193,7 +206,9 @@ echo "Status code: $status_code\n";
 echo "Response body: $result\n";
 ```
 
-```php:line-numbers [PHP (Guzzle)]
+**PHP via Guzzle**:
+
+```php
 use GuzzleHttp\Client;
 
 $client = new Client();
@@ -211,7 +226,9 @@ $response = $client->request('GET', 'https://api.perscom.io/v1/users', [
 echo 'Status code: ' . $response->getStatusCode();
 ```
 
-```python:line-numbers [Python]
+**Python**:
+
+```python
 import requests
 
 url = 'https://api.perscom.io/v1/users'
@@ -226,7 +243,9 @@ print(f'Status code: {response.status_code}')
 print(f'Response body: {response.text}')
 ```
 
-```ruby:line-numbers [Ruby]
+**Ruby**:
+
+```ruby
 require 'net/http'
 
 uri = URI('https://api.perscom.io/v1/users')
@@ -243,7 +262,9 @@ puts "Status code: #{res.code}"
 puts "Response body: #{res.body}"
 ```
 
-```rust:line-numbers [Rust]
+**Rust**:
+
+```rust
 use reqwest::header::{HeaderMap, HeaderValue, USER_AGENT, AUTHORIZATION, ACCEPT};
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -264,7 +285,9 @@ let client = reqwest::Client::new();
 }
 ```
 
-```scala:line-numbers [Scala]
+**Scala**:
+
+```scala
 import java.net.{URL, HttpURLConnection}
 import scala.io.Source
 
@@ -284,7 +307,10 @@ object HttpExample extends App {
 }
 ```
 
-```swift:line-numbers [Swift]let urlString = "https://api.perscom.io/v1/users"
+**Swift**:
+
+```swift
+let urlString = "https://api.perscom.io/v1/users"
 let url = URL(string: urlString)!
 var request = URLRequest(url: url)
 request.httpMethod = "GET"
@@ -307,25 +333,25 @@ let task = session.dataTask(with: request) { (data, response, error) in
 task.resume()
 ```
 
-```ts:line-numbers [Typescript]
-const url = 'https://api.perscom.io/v1/users';
+**Typescript**:
+
+```ts
+const url = 'https://api.perscom.io/v1/users'
 
 const headers = new Headers({
-  'Authorization': 'Bearer apiKey',
-  'Accept': 'application/json',
+  Authorization: 'Bearer apiKey',
+  Accept: 'application/json',
   'X-Perscom-Id': 'perscomId'
-});
+})
 
 fetch(url, { headers })
-  .then(response => {
-    console.log(`Status code: ${response.status}`);
-    return response.json();
+  .then((response) => {
+    console.log(`Status code: ${response.status}`)
+    return response.json()
   })
-  .then(data => console.log(`Response body: ${JSON.stringify(data)}`))
-  .catch(error => console.error(`Error: ${error}`));
+  .then((data) => console.log(`Response body: ${JSON.stringify(data)}`))
+  .catch((error) => console.error(`Error: ${error}`))
 ```
-
-:::
 
 ## Documentation
 

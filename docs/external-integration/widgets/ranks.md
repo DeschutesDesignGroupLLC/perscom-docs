@@ -1,6 +1,6 @@
 # Ranks Widget
 
-The ranks widget outputs a table-based list of your ranks as they are in your Dashboard.
+The ranks widget outputs a table-based list of your ranks as they are in your dashboard.
 
 **Widget ID**: `ranks`
 

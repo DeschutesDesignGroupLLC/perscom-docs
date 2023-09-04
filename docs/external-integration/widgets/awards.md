@@ -1,6 +1,6 @@
 # Awards Widget
 
-The awards widget outputs a table-based list of your awards as they are in your Dashboard.
+The awards widget outputs a table-based list of your awards as they are in your dashboard.
 
 **Widget ID**: `awards`
 

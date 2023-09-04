@@ -1,6 +1,6 @@
 # Roster Widget
 
-The roster widget outputs a table-based list of your personnel, similar to the roster within your Dashboard.
+The roster widget outputs a table-based list of your personnel, similar to the roster within your dashboard.
 
 **Widget ID**: `roster`
 

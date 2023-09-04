@@ -1,10 +1,10 @@
 # Webhooks
 
 For PERSCOM.io, webhooks can be used to enable real-time notifications and data updates for third-party services, such as a messaging
-platform, an external database or a custom reporting tool. This means that any changes made within PERSCOM.io, such as new personnel records
-or updated qualifications, can be automatically communicated to other systems in real-time, without the need for manual data entry or
-synchronization. This can improve data accuracy and save time for personnel managers and other staff who rely on the system for critical
-information.
+platform (for example Slack, Telegram, Discord), an external database (for example Firebase or AWS) or a custom reporting tool. This means
+that any changes made within PERSCOM.io, such as new personnel records or updated qualifications, can be automatically communicated to other
+systems in real-time, without the need for manual data entry or synchronization. This can improve data accuracy and save time for personnel
+managers and other staff who rely on the system for critical information.
 
 ## Creating A Webhook
 
@@ -60,33 +60,41 @@ The following is a list of events that a webhook may subscribe to.
 A webhook will need a server that has an exposed URL that can respond to incoming HTTP requests via `GET` or `POST`. Included below are some
 example endpoints using common web server frameworks.
 
+If you do not want to implement your own webhook server, there are several free services out there than can this for you. Check out the
+[documentation](#third-party-services) below for examples.
+
 Each webhook has a real-time log of each HTTP request that is made when an event is triggered. For reference on how to consume the webhook
 payload request, use the webhook's log to help understand how the data is structured and what is sent with each webhook request.
 
 ### Examples
 
-::: code-group
+Below are examples of backend server implementations that can handle a webhook request that may be used for further processing within your
+own application.
 
-```js:line-numbers [Express.js]
-const express = require('express');
-const bodyParser = require('body-parser');
+**Javascript**:
 
-const app = express();
+```js
+const express = require('express')
+const bodyParser = require('body-parser')
 
-app.use(bodyParser.json());
+const app = express()
+
+app.use(bodyParser.json())
 
 app.post('/webhook', (req, res) => {
-  const data = req.body;
+  const data = req.body
   // do something with the data
-  res.status(200).send('OK');
-});
+  res.status(200).send('OK')
+})
 
 app.listen(3000, () => {
-  console.log('Webhook endpoint listening on port 3000');
-});
+  console.log('Webhook endpoint listening on port 3000')
+})
 ```
 
-```csharp:line-numbers [ASP.net]
+**ASP.net**:
+
+```csharp
 using System.IO;
 using System.Web;
 using System.Web.Mvc;
@@ -109,7 +117,9 @@ public class WebhookController : Controller
 }
 ```
 
-```python:line-numbers [Flask]
+**Python**:
+
+```python
 from flask import Flask, request
 
 app = Flask(__name__)
@@ -124,7 +134,9 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 
-```php:line-numbers [Laravel]
+**Laravel**:
+
+```php
 <?php
 
 namespace App\Http\Controllers;
@@ -144,7 +156,9 @@ class WebhookController extends Controller
 }
 ```
 
-```ruby:line-numbers [Ruby on Rails]
+**Ruby on Rails**:
+
+```ruby
 class WebhookController < ApplicationController
   skip_before_action :verify_authenticity_token
 
@@ -157,8 +171,6 @@ class WebhookController < ApplicationController
   end
 end
 ```
-
-:::
 
 ## Third-Party Services
 

@@ -35,14 +35,14 @@ The following widgets are currently available. Each widget is identified by a Wi
 
 ## Authentication and Authorization
 
-Each widget requires the creation of an API key. Generating an API key is a simple process that can be accomplished in your Dashboard.
+Each widget requires the creation of an API key. Generating an API key is a simple process that can be accomplished in your dashboard.
 Creation and management of API keys requires the `manage:api` permission. Contact your account administrator if you cannot access the API
-section within your Dashboard.
+section within your dashboard.
 
 Depending on the widget you intend to display, the API key will need specific scopes assigned. You can visit the individual widget page for
 a list of the required API key scopes needed to properly display the widget.
 
-Second, each widget requires your PERSCOM ID which can be found in the general settings area of your Dashboard.
+Second, each widget requires your PERSCOM ID which can be found in the general settings area of your dashboard.
 
 These two items will be inserted into the widget when you add them to your website. Failure to add these values with result in an
 authentication error when viewing the widget.

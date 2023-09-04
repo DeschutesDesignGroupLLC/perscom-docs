@@ -6,9 +6,17 @@
     "format": "prettier 'docs/**/*.{js,md}' --write --prose-wrap always --config ./.prettierrc"
   },
   "devDependencies": {
+    "@hempworks/pilgrim": "^0.1.18",
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "^10.4.14",
+    "tailwindcss": "^3.3.3",
     "prettier": "^2.8.3",
-    "vitepress": "^1.0.0-beta.5",
-    "vitepress-plugin-tabs": "^0.2.0",
-    "vue": "^3.2.45"
+    "vitepress": "^1.0.0-beta.5"
+  },
+  "postcss": {
+    "plugins": {
+      "tailwindcss": {},
+      "autoprefixer": {}
+    }
   }
 }

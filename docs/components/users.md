@@ -1,5 +1,12 @@
 # Users
 
+The User's personnel file serves as the core element within the PERSCOM.io system, encompassing all other components and features outlined
+in the documentation. It consolidates records, updates, notes, fields, and various custom data points into a centralized and easily
+manageable view.
+
+Additionally, personnel files offer Custom Fields, empowering administrators to establish organization-specific custom data points stored
+within each user's personnel file.
+
 ## External Integration
 
 ### API
@@ -27,5 +34,5 @@ The following permissions are related to managing users.
 - `update:user` Can update an existing user.
 - `delete:user` Can delete an existing user.
 - `manage:billing` Can access the billing portal and update all billing related settings.
-- `manage:api` Can access the external integration section of the Dashboard.
+- `manage:api` Can access the external integration section of the dashboard.
 - `view:log` Can view the application logs.

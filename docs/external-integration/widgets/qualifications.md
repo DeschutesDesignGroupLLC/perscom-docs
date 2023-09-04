@@ -1,6 +1,6 @@
 # Qualifications Widget
 
-The qualifications widget outputs a table-based list of your qualifications as they are in your Dashboard.
+The qualifications widget outputs a table-based list of your qualifications as they are in your dashboard.
 
 **Widget ID**: `qualifications`
 
