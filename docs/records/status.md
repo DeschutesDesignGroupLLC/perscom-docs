@@ -1,5 +1,9 @@
 # Status Records
 
+Status Records offer administrators a chronological history of every status a user has held during their tenure with the organization. This
+record provides valuable insights into the user's contributions and journey within the organization, offering a more comprehensive
+perspective.
+
 ## External Integration
 
 ### API

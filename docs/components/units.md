@@ -3,8 +3,7 @@
 The units feature allows organizations to clearly define their organizational structure and hierarchy. With this feature, organizations can
 create and manage units within their structure, such as departments, divisions, and branches. Personnel can be assigned to specific units
 and their roles and responsibilities within the organization can be clearly defined. This feature provides a clear picture of how personnel
-fit into the organization, promoting better communication and collaboration. It's an essential tool for organizations looking to streamline
-their operations and enhance the efficiency of their personnel management.
+fit into the organization, promoting better communication and collaboration.
 
 ## External Integration
 

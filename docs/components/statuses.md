@@ -1,5 +1,9 @@
 # Statuses
 
+The statuses feature plays a vital role in maintaining precise records of your personnel's current statuses. You have the flexibility to
+tailor and configure statuses to align with your organization's unique requirements. Additionally, each user in the system is equipped with
+a comprehensive status record history, enhancing transparency by providing insights into both their current status and historical data.
+
 ## External Integration
 
 ### API

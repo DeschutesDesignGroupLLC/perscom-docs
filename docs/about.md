@@ -6,7 +6,7 @@ record and qualification tracking, calendar and event management, custom forms a
 well as the ability to integrate your personnel data into any third-party system.
 
 With PERSCOM.io, you can easily manage personnel information, track their progress, and monitor their performance. Our software allows you
-to create positions and specialties and define your unique organizational structure.
+to create and define your unique organizational structure. We know no two organizations are the same.
 
 We understand the importance of integrating your data with other systems, which is why we offer the ability to integrate with any
 third-party service through our [API](/external-integration/api), [OAuth 2.0](/external-integration/oauth),
@@ -17,5 +17,5 @@ PERSCOM.io is designed to be user-friendly and accessible from anywhere, so you 
 the go. With our comprehensive platform, you can simplify your personnel management processes and focus on what's truly important - your
 mission.
 
-Join the revolution in personnel management and see the difference PERSCOM.io can make for your organization. Sign up for a
-[demo](https://perscom.io/register) today and take the first step towards a more efficient and effective way of managing your personnel.
+Join the revolution in personnel management and see the difference PERSCOM.io can make for your organization. Sign up for a 7-day free
+[trial](https://perscom.io/register) today and take the first step towards a more efficient and effective way of managing your personnel.

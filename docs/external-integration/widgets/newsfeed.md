@@ -1,6 +1,6 @@
 # Newsfeed Widget
 
-The newsfeed widget outputs your newsfeed as it is in your Dashboard.
+The newsfeed widget outputs your newsfeed as it is in your dashboard.
 
 **Widget ID**: `newsfeed`
 

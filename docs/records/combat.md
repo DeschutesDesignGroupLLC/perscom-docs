@@ -1,7 +1,7 @@
 # Combat Records
 
 Combat Records are tangible engagements a user has performed or been involved with during their time in the organization. For example, they
-may be records that include attending an event, completing a training, or delivering a lecture.
+may be records that include attending an event, completing a training, being deployed on an operation, or delivering a lecture.
 
 ## External Integration
 

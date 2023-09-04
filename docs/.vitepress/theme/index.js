@@ -1,6 +1,4 @@
-/** @format */
+import { Theme } from '@hempworks/pilgrim'
+//import './custom.css'
 
-import DefaultTheme from 'vitepress/theme'
-import './custom.css'
-
-export default DefaultTheme
+export default Theme

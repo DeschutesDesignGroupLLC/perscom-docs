@@ -1,7 +1,7 @@
 # Award Records
 
-Award records provide administrators and managers a way to recognize personnel for their achievements. They help to outline a persons
-contributions to the organization over their tenure.
+Award records provide administrators and managers an historical timeline of all awards received by an individual. They help to outline a
+persons contributions to the organization over their tenure.
 
 ## External Integration
 
