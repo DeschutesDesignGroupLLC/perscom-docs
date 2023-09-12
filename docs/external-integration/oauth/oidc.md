@@ -25,14 +25,14 @@ scalable web applications as well as implement Single Sign-On (SSO) with third-p
 
 ### Discovery Endpoint
 
-`/oauth/.well-known/openid-configuration`
+`/.well-known/openid-configuration`
 
 Returns OpenID Connect metadata about the PERSCOM.io authorization server. This information can be used by clients to programmatically
 configure their interactions with PERSCOM.io.
 
 ```vb
 curl -X GET \
-"https://{your-dashboard-url}/oauth/.well-known/openid-configuration
+"https://{your-dashboard-url}/.well-known/openid-configuration
 ```
 
 #### Example Response
