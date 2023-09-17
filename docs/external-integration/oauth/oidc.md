@@ -13,6 +13,13 @@ to initiate the authentication process. Finally, the token endpoint is used to e
 In summary, OIDC provides a standardized way to authenticate users and obtain information about them, making it easier to build secure and
 scalable web applications as well as implement Single Sign-On (SSO) with third-party applications.
 
+## Prerequisites
+
+<!-- prettier-ignore -->
+::: warning
+You must be [subscribed](https://docs.perscom.io/pricing) to the `Enterprise` plan to use this feature.
+:::
+
 ## Endpoints
 
 | Endpoint                                  |                              URL                              | Method |
