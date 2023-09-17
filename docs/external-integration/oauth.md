@@ -8,6 +8,13 @@ personnel data. This can save you time and effort by automating the data transfe
 2.0, you can have more control over which third-party applications can access your organization's data, and you can revoke their access at
 any time if needed.
 
+## Prerequisites
+
+<!-- prettier-ignore -->
+::: warning
+You must be [subscribed](https://docs.perscom.io/pricing) to the `Enterprise` plan to use this feature.
+:::
+
 ## Grants
 
 In OAuth 2.0, there are several types of authorization grants that can be used to obtain an access token, which is used to authenticate and
