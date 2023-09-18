@@ -1,6 +1,11 @@
 # Release Notes
 
-## [Unreleased](https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.24...HEAD)
+## [Unreleased](https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.25...HEAD)
+
+## [v1.0.25](https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.24...v1.0.25) - 2023-09-17
+
+<!-- Release notes generated using configuration in .github/release.yml at v1.0.25 -->
+**Full Changelog**: https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.24...v1.0.25
 
 ## [v1.0.24](https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.23...v1.0.24) - 2023-09-17
 
