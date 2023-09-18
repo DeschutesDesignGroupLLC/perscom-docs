@@ -77,8 +77,8 @@ curl -X GET \
 
 Returns information about the currently signed-in user.
 
-The `access token` must have the `openid` scope. The endpoint also excepts the `profile` and `email` scope that will return the respective
-fields in the response but is not required. The best practice would be to include all three scopes when requesting an access token.
+The `access token` must have the `openid` scope. The endpoint also excepts the `profile`, `email` and `tenant` [scopes](#scopes) that will return the respective
+fields in the response but is not required. The best practice would be to include all four scopes when requesting a token.
 
 ```vb
 curl -X GET \
