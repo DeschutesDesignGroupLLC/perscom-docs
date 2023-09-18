@@ -24,12 +24,12 @@ You must be [subscribed](https://docs.perscom.io/pricing) to the `Enterprise` pl
 
 The following scopes are OpenID Connect (OIDC) specific and determine which claims will be included in the ID token when making a token request. The scopes also determine which attributes will be available when calling the `userinfo` endpoint. 
 
-| Scope   | Description                                          |
-| ------- | ---------------------------------------------------- |
-| openid  | Must be requested in order to retrieve an ID token   |
-| profile | Include a user's name and profile picture url        |
-| email   | Include a user's email and email verification status |
-| tenant  | Include a user's organization name and ID            |
+| Scope   | Description                                             |
+| ------- | ------------------------------------------------------- |
+| openid  | Must be requested in order to retrieve an ID token      |
+| profile | Include a user's name, username and profile picture url |
+| email   | Include a user's email and email verification status    |
+| tenant  | Include a user's organization name and ID               |
 
 ## Endpoints
 
@@ -92,8 +92,11 @@ curl -X GET \
 {
   "sub": 1,
   "email": "email@test.com",
+  "email_verified": true,
   "name": "User",
-  "profile_photo_url": "https://perscom.s3.amazonaws.com/tenant1/iQc2HehFyKASVIUn8v99rX93jkJ2xhNtmQVL0Uwa.jpg",
-  "cover_photo_url": "https://perscom.s3.amazonaws.com/tenant1/hZ45lunpaYAu6mSgNonRAFQ0pknQcZ6ktpwD03fM.jpg"
+  "preferred_username": "email@test.com",
+  "picture": "https://perscom.s3.amazonaws.com/tenant1/iQc2HehFyKASVIUn8v99rX93jkJ2xhNtmQVL0Uwa.jpg",
+  "tenant_name": "Organization Name",
+  "tenant_sub": 1
 }
 ```
