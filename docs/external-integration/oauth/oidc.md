@@ -20,6 +20,17 @@ scalable web applications as well as implement Single Sign-On (SSO) with third-p
 You must be [subscribed](https://docs.perscom.io/pricing) to the `Enterprise` plan to use this feature.
 :::
 
+## Scopes
+
+The following scopes are OpenID Connect (OIDC) specific and determine which claims will be included in the ID token when making a token request. The scopes also determine which attributes will be available when calling the `userinfo` endpoint. 
+
+| Scope   | Description                                          |
+| ------- | ---------------------------------------------------- |
+| openid  | Must be requested in order to retrieve an ID token   |
+| profile | Include a user's name and profile picture url        |
+| email   | Include a user's email and email verification status |
+| tenant  | Include a user's organization name and ID            |
+
 ## Endpoints
 
 | Endpoint                                  |                              URL                              | Method |
