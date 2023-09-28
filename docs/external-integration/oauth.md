@@ -8,6 +8,13 @@ personnel data. This can save you time and effort by automating the data transfe
 2.0, you can have more control over which third-party applications can access your organization's data, and you can revoke their access at
 any time if needed.
 
+## Prerequisites
+
+<!-- prettier-ignore -->
+::: warning
+You must be [subscribed](https://docs.perscom.io/pricing) to the `Enterprise` plan to use this feature.
+:::
+
 ## Grants
 
 In OAuth 2.0, there are several types of authorization grants that can be used to obtain an access token, which is used to authenticate and
@@ -18,10 +25,6 @@ authorize access to protected resources. The four main types of authorization gr
   application exchanging an authorization code for an access token.
 - Implicit grant: This grant type is similar to the authorization code grant, but is used for browser-based applications where the client
   secret cannot be kept secret. The access token is returned directly to the client instead of being exchanged for an authorization code.
-- Resource owner password credentials grant: This grant type is used when the client already has the user's username and password and needs
-  to obtain an access token directly from the authorization server.
-- Client credentials grant: This grant type is used when the client needs to access its own resources, rather than a user's resources. It
-  involves the client providing its own credentials to the authorization server to obtain an access token.
 
 ## Scopes
 
@@ -29,8 +32,8 @@ In the context of OAuth 2.0, scopes are used to specify the level of access that
 client application requests authorization to access a protected resource, it specifies one or more scopes that it requires. The
 authorization server then grants an access token that has permission to access only the specified scopes. Scopes provide a way to limit the
 access granted to a client application, reducing the risk of unauthorized access to sensitive data. For example, an application that needs
-to read a user's email address may request access to the "view:user" scope, but not to other sensitive scopes such as "update:user" or
-"delete:user".
+to read a user's email address may request access to the `view:user` scope, but not to other sensitive scopes such as `update:user` or
+`delete:user`.
 
 For a list of available scopes, visit the Permissions section of your dashboard. In the context of PERSCOM.io, the word Scope and Permission
 are interchangeable.

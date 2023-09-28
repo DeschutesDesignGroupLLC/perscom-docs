@@ -1,6 +1,51 @@
 # Release Notes
 
-## [Unreleased](https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.14...HEAD)
+## [Unreleased](https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.26...HEAD)
+
+## [v1.0.26](https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.25...v1.0.26) - 2023-09-17
+
+<!-- Release notes generated using configuration in .github/release.yml at v1.0.26 -->
+**Full Changelog**: https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.25...v1.0.26
+
+## [v1.0.25](https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.24...v1.0.25) - 2023-09-17
+
+<!-- Release notes generated using configuration in .github/release.yml at v1.0.25 -->
+**Full Changelog**: https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.24...v1.0.25
+
+## [v1.0.24](https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.23...v1.0.24) - 2023-09-17
+
+<!-- Release notes generated using configuration in .github/release.yml at v1.0.24 -->
+**Full Changelog**: https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.23...v1.0.24
+
+## [v1.0.23](https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.22...v1.0.23) - 2023-09-17
+
+<!-- Release notes generated using configuration in .github/release.yml at v1.0.23 -->
+**Full Changelog**: https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.22...v1.0.23
+
+## [v1.0.22](https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.21...v1.0.22) - 2023-09-17
+
+<!-- Release notes generated using configuration in .github/release.yml at v1.0.22 -->
+**Full Changelog**: https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.21...v1.0.22
+
+## [v1.0.21](https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.20...v1.0.21) - 2023-09-17
+
+<!-- Release notes generated using configuration in .github/release.yml at v1.0.21 -->
+**Full Changelog**: https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.20...v1.0.21
+
+## [v1.0.20](https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.19...v1.0.20) - 2023-09-17
+
+<!-- Release notes generated using configuration in .github/release.yml at v1.0.20 -->
+**Full Changelog**: https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.19...v1.0.20
+
+## [v1.0.19](https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.18...v1.0.19) - 2023-09-17
+
+<!-- Release notes generated using configuration in .github/release.yml at v1.0.19 -->
+**Full Changelog**: https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.18...v1.0.19
+
+## [v1.0.18](https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.14...v1.0.18) - 2023-09-17
+
+<!-- Release notes generated using configuration in .github/release.yml at v1.0.18 -->
+**Full Changelog**: https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.17...v1.0.18
 
 ## [v1.0.14](https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.13...v1.0.14) - 2023-09-04
 

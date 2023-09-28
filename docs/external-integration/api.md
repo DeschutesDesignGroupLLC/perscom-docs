@@ -14,6 +14,14 @@ implemented.
 The PERSCOM.io API is built using the `REST` interface. A request to the PERSCOM.io API requires a `GET`, `POST`, `PUT`, or `DELETE` HTTP
 request along with an API key and your PERSCOM ID to an available URL endpoint. Details on how to perform those requests are outlined below.
 
+## Prerequisites
+
+<!-- prettier-ignore -->
+::: warning
+You must be [subscribed](https://docs.perscom.io/pricing) to the `Pro` plan to use this feature.
+:::
+
+
 ## API Keys
 
 API keys can be created and managed from within the `System -> API -> Keys` section of your dashboard. Each API key is a JSON Web Token

@@ -6,6 +6,13 @@ that any changes made within PERSCOM.io, such as new personnel records or update
 systems in real-time, without the need for manual data entry or synchronization. This can improve data accuracy and save time for personnel
 managers and other staff who rely on the system for critical information.
 
+## Prerequisites
+
+<!-- prettier-ignore -->
+::: warning
+You must be [subscribed](https://docs.perscom.io/pricing) to the `Enterprise` plan to use this feature.
+:::
+
 ## Creating A Webhook
 
 Webhooks can be managed via your PERSCOM.io dashboard. Webhooks require a URL that will be notified each time an event takes place that the

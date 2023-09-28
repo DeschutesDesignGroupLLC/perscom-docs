@@ -3,6 +3,13 @@
 PERSCOM.io offers powerful widgets that allow the integration of your organizational data into another website for display. Each widget is a
 snippet of HTML that can be injected into your website.
 
+## Prerequisites
+
+<!-- prettier-ignore -->
+::: warning
+You must be [subscribed](https://docs.perscom.io/pricing) to the `Pro` plan to use this feature.
+:::
+
 ## Choosing The Widget
 
 Each widget uses the same HTML code snippet to display the data. However, to set which widget you would like outputted, you must set the
