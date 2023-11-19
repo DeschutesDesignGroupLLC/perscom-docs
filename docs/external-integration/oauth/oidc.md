@@ -22,7 +22,8 @@ You must be [subscribed](https://docs.perscom.io/pricing) to the `Enterprise` pl
 
 ## Scopes
 
-The following scopes are OpenID Connect (OIDC) specific and determine which claims will be included in the ID token when making a token request. The scopes also determine which attributes will be available when calling the `userinfo` endpoint. 
+The following scopes are OpenID Connect (OIDC) specific and determine which claims will be included in the ID token when making a token
+request. The scopes also determine which attributes will be available when calling the `userinfo` endpoint.
 
 | Scope   | Description                                             |
 | ------- | ------------------------------------------------------- |
@@ -77,8 +78,9 @@ curl -X GET \
 
 Returns information about the currently signed-in user.
 
-The `access token` must have the `openid` scope. The endpoint also excepts the `profile`, `email` and `tenant` [scopes](#scopes) that will return the respective
-fields in the response but is not required. The best practice would be to include all four scopes when requesting a token.
+The `access token` must have the `openid` scope. The endpoint also excepts the `profile`, `email` and `tenant` [scopes](#scopes) that will
+return the respective fields in the response but is not required. The best practice would be to include all four scopes when requesting a
+token.
 
 ```vb
 curl -X GET \

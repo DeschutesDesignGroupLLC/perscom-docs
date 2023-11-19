@@ -9,9 +9,9 @@ With PERSCOM.io, you can easily manage personnel information, track their progre
 to create and define your unique organizational structure. We know no two organizations are the same.
 
 We understand the importance of integrating your data with other systems, which is why we offer the ability to integrate with any
-third-party service through our [API](/external-integration/api), [Command Line Interface (CLI)](/external-integration/cli), [OAuth 2.0](/external-integration/oauth),
-[OpenID Connect (OIDC)](/external-integration/oauth/oidc), [Webhooks](/external-integration/webhooks), or the library of
-[Widgets](/external-integration/widgets).
+third-party service through our [API](/external-integration/api), [Command Line Interface (CLI)](/external-integration/cli),
+[OAuth 2.0](/external-integration/oauth), [OpenID Connect (OIDC)](/external-integration/oauth/oidc),
+[Webhooks](/external-integration/webhooks), or the library of [Widgets](/external-integration/widgets).
 
 PERSCOM.io is designed to be user-friendly and accessible from anywhere, so you can manage your personnel from the office, the field, or on
 the go. With our comprehensive platform, you can simplify your personnel management processes and focus on what's truly important - your
