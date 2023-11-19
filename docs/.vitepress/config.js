@@ -1,7 +1,4 @@
-import config from '@hempworks/pilgrim/config'
-
 export default {
-  extends: config,
   lang: 'en-US',
   title: 'PERSCOM Personnel Management System Documentation',
   description: 'Documentation on the use and integration of PERSCOM.io. Available at https://perscom.io.',
@@ -37,7 +34,6 @@ export default {
       light: '/logo.svg',
       dark: '/logo.svg'
     },
-    versions: [{ text: 'v1.x', link: '/', current: true }],
     nav: [
       {
         text: 'PERSCOM.io Home',
@@ -142,7 +138,10 @@ export default {
             text: 'API',
             collapsed: true,
             link: '/external-integration/api',
-            items: [{ text: 'Documentation', link: 'https://perscom.io/documentation/api' }]
+            items: [
+              { text: 'Documentation', link: 'https://perscom.io/documentation/api' },
+              { text: 'OpenAPI 3.0 Spec', link: 'https://api.perscom.io/v1/spec.yaml' }
+            ]
           },
           {
             text: 'CLI',
@@ -151,12 +150,8 @@ export default {
           {
             text: 'OAuth 2.0',
             collapsed: true,
-            link: '/external-integration/oauth'
-          },
-          {
-            text: 'OpenID Connect',
-            collapsed: true,
-            link: '/external-integration/oauth/oidc'
+            link: '/external-integration/oauth',
+            items: [{ text: 'OpenID Connect', link: '/external-integration/oauth/oidc' }]
           },
           {
             text: 'Webhooks',

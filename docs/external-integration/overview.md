@@ -1,10 +1,10 @@
 # External Integration Overview
 
 PERSCOM.io provides a vast array of different options to integrate your personnel data with third-party services. These services include the
-PERSCOM.io [API](/external-integration/api), [Command Line Interface (CLI)](/external-integration/cli), [OAuth 2.0](/external-integration/oauth),
-[OpenID Connect (OIDC)](/external-integration/oauth/oidc), [Webhooks](/external-integration/webhooks), and
-[Widgets](/external-integration/widgets). Visit the individual integrations page to view more information and how-to's on how to integrate
-these services.
+PERSCOM.io [API](/external-integration/api), [Command Line Interface (CLI)](/external-integration/cli),
+[OAuth 2.0](/external-integration/oauth), [OpenID Connect (OIDC)](/external-integration/oauth/oidc),
+[Webhooks](/external-integration/webhooks), and [Widgets](/external-integration/widgets). Visit the individual integrations page to view
+more information and how-to's on how to integrate these services.
 
 ## Choosing an Integration
 

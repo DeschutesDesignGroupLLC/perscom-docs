@@ -22,7 +22,7 @@ The feature does not integrate with any widgets at this time.
 
 The following permissions are related to managing events.
 
-- `view:event` Can view an event.
-- `create:event` Can create a new event.
-- `update:event` Can update an existing event.
-- `delete:rank` Can delete an existing event.
+- `view:submission` Can view a form submission.
+- `create:submission` Can create a form submission.
+- `update:submission` Can update a form submission.
+- `delete:submission` Can delete a form submission.

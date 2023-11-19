@@ -71,16 +71,14 @@ scope(s) that were requested when the access token was initially obtained.
 
 First, make an authorization request to obtain an authorization code:
 
-**cURL**:
+::: code-group
 
-```vb
+```vb:line-numbers [cURL]
 curl -X GET \
   'https://DASHBOARD_URL/oauth/authorize?response_type=code&client_id=CLIENT_ID&redirect_uri=REDIRECT_URI&scope=SCOPES&state=STATE'
 ```
 
-**HTTP**:
-
-```http
+```http:line-numbers [HTTP]
 GET /authorize?
 response_type=code&
 client_id=CLIENT_ID&
@@ -91,6 +89,8 @@ nonce=NONCE HTTP/1.1
 Host: DASHBOARD_URL
 ```
 
+:::
+
 Replace `DASHBOARD_URL` with your actual dashboard URL, and `CLIENT_ID`, `REDIRECT_URI`, `SCOPES`, and `STATE` with your actual values. Note
 that the specific parameters and endpoint URLs may vary depending on the OAuth 2.0 implementation.
 
@@ -98,18 +98,16 @@ that the specific parameters and endpoint URLs may vary depending on the OAuth 2
 
 After the user approves the request, exchange the authorization code for an access token:
 
-**cURL**:
+::: code-group
 
-```vb
+```vb:line-numbers [cURL]
 curl -X POST \
   'https://DASHBOARD_URL/oauth/token' \
   -H 'Content-Type: application/x-www-form-urlencoded' \
   -d 'grant_type=authorization_code&code=AUTHORIZATION_CODE&redirect_uri=REDIRECT_URI&client_id=CLIENT_ID&client_secret=CLIENT_SECRET'
 ```
 
-**HTTP**:
-
-```http
+```http:line-numbers [HTTP]
 POST /token HTTP/1.1
 Host: DASHBOARD_URL
 Content-Type: application/x-www-form-urlencoded
@@ -121,6 +119,8 @@ client_id=CLIENT_ID&
 client_secret=CLIENT_SECRET
 ```
 
+:::
+
 Replace `DASHBOARD_URL` with your actual dashboard URL, and `AUTHORIZATION_CODE`, `REDIRECT_URI`, `CLIENT_ID`, and `CLIENT_SECRET` with your
 actual values. Note that the specific parameters and endpoint URLs may vary depending on the OAuth 2.0 implementation.
 
@@ -128,18 +128,16 @@ actual values. Note that the specific parameters and endpoint URLs may vary depe
 
 To refresh your access token after it expires:
 
-**cURL**:
+::: code-group
 
-```vb
+```vb:line-numbers [cURL]
 curl -X POST \
   'https://DASHBOARD_URL/oauth/token' \
   -H 'Content-Type: application/x-www-form-urlencoded' \
   -d 'grant_type=refresh_token&refresh_token=REFRESH_TOKEN&client_id=CLIENT_ID&client_secret=CLIENT_SECRET&scope=SCOPES'
 ```
 
-**HTTP**:
-
-```http
+```http:line-numbers [HTTP]
 POST /token HTTP/1.1
 Host: DASHBOARD_URL
 Content-Type: application/x-www-form-urlencoded
@@ -150,6 +148,8 @@ client_id=CLIENT_ID&
 client_secret=CLIENT_SECRET&
 scope=SCOPES
 ```
+
+:::
 
 Replace `DASHBOARD_URL` with your actual dashboard URL, and `REFRESH_TOKEN`, `CLIENT_ID`, `CLIENT_SECRET`, and `SCOPES` with your actual
 values. Note that the specific parameters and endpoint URLs may vary depending on the OAuth 2.0 implementation.

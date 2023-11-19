@@ -25,7 +25,7 @@ The feature does not integrate with any widgets at this time.
 
 The following permissions are related to managing service records.
 
-- `view:servicerecord` Can view an service record.
+- `view:servicerecord` Can view a service record.
 - `create:servicerecord` Can create a new service record.
-- `update:servicerecord` Can update an existing service record.
-- `delete:servicerecord` Can delete an existing service record.
+- `update:servicerecord` Can update a service record.
+- `delete:servicerecord` Can delete a service record.

@@ -23,5 +23,5 @@ The following permissions are related to managing forms.
 
 - `view:form` Can view a form.
 - `create:form` Can create a new form.
-- `update:form` Can update an existing form.
-- `delete:form` Can delete an existing form.
+- `update:form` Can update a form.
+- `delete:form` Can delete a form.

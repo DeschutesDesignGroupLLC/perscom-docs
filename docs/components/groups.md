@@ -25,5 +25,5 @@ The following permissions are related to managing units.
 
 - `view:group` Can view a group.
 - `create:group` Can create a new group.
-- `update:group` Can update an existing group.
-- `delete:group` Can delete an existing group.
+- `update:group` Can update a group.
+- `delete:group` Can delete a group.
