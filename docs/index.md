@@ -1,12 +1,13 @@
-# PERSCOM.io Documentation
+# Introduction
 
-The following documentation is intended to guide and help you on using and integrating the PERSCOM.io system.
+PERSCOM.io is a comprehensive suite of personnel management tools meticulously tailored to address the distinctive requirements of police,
+fire, EMS, military, and public safety agencies. Within PERSCOM.io, you’ll find a robust set of features designed to effectively oversee and
+monitor performance, assign tasks, recognize accomplishments, categorize and meticulously log records, construct and deploy customized
+forms, conduct data analysis, and maintain seamless and constant communication within the organization. You can explore a live demonstration
+of its capabilities at https://demo.perscom.io.
 
-PERSCOM.io is a fully functioning, powerful, and robust personnel management software built for para-military organizations. The goal of
-PERSCOM.io is to enhance and provide common functionalities needed for organizations to run in a manner that is efficient, intuitive, and
-powerful.
-
-Our software is backed by a powerful API, OAuth 2.0 and suite of Widgets that allows integration with third-party software and other
-platforms to extend and enhance the functionality of your personnel data.
+These mission-critical tools are purpose-built to cater to the specific needs of police,
+fire, EMS, military, and public safety agencies, offering the means to enhance communication, streamline data management, and ultimately
+enhance overall operational efficiency with PERSCOM.io.
 
 ![Dashboard Preview](https://raw.githubusercontent.com/DeschutesDesignGroupLLC/perscom-docs/master/resources/dashboard-preview.png)
