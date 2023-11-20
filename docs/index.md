@@ -6,8 +6,8 @@ monitor performance, assign tasks, recognize accomplishments, categorize and met
 forms, conduct data analysis, and maintain seamless and constant communication within the organization. You can explore a live demonstration
 of its capabilities at https://demo.perscom.io.
 
-These mission-critical tools are purpose-built to cater to the specific needs of police,
-fire, EMS, military, and public safety agencies, offering the means to enhance communication, streamline data management, and ultimately
-enhance overall operational efficiency with PERSCOM.io.
+These mission-critical tools are purpose-built to cater to the specific needs of police, fire, EMS, military, and public safety agencies,
+offering the means to enhance communication, streamline data management, and ultimately enhance overall operational efficiency with
+PERSCOM.io.
 
 ![Dashboard Preview](https://raw.githubusercontent.com/DeschutesDesignGroupLLC/perscom-docs/master/resources/dashboard-preview.png)
