@@ -78,30 +78,28 @@ payload request, use the webhook's log to help understand how the data is struct
 Below are examples of backend server implementations that can handle a webhook request that may be used for further processing within your
 own application.
 
-**Javascript**:
+::: code-group
 
-```js
-const express = require('express')
-const bodyParser = require('body-parser')
+```js:line-numbers [Express.js]
+const express = require('express');
+const bodyParser = require('body-parser');
 
-const app = express()
+const app = express();
 
-app.use(bodyParser.json())
+app.use(bodyParser.json());
 
 app.post('/webhook', (req, res) => {
-  const data = req.body
+  const data = req.body;
   // do something with the data
-  res.status(200).send('OK')
-})
+  res.status(200).send('OK');
+});
 
 app.listen(3000, () => {
-  console.log('Webhook endpoint listening on port 3000')
-})
+  console.log('Webhook endpoint listening on port 3000');
+});
 ```
 
-**ASP.net**:
-
-```csharp
+```csharp:line-numbers [ASP.net]
 using System.IO;
 using System.Web;
 using System.Web.Mvc;
@@ -124,9 +122,7 @@ public class WebhookController : Controller
 }
 ```
 
-**Python**:
-
-```python
+```python:line-numbers [Flask]
 from flask import Flask, request
 
 app = Flask(__name__)
@@ -141,9 +137,7 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 
-**Laravel**:
-
-```php
+```php:line-numbers [Laravel]
 <?php
 
 namespace App\Http\Controllers;
@@ -163,9 +157,7 @@ class WebhookController extends Controller
 }
 ```
 
-**Ruby on Rails**:
-
-```ruby
+```ruby:line-numbers [Ruby on Rails]
 class WebhookController < ApplicationController
   skip_before_action :verify_authenticity_token
 
@@ -178,6 +170,8 @@ class WebhookController < ApplicationController
   end
 end
 ```
+
+:::
 
 ## Third-Party Services
 
