@@ -1,6 +1,17 @@
 # Release Notes
 
-## [Unreleased](https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.29...HEAD)
+## [Unreleased](https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.30...HEAD)
+
+## [v1.0.30](https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.29...v1.0.30) - 2023-11-20
+
+<!-- Release notes generated using configuration in .github/release.yml at v1.0.30 -->
+### What's Changed
+
+#### Added
+
+- Add documate AI assistant by @JonErickson in https://github.com/DeschutesDesignGroupLLC/perscom-docs/pull/34
+
+**Full Changelog**: https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.29...v1.0.30
 
 ## [v1.0.29](https://github.com/DeschutesDesignGroupLLC/perscom-docs/compare/v1.0.28...v1.0.29) - 2023-11-19
 
