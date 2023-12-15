@@ -34,8 +34,6 @@ The following is an example of the newsfeed widget being displayed within the PE
 
 The following scopes will need to be added to your API key to properly display the data.
 
-- `manage:newsfeed` Can view an award.
-- `view:user` Can view a user.
 - `view:announcement` Can view an announcement.
 - `view:assignmentrecord` Can view an assignment record.
 - `view:awardrecord` Can view an award record.
