@@ -28,9 +28,9 @@ Below is an example HTML code snippet that will output your roster.
 
 The following is an example of the roster widget being displayed within the PERSCOM.io application.
 
-![Widget Roster Preview](https://perscom-cdn.s3.amazonaws.com/images/roster-preview-1.png)
+![Roster Preview](https://raw.githubusercontent.com/DeschutesDesignGroupLLC/perscom-docs/master/resources/roster-preview.png)
 
-![Widget Roster User Preview](https://perscom-cdn.s3.amazonaws.com/images/roster-preview-2.png)
+![Roster User Preview](https://raw.githubusercontent.com/DeschutesDesignGroupLLC/perscom-docs/master/resources/roster-preview-1.png)
 
 ## Scopes
 

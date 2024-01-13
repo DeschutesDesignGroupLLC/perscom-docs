@@ -28,7 +28,7 @@ Below is an example HTML code snippet that will output your calendar.
 
 The following is an example of the calendar widget being displayed within the PERSCOM.io application.
 
-![Widget Calendar Preview](https://perscom-cdn.s3.amazonaws.com/images/calendar-preview-1.png)
+![Calendar Preview](https://raw.githubusercontent.com/DeschutesDesignGroupLLC/perscom-docs/master/resources/calendar-preview.png)
 
 ## Scopes
 

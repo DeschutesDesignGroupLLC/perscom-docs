@@ -24,7 +24,7 @@ export default {
       level: [0, 0]
     },
     lineNumbers: false,
-    theme: 'css-variables'
+    theme: 'light-plus'
   },
 
   themeConfig: {

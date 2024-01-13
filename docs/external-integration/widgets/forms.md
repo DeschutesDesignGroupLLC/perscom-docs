@@ -56,9 +56,9 @@ Below is an example HTML code snippet that will output your forms.
 
 The following is an example of the forms widget being displayed within the PERSCOM.io application.
 
-![Widget Forms Preview](https://perscom-cdn.s3.amazonaws.com/images/forms-preview-1.png)
+![Form Overview Preview](https://raw.githubusercontent.com/DeschutesDesignGroupLLC/perscom-docs/master/resources/form-preview.png)
 
-![Widget Forms Form Preview](https://perscom-cdn.s3.amazonaws.com/images/forms-preview-2.png)
+![Form Preview](https://raw.githubusercontent.com/DeschutesDesignGroupLLC/perscom-docs/master/resources/form-preview-1.png)
 
 ## Scopes
 

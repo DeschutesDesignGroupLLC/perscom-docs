@@ -3,11 +3,25 @@
 PERSCOM.io offers powerful widgets that allow the integration of your organizational data into another website for display. Each widget is a
 snippet of HTML that can be injected into your website.
 
+![Widget Preview](https://raw.githubusercontent.com/DeschutesDesignGroupLLC/perscom-docs/master/resources/widget-preview.png)
+
 ## Prerequisites
 
 <!-- prettier-ignore -->
 ::: warning
 You must be [subscribed](https://docs.perscom.io/pricing) to the `Pro` plan to use this feature.
+:::
+
+## Trying It Out
+
+If you'd like to try the widgets out before using them on your website, you can preview every widget at
+[https://widget.perscom.io/](https://widget.perscom.io/). Please note, you must be subscribed to the `Pro` plan to use this feature. Please
+have an API key and your PERSCOM ID ready to log in. You can read more about how to access these in the
+[Authentication and Authorization](#authentication-and-authorization) section.
+
+<!-- prettier-ignore -->
+::: tip 
+For demonstration purposes, you can select all available scopes for the API key you will use to preview the widgets. 
 :::
 
 ## Choosing The Widget
@@ -103,16 +117,6 @@ the code snippet for it to take affect.
     type="text/javascript"
   ></script>
 </div>
-```
-
-## Externally Accessing The Widget
-
-The PERSCOM.io widget can be accessed outside of the HTML code snippet that you used to post within your website. To see your widget live,
-without embedding it in a website, you can visit the URL's below. The `widgetId` corresponds with the [ID](#choosing-the-widget) of the
-widget you intend to view. Make sure to set `apiKey` and `perscomId` to the correct values.
-
-```html
-https://widget.perscom.io/{widgetId}?apikey={apiKey}&perscomid={perscomId}
 ```
 
 ## Development
