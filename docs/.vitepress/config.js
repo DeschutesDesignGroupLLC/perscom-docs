@@ -148,6 +148,16 @@ export default {
             link: '/external-integration/cli'
           },
           {
+            text: 'Converters',
+            collapsed: true,
+            link: '/external-integration/converters',
+            items: [{ text: 'Invision Community', link: '/external-integration/converters/invision-community' }]
+          },
+          {
+            text: 'Forums',
+            link: '/external-integration/forums'
+          },
+          {
             text: 'OAuth 2.0',
             collapsed: true,
             link: '/external-integration/oauth',
