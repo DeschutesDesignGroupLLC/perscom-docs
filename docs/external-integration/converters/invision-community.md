@@ -10,4 +10,4 @@ seamlessly transfer all of your Invision Community data to PERSCOM.io. Download 
 After visiting the download link, download the `.tar` file under the `Assets` table and upload the application to your Invision Community website.
 :::
 
-You can download the converter [here](https://github.com/forumify/perscom-migrator/releases/tag/1.0.0).
+You can download the converter [here](https://github.com/forumify/perscom-migrator/releases/latest).
