@@ -1,6 +1,6 @@
 # Invision Community
 
-The folks at [Forumify](https://forumify.net) and PERSCOM.io are proud to off a plug-in-play converter for Invision Community that will
+Thanks to the folks at [Forumify](https://forumify.net), we are proud to offer a plug-in-play converter for Invision Community that will
 seamlessly transfer all of your Invision Community data to PERSCOM.io. Download it below to get started.
 
 ## Download
