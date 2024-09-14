@@ -2,7 +2,7 @@
 
 Use this page to view release notes and upgrade guides as they pertain to PERSCOM Personnel Management System.
 
-## v2.0.0 - 09-14-2-24
+## v2.0.0 - 09-14-2024
 
 Version 2, on the surface, literally, is a complete refresh of the UI and frontend. To achieve this, we did make some minor changes to the
 backend. Be sure to let us know how you life the new refresh!
