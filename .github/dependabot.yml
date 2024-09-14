@@ -5,7 +5,7 @@ updates:
     schedule:
       interval: weekly
     open-pull-requests-limit: 5
-    target-branch: "develop"
+    target-branch: "master"
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-patch"]
