@@ -67,6 +67,7 @@ export default {
           { text: 'Getting Started', link: '/getting-started' },
           { text: 'Pricing', link: '/pricing' },
           { text: 'Registration', link: '/registration' },
+          { text: 'Upgrade', link: '/upgrade' },
           { text: 'Support', link: '/support' }
         ]
       },
