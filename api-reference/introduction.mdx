@@ -1,0 +1,100 @@
+---
+title: 'Introduction'
+description: 'Learn how to work with the powerful PERSCOM API.'
+---
+
+## Getting Started
+
+<Note>
+  Using the PERSCOM API requires a `Pro` subscription. Reach out to support if you need assistance determine if your account supports the
+  PERSCOM API.
+</Note>
+
+The PERSCOM.io API is the backbone that allows PERSCOM.io to function and deliver the services you've come to enjoy. The API also allows you
+to integrate your PERSCOM.io data with third-party services and applications.
+
+<Card title='PERSCOM API OpenAPI Schema' icon='code' href='https://api.perscom.io/spec.json'>
+  View the OpenAPI specification file.
+</Card>
+
+The PERSCOM.io API is built using a RESTful interface. A request to the PERSCOM.io API requires a HTTP `GET`, `POST`, `PUT`, `PATCH`, or
+`DELETE` request along with an API key to an available URL endpoint. A collection of all available endpoints can be found under the
+`Endpoints` folder.
+
+## Authentication
+
+Requests to the PERSCOM API require the user to verify who they are. The API expects a API Key to be passed as a `Bearer` token in the
+`Authorization` header of your HTTP request. API Keys can be managed under your PERSCOM dashboard.
+
+## Versioning
+
+In an effort to always provide a powerful and robust API, we've adopted a versioning system to help us roll out regular updates. The API
+version is defined as a path parameter in the URL. For example:
+
+```
+https://api.perscom.io/{version}/users
+```
+
+Replace `{version}` with the API version. The current API version is `v2`.
+
+## Caching
+
+The PERSCOM API is backed by a worldwide CDN and cache that allows us to deliver your requests quicker no matter where they originate from.
+On the dashboard, we handle updating the cache whenever you make a change to your data to make sure you always have access to the most
+up-to-date data available. Sometimes, this data can get out-of-sync and a cache purge is necessary. At anytime if you feel the data you are
+receiving from the API is stale, you can initiate a cache purge from the API section of your PERSCOM dashboard.
+
+## Examples
+
+Below are examples of requests to the PERSCOM API using different software options.
+
+<CodeGroup>
+
+```php PHP
+use GuzzleHttp\Client;
+
+$client = new Client();
+
+$headers = [
+    'Accept' => 'application/json',
+    'Authorization' => "Bearer ${apiKey}"
+];
+
+$response = $client->request('GET', 'https://api.perscom.io/v2/users', [
+    'headers' => $headers
+]);
+
+echo 'Status code: ' . $response->getStatusCode();
+```
+
+```js Javascript
+fetch('https://api.perscom.io/v2/users', {
+  method: 'GET',
+  headers: {
+    Authorization: 'Bearer apiKey',
+    Accept: 'application/json'
+  }
+})
+  .then((response) => {
+    console.log('Status code:', response.status)
+  })
+  .catch((error) => {
+    console.error('Error:', error)
+  })
+```
+
+```python Python
+import requests
+
+url = 'https://api.perscom.io/v2/users'
+headers = {
+    'Authorization': 'Bearer apiKey',
+    'Accept': 'application/json',
+}
+response = requests.get(url, headers=headers)
+
+print(f'Status code: {response.status_code}')
+print(f'Response body: {response.text}')
+```
+
+</CodeGroup>

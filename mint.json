@@ -1,0 +1,962 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "PERSCOM Documentation",
+  "layout": "sidenav",
+  "sidebar": {
+    "items": "border"
+  },
+  "logo": {
+    "dark": "/logo/logo.svg",
+    "light": "/logo/logo.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#0284c7",
+    "light": "#0284c7",
+    "dark": "#0284c7",
+    "anchors": {
+      "from": "#0284c7",
+      "to": "#0284c7"
+    }
+  },
+  "api": {
+    "auth": {
+      "method": "bearer"
+    }
+  },
+  "codeBlock": {
+    "mode": "auto"
+  },
+  "background": {
+    "style": "windows"
+  },
+  "feedback": {
+    "thumbsRating": true,
+    "suggestEdit": true
+  },
+  "topbarLinks": [
+    {
+      "name": "Home",
+      "url": "https://perscom.io"
+    },
+    {
+      "name": "Support",
+      "url": "https://perscom.io/slack"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Get Started",
+    "url": "https://perscom.io/register"
+  },
+  "tabs": [
+    {
+      "name": "Documentation",
+      "url": "docs"
+    },
+    {
+      "name": "Guides",
+      "url": "guides"
+    },
+    {
+      "name": "Integrations",
+      "url": "integrations"
+    },
+    {
+      "name": "API Reference",
+      "icon": "code",
+      "url": "api-reference"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Documentation",
+      "pages": [
+        "docs/introduction",
+        "docs/getting-started",
+        "docs/pricing",
+        "docs/register",
+        "docs/demo",
+        "docs/support"
+      ]
+    },
+    {
+      "group": "Guides",
+      "pages": [
+        "guides/introduction"
+      ]
+    },
+    {
+      "group": "Integrations",
+      "pages": [
+        "integrations/introduction",
+        "integrations/api",
+        "integrations/forums",
+        {
+          "group": "SDKs",
+          "pages": [
+            "integrations/sdk/php"
+          ]
+        },
+        "integrations/webhooks",
+        "integrations/widgets"
+      ]
+    },
+    {
+      "group": "API Reference",
+      "pages": [
+        "api-reference/introduction",
+        "api-reference/authentication",
+        "api-reference/authorization",
+        {
+          "group": "Endpoints",
+          "pages": [
+            {
+              "group": "Me",
+              "icon": "user",
+              "pages": [
+                "api-reference/endpoints/me/get-a-list-of-users"
+              ]
+            },
+            {
+              "group": "Announcements",
+              "icon": "bullhorn",
+              "pages": [
+                "api-reference/endpoints/announcements/get-a-list-of-announcements",
+                "api-reference/endpoints/announcements/create-announcement",
+                "api-reference/endpoints/announcements/search-for-announcements",
+                "api-reference/endpoints/announcements/get-announcement",
+                "api-reference/endpoints/announcements/delete-announcement",
+                "api-reference/endpoints/announcements/update-announcement",
+                "api-reference/endpoints/announcements/create-a-batch-of-announcements",
+                "api-reference/endpoints/announcements/delete-a-batch-of-announcements",
+                "api-reference/endpoints/announcements/update-a-batch-of-announcements"
+              ]
+            },
+            {
+              "group": "Attachments",
+              "icon": "paperclip",
+              "pages": [
+                "api-reference/endpoints/attachments/get-a-list-of-attachments",
+                "api-reference/endpoints/attachments/create-attachment",
+                "api-reference/endpoints/attachments/get-attachment",
+                "api-reference/endpoints/attachments/delete-attachment",
+                "api-reference/endpoints/attachments/update-attachment",
+                "api-reference/endpoints/attachments/create-a-batch-of-attachments",
+                "api-reference/endpoints/attachments/delete-a-batch-of-attachments",
+                "api-reference/endpoints/attachments/update-a-batch-of-attachments"
+              ]
+            },
+            {
+              "group": "Awards",
+              "icon": "trophy",
+              "pages": [
+                "api-reference/endpoints/awards/get-a-list-of-awards",
+                "api-reference/endpoints/awards/create-award",
+                "api-reference/endpoints/awards/get-award",
+                "api-reference/endpoints/awards/delete-award",
+                "api-reference/endpoints/awards/update-award",
+                "api-reference/endpoints/awards/create-a-batch-of-awards",
+                "api-reference/endpoints/awards/delete-a-batch-of-awards",
+                "api-reference/endpoints/awards/update-a-batch-of-awards",
+                {
+                  "group": "Image",
+                  "icon": "image",
+                  "pages": [
+                    "api-reference/endpoints/awards-image/create-image",
+                    "api-reference/endpoints/awards-image/get-image",
+                    "api-reference/endpoints/awards-image/delete-image",
+                    "api-reference/endpoints/awards-image/update-image"
+                  ]
+                }
+              ]
+            },
+            {
+              "group": "Calendars",
+              "icon": "calendar",
+              "pages": [
+                "api-reference/endpoints/calendars/get-a-list-of-calendars",
+                "api-reference/endpoints/calendars/create-calendar",
+                "api-reference/endpoints/calendars/get-calendar",
+                "api-reference/endpoints/calendars/delete-calendar",
+                "api-reference/endpoints/calendars/update-calendar",
+                "api-reference/endpoints/calendars/create-a-batch-of-calendars",
+                "api-reference/endpoints/calendars/delete-a-batch-of-calendars",
+                "api-reference/endpoints/calendars/update-a-batch-of-calendars"
+              ]
+            },
+            {
+              "group": "Categories",
+              "icon": "folder-open",
+              "pages": [
+                "api-reference/endpoints/categories/get-a-list-of-categories",
+                "api-reference/endpoints/categories/create-category",
+                "api-reference/endpoints/categories/get-category",
+                "api-reference/endpoints/categories/delete-category",
+                "api-reference/endpoints/categories/update-category",
+                "api-reference/endpoints/categories/create-a-batch-of-categories",
+                "api-reference/endpoints/categories/delete-a-batch-of-categories",
+                "api-reference/endpoints/categories/update-a-batch-of-categories",
+                {
+                  "group": "Awards",
+                  "icon": "trophy",
+                  "pages": [
+                    "api-reference/endpoints/categories-awards/get-a-list-of-awards",
+                    "api-reference/endpoints/categories-awards/create-award",
+                    "api-reference/endpoints/categories-awards/get-award",
+                    "api-reference/endpoints/categories-awards/delete-award",
+                    "api-reference/endpoints/categories-awards/update-award",
+                    "api-reference/endpoints/categories-awards/create-a-batch-of-awards",
+                    "api-reference/endpoints/categories-awards/delete-a-batch-of-awards",
+                    "api-reference/endpoints/categories-awards/update-a-batch-of-awards",
+                    "api-reference/endpoints/categories-awards/attach-awards",
+                    "api-reference/endpoints/categories-awards/detach-awards",
+                    "api-reference/endpoints/categories-awards/sync-awards",
+                    "api-reference/endpoints/categories-awards/toggle-awards",
+                    "api-reference/endpoints/categories-awards/update-pivot"
+                  ]
+                },
+                {
+                  "group": "Documents",
+                  "icon": "file",
+                  "pages": [
+                    "api-reference/endpoints/categories-documents/get-a-list-of-documents",
+                    "api-reference/endpoints/categories-documents/create-document",
+                    "api-reference/endpoints/categories-documents/get-document",
+                    "api-reference/endpoints/categories-documents/delete-document",
+                    "api-reference/endpoints/categories-documents/update-document",
+                    "api-reference/endpoints/categories-documents/create-a-batch-of-documents",
+                    "api-reference/endpoints/categories-documents/delete-a-batch-of-documents",
+                    "api-reference/endpoints/categories-documents/update-a-batch-of-documents",
+                    "api-reference/endpoints/categories-documents/attach-documents",
+                    "api-reference/endpoints/categories-documents/detach-documents",
+                    "api-reference/endpoints/categories-documents/sync-documents",
+                    "api-reference/endpoints/categories-documents/toggle-documents",
+                    "api-reference/endpoints/categories-documents/update-pivot"
+                  ]
+                },
+                {
+                  "group": "Forms",
+                  "icon": "pen-to-square",
+                  "pages": [
+                    "api-reference/endpoints/categories-forms/get-a-list-of-forms",
+                    "api-reference/endpoints/categories-forms/create-form",
+                    "api-reference/endpoints/categories-forms/get-form",
+                    "api-reference/endpoints/categories-forms/delete-form",
+                    "api-reference/endpoints/categories-forms/update-form",
+                    "api-reference/endpoints/categories-forms/create-a-batch-of-forms",
+                    "api-reference/endpoints/categories-forms/delete-a-batch-of-forms",
+                    "api-reference/endpoints/categories-forms/update-a-batch-of-forms",
+                    "api-reference/endpoints/categories-forms/attach-forms",
+                    "api-reference/endpoints/categories-forms/detach-forms",
+                    "api-reference/endpoints/categories-forms/sync-forms",
+                    "api-reference/endpoints/categories-forms/toggle-forms",
+                    "api-reference/endpoints/categories-forms/update-pivot"
+                  ]
+                },
+                {
+                  "group": "Qualifications",
+                  "icon": "star",
+                  "pages": [
+                    "api-reference/endpoints/categories-qualifications/get-a-list-of-qualifications",
+                    "api-reference/endpoints/categories-qualifications/create-qualification",
+                    "api-reference/endpoints/categories-qualifications/get-qualification",
+                    "api-reference/endpoints/categories-qualifications/delete-qualification",
+                    "api-reference/endpoints/categories-qualifications/update-qualification",
+                    "api-reference/endpoints/categories-qualifications/create-a-batch-of-qualifications",
+                    "api-reference/endpoints/categories-qualifications/delete-a-batch-of-qualifications",
+                    "api-reference/endpoints/categories-qualifications/update-a-batch-of-qualifications",
+                    "api-reference/endpoints/categories-qualifications/attach-qualifications",
+                    "api-reference/endpoints/categories-qualifications/detach-qualifications",
+                    "api-reference/endpoints/categories-qualifications/sync-qualifications",
+                    "api-reference/endpoints/categories-qualifications/toggle-qualifications",
+                    "api-reference/endpoints/categories-qualifications/update-pivot"
+                  ]
+                },
+                {
+                  "group": "Ranks",
+                  "icon": "angles-up",
+                  "pages": [
+                    "api-reference/endpoints/categories-ranks/get-a-list-of-ranks",
+                    "api-reference/endpoints/categories-ranks/create-rank",
+                    "api-reference/endpoints/categories-ranks/get-rank",
+                    "api-reference/endpoints/categories-ranks/delete-rank",
+                    "api-reference/endpoints/categories-ranks/update-rank",
+                    "api-reference/endpoints/categories-ranks/create-a-batch-of-ranks",
+                    "api-reference/endpoints/categories-ranks/delete-a-batch-of-ranks",
+                    "api-reference/endpoints/categories-ranks/update-a-batch-of-ranks",
+                    "api-reference/endpoints/categories-ranks/attach-ranks",
+                    "api-reference/endpoints/categories-ranks/detach-ranks",
+                    "api-reference/endpoints/categories-ranks/sync-ranks",
+                    "api-reference/endpoints/categories-ranks/toggle-ranks",
+                    "api-reference/endpoints/categories-ranks/update-pivot"
+                  ]
+                }
+              ]
+            },
+            {
+              "group": "Comments",
+              "icon": "comments",
+              "pages": [
+                "api-reference/endpoints/comments/get-a-list-of-comments",
+                "api-reference/endpoints/comments/create-comment",
+                "api-reference/endpoints/comments/get-comment",
+                "api-reference/endpoints/comments/delete-comment",
+                "api-reference/endpoints/comments/update-comment",
+                "api-reference/endpoints/comments/create-a-batch-of-comments",
+                "api-reference/endpoints/comments/delete-a-batch-of-comments",
+                "api-reference/endpoints/comments/update-a-batch-of-comments"
+              ]
+            },
+            {
+              "group": "Documents",
+              "icon": "file",
+              "pages": [
+                "api-reference/endpoints/documents/get-a-list-of-documents",
+                "api-reference/endpoints/documents/create-document",
+                "api-reference/endpoints/documents/get-document",
+                "api-reference/endpoints/documents/delete-document",
+                "api-reference/endpoints/documents/update-document",
+                "api-reference/endpoints/documents/create-a-batch-of-documents",
+                "api-reference/endpoints/documents/delete-a-batch-of-documents",
+                "api-reference/endpoints/documents/update-a-batch-of-documents"
+              ]
+            },
+            {
+              "group": "Events",
+              "icon": "calendar-days",
+              "pages": [
+                "api-reference/endpoints/events/get-event",
+                "api-reference/endpoints/events/delete-event",
+                "api-reference/endpoints/events/update-event",
+                "api-reference/endpoints/events/create-a-batch-of-events",
+                "api-reference/endpoints/events/delete-a-batch-of-events",
+                "api-reference/endpoints/events/update-a-batch-of-events",
+                {
+                  "group": "Image",
+                  "icon": "image",
+                  "pages": [
+                    "api-reference/endpoints/events-image/get-a-list-of-images",
+                    "api-reference/endpoints/events-image/create-image",
+                    "api-reference/endpoints/events-image/search-for-images",
+                    "api-reference/endpoints/events-image/get-image",
+                    "api-reference/endpoints/events-image/delete-image",
+                    "api-reference/endpoints/events-image/update-image",
+                    "api-reference/endpoints/events-image/create-a-batch-of-images",
+                    "api-reference/endpoints/events-image/delete-a-batch-of-images",
+                    "api-reference/endpoints/events-image/update-a-batch-of-images",
+                    "api-reference/endpoints/events-image/associate-image-with-event",
+                    "api-reference/endpoints/events-image/dissociate-image-from-event"
+                  ]
+                }
+              ]
+            },
+            {
+              "group": "Forms",
+              "icon": "pen-to-square",
+              "pages": [
+                "api-reference/endpoints/forms/get-a-list-of-forms",
+                "api-reference/endpoints/forms/create-form",
+                "api-reference/endpoints/forms/get-form",
+                "api-reference/endpoints/forms/delete-form",
+                "api-reference/endpoints/forms/update-form",
+                "api-reference/endpoints/forms/create-a-batch-of-forms",
+                "api-reference/endpoints/forms/delete-a-batch-of-forms",
+                "api-reference/endpoints/forms/update-a-batch-of-forms",
+                {
+                  "group": "Submissions",
+                  "icon": "folder-plus",
+                  "pages": [
+                    "api-reference/endpoints/forms-submissions/get-a-list-of-submissions",
+                    "api-reference/endpoints/forms-submissions/create-submission",
+                    "api-reference/endpoints/forms-submissions/get-submission",
+                    "api-reference/endpoints/forms-submissions/delete-submission",
+                    "api-reference/endpoints/forms-submissions/update-submission",
+                    "api-reference/endpoints/forms-submissions/create-a-batch-of-submissions",
+                    "api-reference/endpoints/forms-submissions/delete-a-batch-of-submissions",
+                    "api-reference/endpoints/forms-submissions/update-a-batch-of-submissions",
+                    "api-reference/endpoints/forms-submissions/associate-submission-with-form",
+                    "api-reference/endpoints/forms-submissions/dissociate-submission-from-form"
+                  ]
+                }
+              ]
+            },
+            {
+              "group": "Groups",
+              "icon": "cubes",
+              "pages": [
+                "api-reference/endpoints/groups/get-a-list-of-groups",
+                "api-reference/endpoints/groups/create-group",
+                "api-reference/endpoints/groups/get-group",
+                "api-reference/endpoints/groups/delete-group",
+                "api-reference/endpoints/groups/update-group",
+                "api-reference/endpoints/groups/create-a-batch-of-groups",
+                "api-reference/endpoints/groups/delete-a-batch-of-groups",
+                "api-reference/endpoints/groups/update-a-batch-of-groups",
+                {
+                  "group": "Image",
+                  "icon": "image",
+                  "pages": [
+                    "api-reference/endpoints/groups-image/create-image",
+                    "api-reference/endpoints/groups-image/get-image",
+                    "api-reference/endpoints/groups-image/delete-image",
+                    "api-reference/endpoints/groups-image/update-image"
+                  ]
+                }
+              ]
+            },
+            {
+              "group": "Images",
+              "icon": "image",
+              "pages": [
+                "api-reference/endpoints/images/get-a-list-of-images",
+                "api-reference/endpoints/images/create-image",
+                "api-reference/endpoints/images/get-image",
+                "api-reference/endpoints/images/delete-image",
+                "api-reference/endpoints/images/update-image",
+                "api-reference/endpoints/images/create-a-batch-of-images",
+                "api-reference/endpoints/images/delete-a-batch-of-images",
+                "api-reference/endpoints/images/update-a-batch-of-images"
+              ]
+            },
+            {
+              "group": "Messages",
+              "icon": "message",
+              "pages": [
+                "api-reference/endpoints/messages/get-a-list-of-messages",
+                "api-reference/endpoints/messages/create-message",
+                "api-reference/endpoints/messages/get-message",
+                "api-reference/endpoints/messages/delete-message",
+                "api-reference/endpoints/messages/update-message",
+                "api-reference/endpoints/messages/create-a-batch-of-messages",
+                "api-reference/endpoints/messages/delete-a-batch-of-messages",
+                "api-reference/endpoints/messages/update-a-batch-of-messages"
+              ]
+            },
+            {
+              "group": "Newsfeed",
+              "icon": "newspaper",
+              "pages": [
+                "api-reference/endpoints/newsfeed/get-a-list-of-activity-log",
+                {
+                  "group": "Likes",
+                  "icon": "heart",
+                  "pages": [
+                    "api-reference/endpoints/newsfeed-likes/get-a-list-of-users",
+                    "api-reference/endpoints/newsfeed-likes/attach-users",
+                    "api-reference/endpoints/newsfeed-likes/detach-users",
+                    "api-reference/endpoints/newsfeed-likes/sync-users"
+                  ]
+                }
+              ]
+            },
+            {
+              "group": "Positions",
+              "icon": "address-card",
+              "pages": [
+                "api-reference/endpoints/positions/get-a-list-of-positions",
+                "api-reference/endpoints/positions/create-position",
+                "api-reference/endpoints/positions/get-position",
+                "api-reference/endpoints/positions/delete-position",
+                "api-reference/endpoints/positions/update-position",
+                "api-reference/endpoints/positions/create-a-batch-of-positions",
+                "api-reference/endpoints/positions/delete-a-batch-of-positions",
+                "api-reference/endpoints/positions/update-a-batch-of-positions"
+              ]
+            },
+            {
+              "group": "Qualifications",
+              "icon": "star",
+              "pages": [
+                "api-reference/endpoints/qualifications/get-a-list-of-qualifications",
+                "api-reference/endpoints/qualifications/create-qualification",
+                "api-reference/endpoints/qualifications/get-qualification",
+                "api-reference/endpoints/qualifications/delete-qualification",
+                "api-reference/endpoints/qualifications/update-qualification",
+                "api-reference/endpoints/qualifications/create-a-batch-of-qualifications",
+                "api-reference/endpoints/qualifications/delete-a-batch-of-qualifications",
+                "api-reference/endpoints/qualifications/update-a-batch-of-qualifications",
+                {
+                  "group": "Image",
+                  "icon": "image",
+                  "pages": [
+                    "api-reference/endpoints/qualifications-image/create-image",
+                    "api-reference/endpoints/qualifications-image/get-image",
+                    "api-reference/endpoints/qualifications-image/delete-image",
+                    "api-reference/endpoints/qualifications-image/update-image"
+                  ]
+                }
+              ]
+            },
+            {
+              "group": "Ranks",
+              "icon": "angles-up",
+              "pages": [
+                "api-reference/endpoints/ranks/get-a-list-of-ranks",
+                "api-reference/endpoints/ranks/create-rank",
+                "api-reference/endpoints/ranks/get-rank",
+                "api-reference/endpoints/ranks/delete-rank",
+                "api-reference/endpoints/ranks/update-rank",
+                "api-reference/endpoints/ranks/create-a-batch-of-ranks",
+                "api-reference/endpoints/ranks/delete-a-batch-of-ranks",
+                "api-reference/endpoints/ranks/update-a-batch-of-ranks",
+                {
+                  "group": "Image",
+                  "icon": "image",
+                  "pages": [
+                    "api-reference/endpoints/ranks-image/create-image",
+                    "api-reference/endpoints/ranks-image/get-image",
+                    "api-reference/endpoints/ranks-image/delete-image",
+                    "api-reference/endpoints/ranks-image/update-image"
+                  ]
+                }
+              ]
+            },
+            {
+              "group": "Records",
+              "icon": "laptop-medical",
+              "pages": [
+                {
+                  "group": "Assignment Records",
+                  "icon": "layer-group",
+                  "pages": [
+                    "api-reference/endpoints/assignment-records/get-a-list-of-records-assignments",
+                    "api-reference/endpoints/assignment-records/create-records-assignment",
+                    "api-reference/endpoints/assignment-records/get-records-assignment",
+                    "api-reference/endpoints/assignment-records/delete-records-assignment",
+                    "api-reference/endpoints/assignment-records/update-records-assignment",
+                    "api-reference/endpoints/assignment-records/create-a-batch-of-records-assignments",
+                    "api-reference/endpoints/assignment-records/delete-a-batch-of-records-assignments",
+                    "api-reference/endpoints/assignment-records/update-a-batch-of-records-assignments"
+                  ]
+                },
+                {
+                  "group": "Award Records",
+                  "icon": "trophy",
+                  "pages": [
+                    "api-reference/endpoints/award-records/get-a-list-of-records-awards",
+                    "api-reference/endpoints/award-records/create-records-award",
+                    "api-reference/endpoints/award-records/get-records-award",
+                    "api-reference/endpoints/award-records/delete-records-award",
+                    "api-reference/endpoints/award-records/update-records-award",
+                    "api-reference/endpoints/award-records/create-a-batch-of-records-awards",
+                    "api-reference/endpoints/award-records/delete-a-batch-of-records-awards",
+                    "api-reference/endpoints/award-records/update-a-batch-of-records-awards"
+                  ]
+                },
+                {
+                  "group": "Combat Records",
+                  "icon": "fire",
+                  "pages": [
+                    "api-reference/endpoints/combat-records/get-a-list-of-records-combat",
+                    "api-reference/endpoints/combat-records/create-records-combat",
+                    "api-reference/endpoints/combat-records/get-records-combat",
+                    "api-reference/endpoints/combat-records/delete-records-combat",
+                    "api-reference/endpoints/combat-records/update-records-combat",
+                    "api-reference/endpoints/combat-records/create-a-batch-of-records-combat",
+                    "api-reference/endpoints/combat-records/delete-a-batch-of-records-combat",
+                    "api-reference/endpoints/combat-records/update-a-batch-of-records-combat"
+                  ]
+                },
+                {
+                  "group": "Qualification Records",
+                  "icon": "star",
+                  "pages": [
+                    "api-reference/endpoints/qualification-records/get-a-list-of-records-qualifications",
+                    "api-reference/endpoints/qualification-records/create-records-qualification",
+                    "api-reference/endpoints/qualification-records/get-records-qualification",
+                    "api-reference/endpoints/qualification-records/delete-records-qualification",
+                    "api-reference/endpoints/qualification-records/update-records-qualification",
+                    "api-reference/endpoints/qualification-records/create-a-batch-of-records-qualifications",
+                    "api-reference/endpoints/qualification-records/delete-a-batch-of-records-qualifications",
+                    "api-reference/endpoints/qualification-records/update-a-batch-of-records-qualifications"
+                  ]
+                },
+                {
+                  "group": "Rank Records",
+                  "icon": "angles-up",
+                  "pages": [
+                    "api-reference/endpoints/rank-records/get-a-list-of-records-ranks",
+                    "api-reference/endpoints/rank-records/create-records-rank",
+                    "api-reference/endpoints/rank-records/get-records-rank",
+                    "api-reference/endpoints/rank-records/delete-records-rank",
+                    "api-reference/endpoints/rank-records/update-records-rank",
+                    "api-reference/endpoints/rank-records/create-a-batch-of-records-ranks",
+                    "api-reference/endpoints/rank-records/delete-a-batch-of-records-ranks",
+                    "api-reference/endpoints/rank-records/update-a-batch-of-records-ranks"
+                  ]
+                },
+                {
+                  "group": "Service Records",
+                  "icon": "paste",
+                  "pages": [
+                    "api-reference/endpoints/service-records/get-a-list-of-records-service",
+                    "api-reference/endpoints/service-records/create-records-service",
+                    "api-reference/endpoints/service-records/get-records-service",
+                    "api-reference/endpoints/service-records/delete-records-service",
+                    "api-reference/endpoints/service-records/update-records-service",
+                    "api-reference/endpoints/service-records/create-a-batch-of-records-service",
+                    "api-reference/endpoints/service-records/delete-a-batch-of-records-service",
+                    "api-reference/endpoints/service-records/update-a-batch-of-records-service"
+                  ]
+                }
+              ]
+            },
+            {
+              "group": "Roster",
+              "icon": "bars",
+              "pages": [
+                "api-reference/endpoints/roster/get-a-list-of-groups",
+                "api-reference/endpoints/roster/get-group"
+              ]
+            },
+            {
+              "group": "Settings",
+              "icon": "gear",
+              "pages": [
+                "api-reference/endpoints/settings/get-a-list-of-settings"
+              ]
+            },
+            {
+              "group": "Specialties",
+              "icon": "briefcase",
+              "pages": [
+                "api-reference/endpoints/specialties/get-a-list-of-specialties",
+                "api-reference/endpoints/specialties/create-specialty",
+                "api-reference/endpoints/specialties/get-specialty",
+                "api-reference/endpoints/specialties/delete-specialty",
+                "api-reference/endpoints/specialties/update-specialty",
+                "api-reference/endpoints/specialties/create-a-batch-of-specialties",
+                "api-reference/endpoints/specialties/delete-a-batch-of-specialties",
+                "api-reference/endpoints/specialties/update-a-batch-of-specialties"
+              ]
+            },
+            {
+              "group": "Statuses",
+              "icon": "scale-balanced",
+              "pages": [
+                "api-reference/endpoints/statuses/get-status",
+                "api-reference/endpoints/statuses/delete-status",
+                "api-reference/endpoints/statuses/update-status",
+                "api-reference/endpoints/statuses/create-a-batch-of-statuses",
+                "api-reference/endpoints/statuses/delete-a-batch-of-statuses",
+                "api-reference/endpoints/statuses/update-a-batch-of-statuses"
+              ]
+            },
+            {
+              "group": "Submissions",
+              "icon": "folder-open",
+              "pages": [
+                "api-reference/endpoints/submissions/get-a-list-of-submissions",
+                "api-reference/endpoints/submissions/create-submission",
+                "api-reference/endpoints/submissions/get-submission",
+                "api-reference/endpoints/submissions/delete-submission",
+                "api-reference/endpoints/submissions/update-submission",
+                "api-reference/endpoints/submissions/create-a-batch-of-submissions",
+                "api-reference/endpoints/submissions/delete-a-batch-of-submissions",
+                "api-reference/endpoints/submissions/update-a-batch-of-submissions",
+                {
+                  "group": "Statuses",
+                  "icon": "scale-balanced",
+                  "pages": [
+                    "api-reference/endpoints/submissions-statuses/get-a-list-of-statuses",
+                    "api-reference/endpoints/submissions-statuses/create-status",
+                    "api-reference/endpoints/submissions-statuses/get-status",
+                    "api-reference/endpoints/submissions-statuses/delete-status",
+                    "api-reference/endpoints/submissions-statuses/update-status",
+                    "api-reference/endpoints/submissions-statuses/create-a-batch-of-statuses",
+                    "api-reference/endpoints/submissions-statuses/delete-a-batch-of-statuses",
+                    "api-reference/endpoints/submissions-statuses/update-a-batch-of-statuses",
+                    "api-reference/endpoints/submissions-statuses/attach-statuses",
+                    "api-reference/endpoints/submissions-statuses/detach-statuses",
+                    "api-reference/endpoints/submissions-statuses/sync-statuses",
+                    "api-reference/endpoints/submissions-statuses/toggle-statuses",
+                    "api-reference/endpoints/submissions-statuses/update-pivot"
+                  ]
+                }
+              ]
+            },
+            {
+              "group": "Tasks",
+              "icon": "square-check",
+              "pages": [
+                "api-reference/endpoints/tasks/get-a-list-of-tasks",
+                "api-reference/endpoints/tasks/create-task",
+                "api-reference/endpoints/tasks/get-task",
+                "api-reference/endpoints/tasks/delete-task",
+                "api-reference/endpoints/tasks/update-task",
+                "api-reference/endpoints/tasks/create-a-batch-of-tasks",
+                "api-reference/endpoints/tasks/delete-a-batch-of-tasks",
+                "api-reference/endpoints/tasks/update-a-batch-of-tasks"
+              ]
+            },
+            {
+              "group": "Units",
+              "icon": "house",
+              "pages": [
+                "api-reference/endpoints/units/get-a-list-of-units",
+                "api-reference/endpoints/units/create-unit",
+                "api-reference/endpoints/units/get-unit",
+                "api-reference/endpoints/units/delete-unit",
+                "api-reference/endpoints/units/update-unit",
+                "api-reference/endpoints/units/create-a-batch-of-units",
+                "api-reference/endpoints/units/delete-a-batch-of-units",
+                "api-reference/endpoints/units/update-a-batch-of-units",
+                {
+                  "group": "Image",
+                  "icon": "image",
+                  "pages": [
+                    "api-reference/endpoints/units-image/create-image",
+                    "api-reference/endpoints/units-image/get-image",
+                    "api-reference/endpoints/units-image/delete-image",
+                    "api-reference/endpoints/units-image/update-image"
+                  ]
+                }
+              ]
+            },
+            {
+              "group": "Users",
+              "icon": "users",
+              "pages": [
+                "api-reference/endpoints/users/get-a-list-of-users",
+                "api-reference/endpoints/users/create-user",
+                "api-reference/endpoints/users/get-user",
+                "api-reference/endpoints/users/delete-user",
+                "api-reference/endpoints/users/update-user",
+                "api-reference/endpoints/users/create-a-batch-of-users",
+                "api-reference/endpoints/users/delete-a-batch-of-users",
+                "api-reference/endpoints/users/update-a-batch-of-users",
+                {
+                  "group": "Attachments",
+                  "icon": "paperclip",
+                  "pages": [
+                    "api-reference/endpoints/users-attachments/get-a-list-of-attachments",
+                    "api-reference/endpoints/users-attachments/create-attachment",
+                    "api-reference/endpoints/users-attachments/get-attachment",
+                    "api-reference/endpoints/users-attachments/delete-attachment",
+                    "api-reference/endpoints/users-attachments/update-attachment",
+                    "api-reference/endpoints/users-attachments/create-a-batch-of-attachments",
+                    "api-reference/endpoints/users-attachments/delete-a-batch-of-attachments",
+                    "api-reference/endpoints/users-attachments/update-a-batch-of-attachments",
+                    "api-reference/endpoints/users-attachments/attach-attachments",
+                    "api-reference/endpoints/users-attachments/detach-attachments",
+                    "api-reference/endpoints/users-attachments/sync-attachments",
+                    "api-reference/endpoints/users-attachments/toggle-attachments",
+                    "api-reference/endpoints/users-attachments/update-pivot"
+                  ]
+                },
+                {
+                "group": "Fields",
+                  "icon": "pencil",
+                "pages": [
+                  "api-reference/endpoints/users-fields/get-a-list-of-fields",
+                  "api-reference/endpoints/users-fields/create-field",
+                  "api-reference/endpoints/users-fields/get-field",
+                  "api-reference/endpoints/users-fields/delete-field",
+                  "api-reference/endpoints/users-fields/update-field",
+                  "api-reference/endpoints/users-fields/create-a-batch-of-fields",
+                  "api-reference/endpoints/users-fields/delete-a-batch-of-fields",
+                  "api-reference/endpoints/users-fields/update-a-batch-of-fields",
+                  "api-reference/endpoints/users-fields/attach-fields",
+                  "api-reference/endpoints/users-fields/detach-fields",
+                  "api-reference/endpoints/users-fields/sync-fields",
+                  "api-reference/endpoints/users-fields/toggle-fields",
+                  "api-reference/endpoints/users-fields/update-pivot"
+                ]
+                },
+                {
+                  "group": "Position",
+                  "icon": "address-card",
+                  "pages": [
+                    "api-reference/endpoints/users-position/get-position",
+                    "api-reference/endpoints/users-position/delete-position",
+                    "api-reference/endpoints/users-position/update-position",
+                    "api-reference/endpoints/users-position/delete-a-batch-of-positions",
+                    "api-reference/endpoints/users-position/update-a-batch-of-positions"
+                  ]
+                },
+                {
+                  "group": "Rank",
+                  "icon": "angles-up",
+                  "pages": [
+                    "api-reference/endpoints/users-rank/get-rank",
+                    "api-reference/endpoints/users-rank/delete-rank",
+                    "api-reference/endpoints/users-rank/update-rank",
+                    "api-reference/endpoints/users-rank/delete-a-batch-of-ranks",
+                    "api-reference/endpoints/users-rank/update-a-batch-of-ranks"
+                  ]
+                },
+                {
+                  "group": "Specialty",
+                  "icon": "briefcase",
+                  "pages": [
+                    "api-reference/endpoints/users-specialty/get-specialty",
+                    "api-reference/endpoints/users-specialty/delete-specialty",
+                    "api-reference/endpoints/users-specialty/update-specialty",
+                    "api-reference/endpoints/users-specialty/delete-a-batch-of-specialties",
+                    "api-reference/endpoints/users-specialty/update-a-batch-of-specialties"
+                  ]
+                },
+                {
+                  "group": "Status",
+                  "icon": "scale-balanced",
+                  "pages": [
+                    "api-reference/endpoints/users-status/get-status",
+                    "api-reference/endpoints/users-status/delete-status",
+                    "api-reference/endpoints/users-status/update-status",
+                    "api-reference/endpoints/users-status/delete-a-batch-of-statuses",
+                    "api-reference/endpoints/users-status/update-a-batch-of-statuses"
+                  ]
+                },
+                {
+                  "group": "Tasks",
+                  "icon": "square-check",
+                  "pages": [
+                    "api-reference/endpoints/users-tasks/get-a-list-of-tasks",
+                    "api-reference/endpoints/users-tasks/create-task",
+                    "api-reference/endpoints/users-tasks/get-task",
+                    "api-reference/endpoints/users-tasks/delete-task",
+                    "api-reference/endpoints/users-tasks/update-task",
+                    "api-reference/endpoints/users-tasks/create-a-batch-of-tasks",
+                    "api-reference/endpoints/users-tasks/delete-a-batch-of-tasks",
+                    "api-reference/endpoints/users-tasks/update-a-batch-of-tasks",
+                    "api-reference/endpoints/users-tasks/attach-tasks",
+                    "api-reference/endpoints/users-tasks/detach-tasks",
+                    "api-reference/endpoints/users-tasks/sync-tasks",
+                    "api-reference/endpoints/users-tasks/toggle-tasks",
+                    "api-reference/endpoints/users-tasks/update-pivot"
+                  ]
+                },
+                {
+                  "group": "Unit",
+                  "icon": "house",
+                  "pages": [
+                    "api-reference/endpoints/users-unit/get-unit",
+                    "api-reference/endpoints/users-unit/delete-unit",
+                    "api-reference/endpoints/users-unit/update-unit",
+                    "api-reference/endpoints/users-unit/delete-a-batch-of-units",
+                    "api-reference/endpoints/users-unit/update-a-batch-of-units"
+                  ]
+                },
+                {
+                  "group": "Assignment Records",
+                  "icon": "layer-group",
+                  "pages": [
+                    "api-reference/endpoints/users-assignment-records/get-a-list-of-records-assignments",
+                    "api-reference/endpoints/users-assignment-records/create-records-assignment",
+                    "api-reference/endpoints/users-assignment-records/get-records-assignment",
+                    "api-reference/endpoints/users-assignment-records/delete-records-assignment",
+                    "api-reference/endpoints/users-assignment-records/update-records-assignment",
+                    "api-reference/endpoints/users-assignment-records/create-a-batch-of-records-assignments",
+                    "api-reference/endpoints/users-assignment-records/delete-a-batch-of-records-assignments",
+                    "api-reference/endpoints/users-assignment-records/update-a-batch-of-records-assignments",
+                    "api-reference/endpoints/users-assignment-records/associate-records-assignment-with-user",
+                    "api-reference/endpoints/users-assignment-records/dissociate-records-assignment-from-user"
+                  ]
+                },
+                {
+                  "group": "Award Records",
+                  "icon": "trophy",
+                  "pages": [
+                    "api-reference/endpoints/users-award-records/get-a-list-of-records-awards",
+                    "api-reference/endpoints/users-award-records/create-records-award",
+                    "api-reference/endpoints/users-award-records/get-records-award",
+                    "api-reference/endpoints/users-award-records/delete-records-award",
+                    "api-reference/endpoints/users-award-records/update-records-award",
+                    "api-reference/endpoints/users-award-records/create-a-batch-of-records-awards",
+                    "api-reference/endpoints/users-award-records/delete-a-batch-of-records-awards",
+                    "api-reference/endpoints/users-award-records/update-a-batch-of-records-awards",
+                    "api-reference/endpoints/users-award-records/associate-records-award-with-user",
+                    "api-reference/endpoints/users-award-records/dissociate-records-award-from-user"
+                  ]
+                },
+                {
+                  "group": "Combat Records",
+                  "icon": "fire",
+                  "pages": [
+                    "api-reference/endpoints/users-combat-records/get-a-list-of-records-combat",
+                    "api-reference/endpoints/users-combat-records/create-records-combat",
+                    "api-reference/endpoints/users-combat-records/get-records-combat",
+                    "api-reference/endpoints/users-combat-records/delete-records-combat",
+                    "api-reference/endpoints/users-combat-records/update-records-combat",
+                    "api-reference/endpoints/users-combat-records/create-a-batch-of-records-combat",
+                    "api-reference/endpoints/users-combat-records/delete-a-batch-of-records-combat",
+                    "api-reference/endpoints/users-combat-records/update-a-batch-of-records-combat",
+                    "api-reference/endpoints/users-combat-records/associate-records-combat-with-user",
+                    "api-reference/endpoints/users-combat-records/dissociate-records-combat-from-user"
+                  ]
+                },
+                {
+                  "group": "Qualification Records",
+                  "icon": "star",
+                  "pages": [
+                    "api-reference/endpoints/users-qualification-records/get-a-list-of-records-qualifications",
+                    "api-reference/endpoints/users-qualification-records/create-records-qualification",
+                    "api-reference/endpoints/users-qualification-records/get-records-qualification",
+                    "api-reference/endpoints/users-qualification-records/delete-records-qualification",
+                    "api-reference/endpoints/users-qualification-records/update-records-qualification",
+                    "api-reference/endpoints/users-qualification-records/create-a-batch-of-records-qualifications",
+                    "api-reference/endpoints/users-qualification-records/delete-a-batch-of-records-qualifications",
+                    "api-reference/endpoints/users-qualification-records/update-a-batch-of-records-qualifications",
+                    "api-reference/endpoints/users-qualification-records/associate-records-qualification-with-user",
+                    "api-reference/endpoints/users-qualification-records/dissociate-records-qualification-from-user"
+                  ]
+                },
+                {
+                  "group": "Rank Records",
+                  "icon": "angles-up",
+                  "pages": [
+                    "api-reference/endpoints/users-rank-records/get-a-list-of-records-ranks",
+                    "api-reference/endpoints/users-rank-records/create-records-rank",
+                    "api-reference/endpoints/users-rank-records/get-records-rank",
+                    "api-reference/endpoints/users-rank-records/delete-records-rank",
+                    "api-reference/endpoints/users-rank-records/update-records-rank",
+                    "api-reference/endpoints/users-rank-records/create-a-batch-of-records-ranks",
+                    "api-reference/endpoints/users-rank-records/delete-a-batch-of-records-ranks",
+                    "api-reference/endpoints/users-rank-records/update-a-batch-of-records-ranks",
+                    "api-reference/endpoints/users-rank-records/associate-records-rank-with-user",
+                    "api-reference/endpoints/users-rank-records/dissociate-records-rank-from-user"
+                  ]
+                },
+                {
+                  "group": "Service Records",
+                  "icon": "paste",
+                  "pages": [
+                    "api-reference/endpoints/users-service-records/get-a-list-of-records-service",
+                    "api-reference/endpoints/users-service-records/create-records-service",
+                    "api-reference/endpoints/users-service-records/get-records-service",
+                    "api-reference/endpoints/users-service-records/delete-records-service",
+                    "api-reference/endpoints/users-service-records/update-records-service",
+                    "api-reference/endpoints/users-service-records/create-a-batch-of-records-service",
+                    "api-reference/endpoints/users-service-records/delete-a-batch-of-records-service",
+                    "api-reference/endpoints/users-service-records/update-a-batch-of-records-service",
+                    "api-reference/endpoints/users-service-records/associate-records-service-with-user",
+                    "api-reference/endpoints/users-service-records/dissociate-records-service-from-user"
+                  ]
+                },
+                {
+                  "group": "Status Records",
+                  "icon": "scale-balanced",
+                  "pages": [
+                    "api-reference/endpoints/users-status-records/get-a-list-of-statuses",
+                    "api-reference/endpoints/users-status-records/create-status",
+                    "api-reference/endpoints/users-status-records/get-status",
+                    "api-reference/endpoints/users-status-records/delete-status",
+                    "api-reference/endpoints/users-status-records/update-status",
+                    "api-reference/endpoints/users-status-records/create-a-batch-of-statuses",
+                    "api-reference/endpoints/users-status-records/delete-a-batch-of-statuses",
+                    "api-reference/endpoints/users-status-records/update-a-batch-of-statuses",
+                    "api-reference/endpoints/users-status-records/attach-statuses",
+                    "api-reference/endpoints/users-status-records/detach-statuses",
+                    "api-reference/endpoints/users-status-records/sync-statuses",
+                    "api-reference/endpoints/users-status-records/toggle-statuses",
+                    "api-reference/endpoints/users-status-records/update-pivot"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
