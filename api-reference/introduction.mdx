@@ -6,14 +6,13 @@ description: 'Learn how to work with the powerful PERSCOM API.'
 ## Getting Started
 
 <Note>
-  Using the PERSCOM API requires a `Pro` subscription. Reach out to support if you need assistance determine if your account supports the
-  PERSCOM API.
+  Using the PERSCOM API requires a `Pro` subscription. Reach out to support if you need assistance determining if your account supports the PERSCOM API.
 </Note>
 
 The PERSCOM.io API is the backbone that allows PERSCOM.io to function and deliver the services you've come to enjoy. The API also allows you
 to integrate your PERSCOM.io data with third-party services and applications.
 
-<Card title='PERSCOM API OpenAPI Schema' icon='code' href='https://api.perscom.io/spec.json'>
+<Card title="PERSCOM API OpenAPI Schema" icon="code" href="https://api.perscom.io/spec.json">
   View the OpenAPI specification file.
 </Card>
 
@@ -49,52 +48,50 @@ receiving from the API is stale, you can initiate a cache purge from the API sec
 Below are examples of requests to the PERSCOM API using different software options.
 
 <CodeGroup>
+  ```php PHP
+  use GuzzleHttp\Client;
 
-```php PHP
-use GuzzleHttp\Client;
+  $client = new Client();
 
-$client = new Client();
+  $headers = [
+      'Accept' => 'application/json',
+      'Authorization' => "Bearer ${apiKey}"
+  ];
 
-$headers = [
-    'Accept' => 'application/json',
-    'Authorization' => "Bearer ${apiKey}"
-];
+  $response = $client->request('GET', 'https://api.perscom.io/v2/users', [
+      'headers' => $headers
+  ]);
 
-$response = $client->request('GET', 'https://api.perscom.io/v2/users', [
-    'headers' => $headers
-]);
+  echo 'Status code: ' . $response->getStatusCode();
+  ```
 
-echo 'Status code: ' . $response->getStatusCode();
-```
+  ```js Javascript
+  fetch('https://api.perscom.io/v2/users', {
+    method: 'GET',
+    headers: {
+      Authorization: 'Bearer apiKey',
+      Accept: 'application/json'
+    }
+  })
+    .then((response) => {
+      console.log('Status code:', response.status)
+    })
+    .catch((error) => {
+      console.error('Error:', error)
+    })
+  ```
 
-```js Javascript
-fetch('https://api.perscom.io/v2/users', {
-  method: 'GET',
-  headers: {
-    Authorization: 'Bearer apiKey',
-    Accept: 'application/json'
+  ```python Python
+  import requests
+
+  url = 'https://api.perscom.io/v2/users'
+  headers = {
+      'Authorization': 'Bearer apiKey',
+      'Accept': 'application/json',
   }
-})
-  .then((response) => {
-    console.log('Status code:', response.status)
-  })
-  .catch((error) => {
-    console.error('Error:', error)
-  })
-```
+  response = requests.get(url, headers=headers)
 
-```python Python
-import requests
-
-url = 'https://api.perscom.io/v2/users'
-headers = {
-    'Authorization': 'Bearer apiKey',
-    'Accept': 'application/json',
-}
-response = requests.get(url, headers=headers)
-
-print(f'Status code: {response.status_code}')
-print(f'Response body: {response.text}')
-```
-
+  print(f'Status code: {response.status_code}')
+  print(f'Response body: {response.text}')
+  ```
 </CodeGroup>
