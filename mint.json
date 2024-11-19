@@ -325,6 +325,8 @@
               "group": "Events",
               "icon": "calendar-days",
               "pages": [
+                "api-reference/endpoints/events/get-a-list-of-events",
+                "api-reference/endpoints/events/create-event",
                 "api-reference/endpoints/events/get-event",
                 "api-reference/endpoints/events/delete-event",
                 "api-reference/endpoints/events/update-event",
@@ -634,6 +636,8 @@
               "group": "Statuses",
               "icon": "scale-balanced",
               "pages": [
+                "api-reference/endpoints/statuses/get-a-list-of-statuses",
+                "api-reference/endpoints/statuses/create-status",
                 "api-reference/endpoints/statuses/get-status",
                 "api-reference/endpoints/statuses/delete-status",
                 "api-reference/endpoints/statuses/update-status",

@@ -992,7 +992,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Create records assignment",
+        "summary": "Create assignment record",
         "tags": [
           "Assignment Records"
         ]
@@ -1084,7 +1084,7 @@
             "description": "Unauthorized"
           }
         },
-        "summary": "Get a list of records assignments",
+        "summary": "Get a list of assignment records",
         "tags": [
           "Assignment Records"
         ]
@@ -1180,7 +1180,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Get records assignment",
+        "summary": "Get assignment record",
         "tags": [
           "Assignment Records"
         ]
@@ -1270,7 +1270,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Update records assignment",
+        "summary": "Update assignment record",
         "tags": [
           "Assignment Records"
         ]
@@ -1356,7 +1356,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Delete records assignment",
+        "summary": "Delete assignment record",
         "tags": [
           "Assignment Records"
         ]
@@ -1451,7 +1451,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Create a batch of records assignments",
+        "summary": "Create a batch of assignment records",
         "tags": [
           "Assignment Records"
         ]
@@ -1546,7 +1546,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Update a batch of records assignments",
+        "summary": "Update a batch of assignment records",
         "tags": [
           "Assignment Records"
         ]
@@ -1648,7 +1648,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Delete a batch of records assignments",
+        "summary": "Delete a batch of assignment records",
         "tags": [
           "Assignment Records"
         ]
@@ -3305,7 +3305,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Create records award",
+        "summary": "Create award record",
         "tags": [
           "Award Records"
         ]
@@ -3394,7 +3394,7 @@
             "description": "Unauthorized"
           }
         },
-        "summary": "Get a list of records awards",
+        "summary": "Get a list of award records",
         "tags": [
           "Award Records"
         ]
@@ -3487,7 +3487,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Get records award",
+        "summary": "Get award record",
         "tags": [
           "Award Records"
         ]
@@ -3574,7 +3574,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Update records award",
+        "summary": "Update award record",
         "tags": [
           "Award Records"
         ]
@@ -3657,7 +3657,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Delete records award",
+        "summary": "Delete award record",
         "tags": [
           "Award Records"
         ]
@@ -3749,7 +3749,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Create a batch of records awards",
+        "summary": "Create a batch of award records",
         "tags": [
           "Award Records"
         ]
@@ -3841,7 +3841,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Update a batch of records awards",
+        "summary": "Update a batch of award records",
         "tags": [
           "Award Records"
         ]
@@ -3940,7 +3940,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Delete a batch of records awards",
+        "summary": "Delete a batch of award records",
         "tags": [
           "Award Records"
         ]
@@ -11325,7 +11325,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Create records combat",
+        "summary": "Create combat record",
         "tags": [
           "Combat Records"
         ]
@@ -11412,7 +11412,7 @@
             "description": "Unauthorized"
           }
         },
-        "summary": "Get a list of records combat",
+        "summary": "Get a list of combat records",
         "tags": [
           "Combat Records"
         ]
@@ -11503,7 +11503,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Get records combat",
+        "summary": "Get combat record",
         "tags": [
           "Combat Records"
         ]
@@ -11588,7 +11588,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Update records combat",
+        "summary": "Update combat record",
         "tags": [
           "Combat Records"
         ]
@@ -11669,7 +11669,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Delete records combat",
+        "summary": "Delete combat record",
         "tags": [
           "Combat Records"
         ]
@@ -11759,7 +11759,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Create a batch of records combat",
+        "summary": "Create a batch of combat records",
         "tags": [
           "Combat Records"
         ]
@@ -11849,7 +11849,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Update a batch of records combat",
+        "summary": "Update a batch of combat records",
         "tags": [
           "Combat Records"
         ]
@@ -11946,7 +11946,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Delete a batch of records combat",
+        "summary": "Delete a batch of combat records",
         "tags": [
           "Combat Records"
         ]
@@ -13239,6 +13239,155 @@
         "summary": "Delete a batch of documents",
         "tags": [
           "Documents"
+        ]
+      }
+    },
+    "/{version}/events": {
+      "post": {
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "v1",
+                "v2"
+              ],
+              "default": "v2"
+            },
+            "name": "version",
+            "in": "path",
+            "required": true,
+            "description": "The API version to use."
+          },
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "image"
+              ]
+            },
+            "name": "include",
+            "in": "query"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Event"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/EventResource"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthenticated"
+          },
+          "403": {
+            "description": "Unauthorized"
+          },
+          "422": {
+            "description": "Validation error"
+          }
+        },
+        "summary": "Create event",
+        "tags": [
+          "Events"
+        ]
+      },
+      "get": {
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "v1",
+                "v2"
+              ],
+              "default": "v2"
+            },
+            "name": "version",
+            "in": "path",
+            "required": true,
+            "description": "The API version to use."
+          },
+          {
+            "schema": {
+              "type": "boolean"
+            },
+            "name": "with_trashed",
+            "description": "Include deleted resources.",
+            "in": "query"
+          },
+          {
+            "schema": {
+              "type": "boolean"
+            },
+            "name": "only_trashed",
+            "description": "Only return deleted resources.",
+            "in": "query"
+          },
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "image"
+              ]
+            },
+            "name": "include",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/EventResource"
+                      }
+                    },
+                    "links": {
+                      "$ref": "#/components/schemas/ResourceLinks"
+                    },
+                    "meta": {
+                      "$ref": "#/components/schemas/ResourceMeta"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthenticated"
+          },
+          "403": {
+            "description": "Unauthorized"
+          }
+        },
+        "summary": "Get a list of events",
+        "tags": [
+          "Events"
         ]
       }
     },
@@ -20726,7 +20875,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Create records qualification",
+        "summary": "Create qualification record",
         "tags": [
           "Qualification Records"
         ]
@@ -20815,7 +20964,7 @@
             "description": "Unauthorized"
           }
         },
-        "summary": "Get a list of records qualifications",
+        "summary": "Get a list of qualification records",
         "tags": [
           "Qualification Records"
         ]
@@ -20908,7 +21057,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Get records qualification",
+        "summary": "Get qualification record",
         "tags": [
           "Qualification Records"
         ]
@@ -20995,7 +21144,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Update records qualification",
+        "summary": "Update qualification record",
         "tags": [
           "Qualification Records"
         ]
@@ -21078,7 +21227,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Delete records qualification",
+        "summary": "Delete qualification record",
         "tags": [
           "Qualification Records"
         ]
@@ -21170,7 +21319,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Create a batch of records qualifications",
+        "summary": "Create a batch of qualification records",
         "tags": [
           "Qualification Records"
         ]
@@ -21262,7 +21411,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Update a batch of records qualifications",
+        "summary": "Update a batch of qualification records",
         "tags": [
           "Qualification Records"
         ]
@@ -21361,7 +21510,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Delete a batch of records qualifications",
+        "summary": "Delete a batch of qualification records",
         "tags": [
           "Qualification Records"
         ]
@@ -22377,7 +22526,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Create records rank",
+        "summary": "Create rank record",
         "tags": [
           "Rank Records"
         ]
@@ -22466,7 +22615,7 @@
             "description": "Unauthorized"
           }
         },
-        "summary": "Get a list of records ranks",
+        "summary": "Get a list of rank records",
         "tags": [
           "Rank Records"
         ]
@@ -22559,7 +22708,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Get records rank",
+        "summary": "Get rank record",
         "tags": [
           "Rank Records"
         ]
@@ -22646,7 +22795,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Update records rank",
+        "summary": "Update rank record",
         "tags": [
           "Rank Records"
         ]
@@ -22729,7 +22878,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Delete records rank",
+        "summary": "Delete rank record",
         "tags": [
           "Rank Records"
         ]
@@ -22821,7 +22970,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Create a batch of records ranks",
+        "summary": "Create a batch of rank records",
         "tags": [
           "Rank Records"
         ]
@@ -22913,7 +23062,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Update a batch of records ranks",
+        "summary": "Update a batch of rank records",
         "tags": [
           "Rank Records"
         ]
@@ -23012,7 +23161,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Delete a batch of records ranks",
+        "summary": "Delete a batch of rank records",
         "tags": [
           "Rank Records"
         ]
@@ -23273,7 +23422,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Create records service",
+        "summary": "Create service record",
         "tags": [
           "Service Records"
         ]
@@ -23360,7 +23509,7 @@
             "description": "Unauthorized"
           }
         },
-        "summary": "Get a list of records service",
+        "summary": "Get a list of service records",
         "tags": [
           "Service Records"
         ]
@@ -23451,7 +23600,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Get records service",
+        "summary": "Get service record",
         "tags": [
           "Service Records"
         ]
@@ -23536,7 +23685,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Update records service",
+        "summary": "Update service record",
         "tags": [
           "Service Records"
         ]
@@ -23617,7 +23766,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Delete records service",
+        "summary": "Delete service record",
         "tags": [
           "Service Records"
         ]
@@ -23707,7 +23856,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Create a batch of records service",
+        "summary": "Create a batch of service records",
         "tags": [
           "Service Records"
         ]
@@ -23797,7 +23946,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Update a batch of records service",
+        "summary": "Update a batch of service records",
         "tags": [
           "Service Records"
         ]
@@ -23894,7 +24043,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Delete a batch of records service",
+        "summary": "Delete a batch of service records",
         "tags": [
           "Service Records"
         ]
@@ -24610,6 +24759,135 @@
         "summary": "Delete a batch of specialties",
         "tags": [
           "Specialties"
+        ]
+      }
+    },
+    "/{version}/statuses": {
+      "post": {
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "v1",
+                "v2"
+              ],
+              "default": "v2"
+            },
+            "name": "version",
+            "in": "path",
+            "required": true,
+            "description": "The API version to use."
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Status"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/StatusResource"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthenticated"
+          },
+          "403": {
+            "description": "Unauthorized"
+          },
+          "422": {
+            "description": "Validation error"
+          }
+        },
+        "summary": "Create status",
+        "tags": [
+          "Statuses"
+        ]
+      },
+      "get": {
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "v1",
+                "v2"
+              ],
+              "default": "v2"
+            },
+            "name": "version",
+            "in": "path",
+            "required": true,
+            "description": "The API version to use."
+          },
+          {
+            "schema": {
+              "type": "boolean"
+            },
+            "name": "with_trashed",
+            "description": "Include deleted resources.",
+            "in": "query"
+          },
+          {
+            "schema": {
+              "type": "boolean"
+            },
+            "name": "only_trashed",
+            "description": "Only return deleted resources.",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/StatusResource"
+                      }
+                    },
+                    "links": {
+                      "$ref": "#/components/schemas/ResourceLinks"
+                    },
+                    "meta": {
+                      "$ref": "#/components/schemas/ResourceMeta"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthenticated"
+          },
+          "403": {
+            "description": "Unauthorized"
+          }
+        },
+        "summary": "Get a list of statuses",
+        "tags": [
+          "Statuses"
         ]
       }
     },
@@ -29553,7 +29831,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Create records assignment",
+        "summary": "Create assignment record",
         "tags": [
           "Users Assignment Records"
         ]
@@ -29651,7 +29929,7 @@
             "description": "Unauthorized"
           }
         },
-        "summary": "Get a list of records assignments",
+        "summary": "Get a list of assignment records",
         "tags": [
           "Users Assignment Records"
         ]
@@ -29753,7 +30031,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Get records assignment",
+        "summary": "Get assignment record",
         "tags": [
           "Users Assignment Records"
         ]
@@ -29849,7 +30127,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Update records assignment",
+        "summary": "Update assignment record",
         "tags": [
           "Users Assignment Records"
         ]
@@ -29941,7 +30219,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Delete records assignment",
+        "summary": "Delete assignment record",
         "tags": [
           "Users Assignment Records"
         ]
@@ -30042,7 +30320,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Create a batch of records assignments",
+        "summary": "Create a batch of assignment records",
         "tags": [
           "Users Assignment Records"
         ]
@@ -30143,7 +30421,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Update a batch of records assignments",
+        "summary": "Update a batch of assignment records",
         "tags": [
           "Users Assignment Records"
         ]
@@ -30251,7 +30529,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Delete a batch of records assignments",
+        "summary": "Delete a batch of assignment records",
         "tags": [
           "Users Assignment Records"
         ]
@@ -30332,7 +30610,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Associate records assignment with user",
+        "summary": "Associate assignment record with user",
         "tags": [
           "Users Assignment Records"
         ]
@@ -30421,7 +30699,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Dissociate records assignment from user",
+        "summary": "Dissociate assignment record from user",
         "tags": [
           "Users Assignment Records"
         ]
@@ -30505,7 +30783,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Create records award",
+        "summary": "Create award record",
         "tags": [
           "Users Award Records"
         ]
@@ -30600,7 +30878,7 @@
             "description": "Unauthorized"
           }
         },
-        "summary": "Get a list of records awards",
+        "summary": "Get a list of award records",
         "tags": [
           "Users Award Records"
         ]
@@ -30699,7 +30977,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Get records award",
+        "summary": "Get award record",
         "tags": [
           "Users Award Records"
         ]
@@ -30792,7 +31070,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Update records award",
+        "summary": "Update award record",
         "tags": [
           "Users Award Records"
         ]
@@ -30881,7 +31159,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Delete records award",
+        "summary": "Delete award record",
         "tags": [
           "Users Award Records"
         ]
@@ -30979,7 +31257,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Create a batch of records awards",
+        "summary": "Create a batch of award records",
         "tags": [
           "Users Award Records"
         ]
@@ -31077,7 +31355,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Update a batch of records awards",
+        "summary": "Update a batch of award records",
         "tags": [
           "Users Award Records"
         ]
@@ -31182,7 +31460,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Delete a batch of records awards",
+        "summary": "Delete a batch of award records",
         "tags": [
           "Users Award Records"
         ]
@@ -31260,7 +31538,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Associate records award with user",
+        "summary": "Associate award record with user",
         "tags": [
           "Users Award Records"
         ]
@@ -31346,7 +31624,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Dissociate records award from user",
+        "summary": "Dissociate award record from user",
         "tags": [
           "Users Award Records"
         ]
@@ -31428,7 +31706,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Create records combat",
+        "summary": "Create combat record",
         "tags": [
           "Users Combat Records"
         ]
@@ -31521,7 +31799,7 @@
             "description": "Unauthorized"
           }
         },
-        "summary": "Get a list of records combat",
+        "summary": "Get a list of combat records",
         "tags": [
           "Users Combat Records"
         ]
@@ -31618,7 +31896,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Get records combat",
+        "summary": "Get combat record",
         "tags": [
           "Users Combat Records"
         ]
@@ -31709,7 +31987,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Update records combat",
+        "summary": "Update combat record",
         "tags": [
           "Users Combat Records"
         ]
@@ -31796,7 +32074,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Delete records combat",
+        "summary": "Delete combat record",
         "tags": [
           "Users Combat Records"
         ]
@@ -31892,7 +32170,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Create a batch of records combat",
+        "summary": "Create a batch of combat records",
         "tags": [
           "Users Combat Records"
         ]
@@ -31988,7 +32266,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Update a batch of records combat",
+        "summary": "Update a batch of combat records",
         "tags": [
           "Users Combat Records"
         ]
@@ -32091,7 +32369,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Delete a batch of records combat",
+        "summary": "Delete a batch of combat records",
         "tags": [
           "Users Combat Records"
         ]
@@ -32167,7 +32445,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Associate records combat with user",
+        "summary": "Associate combat record with user",
         "tags": [
           "Users Combat Records"
         ]
@@ -32251,7 +32529,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Dissociate records combat from user",
+        "summary": "Dissociate combat record from user",
         "tags": [
           "Users Combat Records"
         ]
@@ -32335,7 +32613,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Create records qualification",
+        "summary": "Create qualification record",
         "tags": [
           "Users Qualification Records"
         ]
@@ -32430,7 +32708,7 @@
             "description": "Unauthorized"
           }
         },
-        "summary": "Get a list of records qualifications",
+        "summary": "Get a list of qualification records",
         "tags": [
           "Users Qualification Records"
         ]
@@ -32529,7 +32807,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Get records qualification",
+        "summary": "Get qualification record",
         "tags": [
           "Users Qualification Records"
         ]
@@ -32622,7 +32900,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Update records qualification",
+        "summary": "Update qualification record",
         "tags": [
           "Users Qualification Records"
         ]
@@ -32711,7 +32989,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Delete records qualification",
+        "summary": "Delete qualification record",
         "tags": [
           "Users Qualification Records"
         ]
@@ -32809,7 +33087,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Create a batch of records qualifications",
+        "summary": "Create a batch of qualification records",
         "tags": [
           "Users Qualification Records"
         ]
@@ -32907,7 +33185,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Update a batch of records qualifications",
+        "summary": "Update a batch of qualification records",
         "tags": [
           "Users Qualification Records"
         ]
@@ -33012,7 +33290,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Delete a batch of records qualifications",
+        "summary": "Delete a batch of qualification records",
         "tags": [
           "Users Qualification Records"
         ]
@@ -33090,7 +33368,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Associate records qualification with user",
+        "summary": "Associate qualification record with user",
         "tags": [
           "Users Qualification Records"
         ]
@@ -33176,7 +33454,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Dissociate records qualification from user",
+        "summary": "Dissociate qualification record from user",
         "tags": [
           "Users Qualification Records"
         ]
@@ -33260,7 +33538,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Create records rank",
+        "summary": "Create rank record",
         "tags": [
           "Users Rank Records"
         ]
@@ -33355,7 +33633,7 @@
             "description": "Unauthorized"
           }
         },
-        "summary": "Get a list of records ranks",
+        "summary": "Get a list of rank records",
         "tags": [
           "Users Rank Records"
         ]
@@ -33454,7 +33732,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Get records rank",
+        "summary": "Get rank record",
         "tags": [
           "Users Rank Records"
         ]
@@ -33547,7 +33825,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Update records rank",
+        "summary": "Update rank record",
         "tags": [
           "Users Rank Records"
         ]
@@ -33636,7 +33914,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Delete records rank",
+        "summary": "Delete rank record",
         "tags": [
           "Users Rank Records"
         ]
@@ -33734,7 +34012,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Create a batch of records ranks",
+        "summary": "Create a batch of rank records",
         "tags": [
           "Users Rank Records"
         ]
@@ -33832,7 +34110,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Update a batch of records ranks",
+        "summary": "Update a batch of rank records",
         "tags": [
           "Users Rank Records"
         ]
@@ -33937,7 +34215,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Delete a batch of records ranks",
+        "summary": "Delete a batch of rank records",
         "tags": [
           "Users Rank Records"
         ]
@@ -34015,7 +34293,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Associate records rank with user",
+        "summary": "Associate rank record with user",
         "tags": [
           "Users Rank Records"
         ]
@@ -34101,7 +34379,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Dissociate records rank from user",
+        "summary": "Dissociate rank record from user",
         "tags": [
           "Users Rank Records"
         ]
@@ -34183,7 +34461,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Create records service",
+        "summary": "Create service record",
         "tags": [
           "Users Service Records"
         ]
@@ -34276,7 +34554,7 @@
             "description": "Unauthorized"
           }
         },
-        "summary": "Get a list of records service",
+        "summary": "Get a list of service records",
         "tags": [
           "Users Service Records"
         ]
@@ -34373,7 +34651,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Get records service",
+        "summary": "Get service record",
         "tags": [
           "Users Service Records"
         ]
@@ -34464,7 +34742,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Update records service",
+        "summary": "Update service record",
         "tags": [
           "Users Service Records"
         ]
@@ -34551,7 +34829,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Delete records service",
+        "summary": "Delete service record",
         "tags": [
           "Users Service Records"
         ]
@@ -34647,7 +34925,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Create a batch of records service",
+        "summary": "Create a batch of service records",
         "tags": [
           "Users Service Records"
         ]
@@ -34743,7 +35021,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Update a batch of records service",
+        "summary": "Update a batch of service records",
         "tags": [
           "Users Service Records"
         ]
@@ -34846,7 +35124,7 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Delete a batch of records service",
+        "summary": "Delete a batch of service records",
         "tags": [
           "Users Service Records"
         ]
@@ -34922,7 +35200,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Associate records service with user",
+        "summary": "Associate service record with user",
         "tags": [
           "Users Service Records"
         ]
@@ -35006,7 +35284,7 @@
             "description": "Validation error"
           }
         },
-        "summary": "Dissociate records service from user",
+        "summary": "Dissociate service record from user",
         "tags": [
           "Users Service Records"
         ]
@@ -41634,6 +41912,7 @@
       "User": {
         "title": "User",
         "type": "object",
+        "required": ["name", "email"],
         "properties": {
           "name": {
             "type": "string"
@@ -41643,6 +41922,7 @@
           },
           "email_verified_at": {
             "type": "string",
+            "format": "date-time",
             "nullable": true
           },
           "phone_number": {
@@ -41670,54 +41950,69 @@
             "nullable": true
           },
           "approved": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": true
           },
           "online": {
-            "type": "boolean"
+            "type": "boolean",
+            "readOnly": true
           },
           "notes": {
             "type": "string",
-            "nullable": true
+            "nullable": true,
+            "description": "Supports HTML."
           },
           "notes_updated_at": {
             "type": "string",
+            "format": "date-time",
             "nullable": true
           },
           "profile_photo": {
             "type": "string",
+            "format": "binary",
             "nullable": true
           },
           "profile_photo_url": {
             "type": "string",
-            "nullable": true
+            "nullable": true,
+            "readOnly": true
           },
           "cover_photo": {
             "type": "string",
+            "format": "binary",
             "nullable": true
           },
           "cover_photo_url": {
             "type": "string",
-            "nullable": true
+            "nullable": true,
+            "readOnly": true
           },
           "discord_user_id": {
             "type": "string",
-            "nullable": true
+            "nullable": true,
+            "readOnly": true
           },
           "timezone": {
             "type": "string",
-            "nullable": true
+            "nullable": true,
+            "readOnly": true
           },
           "last_seen_at": {
             "type": "string",
+            "format": "date-time",
             "nullable": true
           },
           "last_assignment_change_date": {
             "type": "string",
-            "nullable": true
+            "format": "date-time",
+            "nullable": true,
+            "readOnly": true
           },
           "last_rank_change_date": {
             "type": "string",
-            "nullable": true
+            "format": "date-time",
+            "nullable": true,
+            "readOnly": true
           }
         }
       },
@@ -41746,24 +42041,30 @@
       "Announcement": {
         "title": "Announcement",
         "type": "object",
+        "required": ["title", "content", "color"],
         "properties": {
           "title": {
             "type": "string"
           },
           "content": {
-            "type": "string"
+            "type": "string",
+            "description": "Supports HTML."
           },
           "color": {
-            "type": "string"
+            "type": "string",
+            "description": "Provided as a 6 digit hex code."
           },
           "global": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": "false"
           },
           "enabled": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": "true"
           },
           "expires_at": {
             "type": "string",
+            "format": "date-time",
             "nullable": true
           }
         }
@@ -41793,10 +42094,10 @@
       "AssignmentRecord": {
         "title": "AssignmentRecord",
         "type": "object",
+        "required": ["user_id"],
         "properties": {
           "user_id": {
-            "type": "integer",
-            "nullable": true
+            "type": "integer"
           },
           "status_id": {
             "type": "integer",
@@ -41824,10 +42125,11 @@
           },
           "type": {
             "type": "string",
-            "nullable": true
+            "enum": ["primary", "secondary"]
           },
           "text": {
             "type": "string",
+            "description": "Supports HTML.",
             "nullable": true
           }
         }
@@ -41857,26 +42159,37 @@
       "Attachment": {
         "title": "Attachment",
         "type": "object",
+        "required": ["name", "file"],
         "properties": {
           "name": {
             "type": "string"
           },
+          "file": {
+            "type": "string",
+            "format": "binary",
+            "description": "The file to be uploaded."
+          },
           "filename": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "model_type": {
             "type": "string",
-            "nullable": true
+            "nullable": true,
+            "readOnly": true
           },
           "model_id": {
             "type": "integer",
-            "nullable": true
+            "nullable": true,
+            "readOnly": true
           },
           "path": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "attachment_url": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           }
         }
       },
@@ -41905,16 +42218,19 @@
       "Award": {
         "title": "Award",
         "type": "object",
+        "required": ["name"],
         "properties": {
           "name": {
             "type": "string"
           },
           "description": {
             "type": "string",
-            "nullable": true
+            "nullable": true,
+            "description": "Supports HTML."
           },
           "order": {
-            "type": "integer"
+            "type": "integer",
+            "description": "Will be auto-calculated if nothing is provided."
           }
         }
       },
@@ -41943,23 +42259,33 @@
       "Image": {
         "title": "Image",
         "type": "object",
+        "required": ["name", "image"],
         "properties": {
           "name": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "description": {
             "type": "string",
-            "nullable": true
+            "nullable": true,
+            "description": "Supports HTML."
+          },
+          "image": {
+            "type": "string",
+            "description": "The file to be uploaded.",
+            "format": "binary",
+            "writeOnly": true
           },
           "filename": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "path": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "image_url": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           }
         }
       },
@@ -41996,14 +42322,13 @@
       "AwardRecord": {
         "title": "AwardRecord",
         "type": "object",
+        "required": ["user_id", "award_id"],
         "properties": {
           "user_id": {
-            "type": "integer",
-            "nullable": true
+            "type": "integer"
           },
           "award_id": {
-            "type": "integer",
-            "nullable": true
+            "type": "integer"
           },
           "document_id": {
             "type": "integer",
@@ -42015,6 +42340,7 @@
           },
           "text": {
             "type": "string",
+            "description": "Supports HTML.",
             "nullable": true
           }
         }
@@ -42044,17 +42370,19 @@
       "Calendar": {
         "title": "Calendar",
         "type": "object",
+        "required": ["name", "color"],
         "properties": {
           "name": {
             "type": "string"
           },
           "description": {
             "type": "string",
-            "nullable": true
+            "nullable": true,
+            "description": "Supports HTML."
           },
           "color": {
             "type": "string",
-            "nullable": true
+            "description": "Provided as a 6 digit hex code."
           }
         }
       },
@@ -42089,7 +42417,8 @@
           },
           "description": {
             "type": "string",
-            "nullable": true
+            "nullable": true,
+            "description": "Supports HTML."
           },
           "resource": {
             "type": "string"
@@ -42121,20 +42450,22 @@
       "Document": {
         "title": "Document",
         "type": "object",
+        "required": ["name", "author_id", "content"],
         "properties": {
           "author_id": {
-            "type": "integer",
-            "nullable": true
+            "type": "integer"
           },
           "name": {
             "type": "string"
           },
           "description": {
             "type": "string",
-            "nullable": true
+            "nullable": true,
+            "description": "Supports HTML."
           },
           "content": {
-            "type": "string"
+            "type": "string",
+            "description": "Supports HTML."
           }
         }
       },
@@ -42163,6 +42494,7 @@
       "Form": {
         "title": "Form",
         "type": "object",
+        "required": ["name", "slug", "is_public"],
         "properties": {
           "name": {
             "type": "string"
@@ -42172,18 +42504,22 @@
           },
           "success_message": {
             "type": "string",
+            "description": "Supports HTML.",
             "nullable": true
           },
           "is_public": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": false
           },
           "description": {
             "type": "string",
-            "nullable": true
+            "nullable": true,
+            "description": "Supports HTML."
           },
           "instructions": {
             "type": "string",
-            "nullable": true
+            "nullable": true,
+            "description": "Supports HTML."
           }
         }
       },
@@ -42216,16 +42552,19 @@
       "Qualification": {
         "title": "Qualification",
         "type": "object",
+        "required": ["name"],
         "properties": {
           "name": {
             "type": "string"
           },
           "description": {
             "type": "string",
-            "nullable": true
+            "nullable": true,
+            "description": "Supports HTML."
           },
           "order": {
-            "type": "integer"
+            "type": "integer",
+            "description": "Will be auto-calculated if nothing is provided."
           }
         }
       },
@@ -42254,13 +42593,15 @@
       "Rank": {
         "title": "Rank",
         "type": "object",
+        "required": ["name"],
         "properties": {
           "name": {
             "type": "string"
           },
           "description": {
             "type": "string",
-            "nullable": true
+            "nullable": true,
+            "description": "Supports HTML."
           },
           "abbreviation": {
             "type": "string",
@@ -42271,7 +42612,8 @@
             "nullable": true
           },
           "order": {
-            "type": "integer"
+            "type": "integer",
+            "description": "Will be auto-calculated if nothing is provided."
           }
         }
       },
@@ -42300,10 +42642,10 @@
       "CombatRecord": {
         "title": "CombatRecord",
         "type": "object",
+        "required": ["user_id", "text"],
         "properties": {
           "user_id": {
-            "type": "integer",
-            "nullable": true
+            "type": "integer"
           },
           "document_id": {
             "type": "integer",
@@ -42314,7 +42656,8 @@
             "nullable": true
           },
           "text": {
-            "type": "string"
+            "type": "string",
+            "description": "Supports HTML."
           }
         }
       },
@@ -42343,10 +42686,10 @@
       "Comment": {
         "title": "Comment",
         "type": "object",
+        "required": ["author_id", "comment"],
         "properties": {
           "author_id": {
-            "type": "integer",
-            "nullable": true
+            "type": "integer"
           },
           "model_type": {
             "type": "string",
@@ -42357,7 +42700,8 @@
             "nullable": true
           },
           "comment": {
-            "type": "string"
+            "type": "string",
+            "description": "Supports HTML."
           }
         }
       },
@@ -42386,20 +42730,22 @@
       "Event": {
         "title": "Event",
         "type": "object",
+        "required": ["name", "calendar_id", "author_id", "starts", "ends", "repeats", "all_day", "registration_enabled", "notifications_enabled"],
         "properties": {
           "name": {
             "type": "string"
           },
           "calendar_id": {
-            "type": "integer",
-            "nullable": true
+            "type": "integer"
           },
           "description": {
             "type": "string",
-            "nullable": true
+            "nullable": true,
+            "description": "Supports HTML."
           },
           "content": {
             "type": "string",
+            "description": "Supports HTML.",
             "nullable": true
           },
           "location": {
@@ -42411,43 +42757,51 @@
             "nullable": true
           },
           "author_id": {
-            "type": "integer",
-            "nullable": true
+            "type": "integer"
           },
           "all_day": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": false
           },
           "starts": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time"
           },
           "ends": {
             "type": "string",
+            "format": "date-time",
             "nullable": true
           },
           "repeats": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": false
           },
           "registration_enabled": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": true
           },
           "registration_deadline": {
             "type": "string",
+            "format": "date-time",
             "nullable": true
           },
           "notifications_enabled": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": true
           },
           "notifications_interval": {
             "type": "array",
             "items": {
-              "type": "string"
+              "type": "string",
+              "enum": ["pt0m", "pt15m", "pt1h", "p1d", "p1w"]
             },
             "nullable": true
           },
           "notifications_channels": {
             "type": "array",
             "items": {
-              "type": "string"
+              "type": "string",
+              "enum": ["broadcast", "database", "discord_private", "discord_public", "mail", "sms"]
             },
             "nullable": true
           }
@@ -42479,6 +42833,7 @@
         "title": "Submission",
         "type": "object",
         "additionalProperties": true,
+        "required": ["form_id", "user_id"],
         "properties": {
           "form_id": {
             "type": "integer"
@@ -42514,23 +42869,28 @@
       "Group": {
         "title": "Group",
         "type": "object",
+        "required": ["name"],
         "properties": {
           "name": {
             "type": "string"
           },
           "description": {
             "type": "string",
-            "nullable": true
+            "nullable": true,
+            "description": "Supports HTML."
           },
           "order": {
-            "type": "integer"
+            "type": "integer",
+            "description": "Will be auto-calculated if nothing is provided."
           },
           "hidden": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": false
           },
           "icon": {
             "type": "string",
-            "nullable": true
+            "nullable": true,
+            "description": "A valid Heroicon."
           }
         }
       },
@@ -42559,31 +42919,39 @@
       "Message": {
         "title": "Message",
         "type": "object",
+        "required": ["message", "channels"],
         "properties": {
           "message": {
-            "type": "string"
+            "type": "string",
+            "description": "Supports HTML."
           },
           "channels": {
             "type": "array",
             "items": {
-              "type": "string"
+              "type": "string",
+              "enum": ["broadcast", "database", "discord_private", "discord_public", "mail", "sms"]
             }
           },
           "recipients": {
             "type": "array",
+            "description": "An array of User IDs. Defaults to everyone if no recipients are provided.",
             "items": {
               "type": "integer"
             }
           },
           "repeats": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": false
           },
           "send_at": {
             "type": "string",
+            "format": "date-time",
+            "description": "Set a future date to send the msssage at.",
             "nullable": true
           },
           "sent_at": {
             "type": "string",
+            "format": "date-time",
             "nullable": true
           }
         }
@@ -42664,11 +43032,13 @@
               },
               "created_at": {
                 "type": "string",
+                "description": "The date the resource was created. Stored in UTC.",
                 "nullable": true,
                 "format": "date-time"
               },
               "updated_at": {
                 "type": "string",
+                "description": "The date the resource was updated. Stored in UTC.",
                 "nullable": true,
                 "format": "date-time"
               }
@@ -42679,16 +43049,19 @@
       "Position": {
         "title": "Position",
         "type": "object",
+        "required": ["name"],
         "properties": {
           "name": {
             "type": "string"
           },
           "description": {
             "type": "string",
-            "nullable": true
+            "nullable": true,
+            "description": "Supports HTML."
           },
           "order": {
-            "type": "integer"
+            "type": "integer",
+            "description": "Will be auto-calculated if nothing is provided."
           }
         }
       },
@@ -42717,14 +43090,13 @@
       "QualificationRecord": {
         "title": "QualificationRecord",
         "type": "object",
+        "required": ["user_id", "qualification_id"],
         "properties": {
           "user_id": {
-            "type": "integer",
-            "nullable": true
+            "type": "integer"
           },
           "qualification_id": {
-            "type": "integer",
-            "nullable": true
+            "type": "integer"
           },
           "document_id": {
             "type": "integer",
@@ -42736,7 +43108,8 @@
           },
           "text": {
             "type": "string",
-            "nullable": true
+            "nullable": true,
+            "description": "Supports HTML."
           }
         }
       },
@@ -42765,14 +43138,13 @@
       "RankRecord": {
         "title": "RankRecord",
         "type": "object",
+        "required": ["user_id", "rank_id", "type"],
         "properties": {
           "user_id": {
-            "type": "integer",
-            "nullable": true
+            "type": "integer"
           },
           "rank_id": {
-            "type": "integer",
-            "nullable": true
+            "type": "integer"
           },
           "document_id": {
             "type": "integer",
@@ -42784,10 +43156,13 @@
           },
           "text": {
             "type": "string",
+            "description": "Supports HTML.",
             "nullable": true
           },
           "type": {
-            "type": "integer"
+            "type": "integer",
+            "description": "0: Promotion, 1: Demotion, 2: Lateral, 3: Transfer",
+            "enum": [0, 1, 2, 3]
           }
         }
       },
@@ -42816,10 +43191,10 @@
       "ServiceRecord": {
         "title": "ServiceRecord",
         "type": "object",
+        "required": ["user_id", "text"],
         "properties": {
           "user_id": {
-            "type": "integer",
-            "nullable": true
+            "type": "integer"
           },
           "document_id": {
             "type": "integer",
@@ -42830,7 +43205,8 @@
             "nullable": true
           },
           "text": {
-            "type": "string"
+            "type": "string",
+            "description": "Supports HTML."
           }
         }
       },
@@ -42904,6 +43280,7 @@
       "Specialty": {
         "title": "Specialty",
         "type": "object",
+        "required": ["name"],
         "properties": {
           "name": {
             "type": "string"
@@ -42914,10 +43291,12 @@
           },
           "description": {
             "type": "string",
-            "nullable": true
+            "nullable": true,
+            "description": "Supports HTML."
           },
           "order": {
-            "type": "integer"
+            "type": "integer",
+            "description": "Will be auto-calculated if nothing is provided."
           }
         }
       },
@@ -42946,16 +43325,18 @@
       "Status": {
         "title": "Status",
         "type": "object",
+        "required": ["name", "color"],
         "properties": {
           "name": {
             "type": "string"
           },
           "color": {
             "type": "string",
-            "nullable": true
+            "description": "Provided as a 6 digit hex code."
           },
           "order": {
-            "type": "integer"
+            "type": "integer",
+            "description": "Will be auto-calculated if nothing is provided."
           }
         }
       },
@@ -42984,16 +43365,19 @@
       "Task": {
         "title": "Task",
         "type": "object",
+        "required": ["title", "description"],
         "properties": {
           "title": {
             "type": "string"
           },
           "description": {
-            "type": "string"
+            "type": "string",
+            "description": "Supports HTML."
           },
           "instructions": {
             "type": "string",
-            "nullable": true
+            "nullable": true,
+            "description": "Supports HTML."
           },
           "form_id": {
             "type": "integer",
@@ -43026,23 +43410,28 @@
       "Unit": {
         "title": "Unit",
         "type": "object",
+        "required": ["name"],
         "properties": {
           "name": {
             "type": "string"
           },
           "description": {
             "type": "string",
-            "nullable": true
+            "nullable": true,
+            "description": "Supports HTML."
           },
           "order": {
-            "type": "integer"
+            "type": "integer",
+            "description": "Will be auto-calculated if nothing is provided."
           },
           "hidden": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": false
           },
           "icon": {
             "type": "string",
-            "nullable": true
+            "nullable": true,
+            "description": "A valid Heroicon."
           }
         }
       },
@@ -43088,7 +43477,8 @@
           },
           "description": {
             "type": "string",
-            "nullable": true
+            "nullable": true,
+            "description": "Supports HTML."
           },
           "placeholder": {
             "type": "string",
@@ -43271,13 +43661,20 @@
         "type": "object",
         "properties": {
           "created_at": {
-            "type": "string"
+            "type": "string",
+            "description": "The date the resource was created. Stored in UTC.",
+            "format": "date-time"
           },
           "updated_at": {
-            "type": "string"
+            "type": "string",
+            "description": "The date the resource was updated. Stored in UTC.",
+            "format": "date-time"
           },
           "deleted_at": {
-            "type": "string"
+            "type": "string",
+            "description": "The date the resource was deleted. Stored in UTC.",
+            "format":  "date-time",
+            "nullable": true
           }
         }
       },
