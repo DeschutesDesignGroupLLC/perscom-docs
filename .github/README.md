@@ -4,9 +4,7 @@
 
 # The Official PERSCOM Documentation
 
-A VitePress deployed static website used for displaying the official PERSCOM documentation.
-
-[![Deployment](https://github.com/DeschutesDesignGroupLLC/perscom-docs/actions/workflows/main.yml/badge.svg)](https://github.com/DeschutesDesignGroupLLC/perscom-docs/actions/workflows/main.yml)
+A Mintlify website used for displaying the official PERSCOM documentation.
 
 [Documentation](https://docs.perscom.io)
 

@@ -1,26 +1,8 @@
 {
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs",
-    "documate:upload": "documate upload",
-    "format": "prettier 'docs/**/*.{js,md}' --write --prose-wrap always --config ./.prettierrc"
+    "format": "prettier './**/*.{js}' --write --prose-wrap always --config ./.prettierrc"
   },
   "devDependencies": {
-    "@documate/documate": "^0.2.1",
-    "@tailwindcss/typography": "^0.5.9",
-    "autoprefixer": "^10.4.14",
-    "prettier": "^3.1.0",
-    "tailwindcss": "^3.4.1",
-    "vitepress": "^1.3.4"
-  },
-  "postcss": {
-    "plugins": {
-      "tailwindcss": {},
-      "autoprefixer": {}
-    }
-  },
-  "dependencies": {
-    "@documate/vue": "^0.3.1"
+    "prettier": "^3.1.0"
   }
 }
