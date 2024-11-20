@@ -97,3 +97,41 @@ $response = $perscom->users()->assignment_records(id: 1)->delete();
 // Parse the response into a usable array
 $data = $response->json();
 ```
+
+## Error Handling
+
+The PERSCOM SDK throws exceptions when an API error occurs. You can catch these exceptions and handle them accordingly with a standard \`try/catch\` block. For a more elegant approach to error handling, consider using the \[promise-based]\(#promise-support) approach.
+
+```php
+try {
+  $perscom = new PerscomConnection('YOUR_API_KEY');
+
+  $response = $perscom->users()->all()->json();
+} catch (AuthenticationException $exception) {
+  Log::error('The provided API key is invalid');
+}
+```
+
+## Promise Support
+
+The PERSCOM SDK can send asynchronous requests using a promise-based approach. This allows you to handle both successful and failed requests in a more fluent way.
+
+```php
+// Create a PERSCOM instance
+$perscom = new PerscomConnection('YOUR_API_KEY');
+
+// Create a promise
+$promise = $plaid->sendAsync(new GetAllUsersRequest());
+
+// Send the request
+$promise
+    ->then(function (Response $response) {
+        // Handle successful response
+    })
+    ->otherwise(function (RequestException $exception) {
+        // Handle failed request
+    });
+
+// Resolve the promise
+$promise->wait();
+```
