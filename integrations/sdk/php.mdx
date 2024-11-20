@@ -8,6 +8,92 @@ description: 'Integrating with PERSCOM using PHP.'
 PERSCOM offers an official first-party PHP SDK to assist developers with integrating with PERSCOM. To build you next integration, check it
 out on GitHub!
 
-<Card title='Visit GitHub' icon='github' href='https://github.com/deschutesdesigngroupllc/perscom-php-sdk'>
+<Card title="Visit GitHub" icon="github" href="https://github.com/deschutesdesigngroupllc/perscom-php-sdk">
   Checkout the official PERSCOM PHP SDK.
 </Card>
+
+## Installation
+
+Install the SDK with composer using the following command.
+
+```bash
+composer require deschutesdesigngroupllc/perscom-php-sdk
+```
+
+## Getting Starte
+
+The following is a brief overview of how the PHP SDK is structured on a functional level. Each of these examples can be applied to the vast array of PERSCOM resources available. The SDK is built on the PERSCOM API and is seeks to follow the same naming conventions as the API to reduce confusion.
+
+```php
+// The following are examples on the user resource, but the same principles
+// can be applied to any PERSCOM resource. 
+$perscom = new PerscomConnection('YOUR_API_KEY');
+
+// Get a list of a specific resource
+$response = $perscom->users()->all();
+
+// Get a specific resource
+$response = $perscom->users()->get(id: 1);
+
+// Create a resource
+$response = $perscom->users()->create(data: [
+    'name' => 'User 1',
+    'email' => 'user1@email.com'
+]);
+
+// Update a resource
+$response = $perscom->users()->update(id: 1, data: [
+    'name' => 'User 1 New Name'
+]);
+
+// Delete a resource
+$response = $perscom->users()->delete(id: 1);
+
+// Search for a resource
+$response = $perscom->users()->search(
+    value: 'foobar', 
+    sort: new SortObject('first_name', 'asc'), 
+    filter: new FilterObject('created_at', '<', '2024-01-01')
+);
+
+// Batch create a resource
+$response = $perscom->users()->batchCreate([
+    new ResourceObject(data: [
+        'name' => 'User 1',
+        'email' => 'user1@email.com'
+    ]),
+    new ResourceObject(data: [
+        'name' => 'User 2',
+        'email' => 'user2@email.com'
+    ])
+]);
+
+// Batch update a resource
+$response = $perscom->users()->batchUpdate([
+    new ResourceObject(id: 1, data: [
+        'name' => 'User 1 New Name'
+    ]),
+    new ResourceObject(id: 2, data: [
+        'name' => 'User 2 New Name'
+    ])
+]);
+
+// Batch delete a resource
+$response = $perscom->users()->batchDelete([
+    new ResourceObject(id: 1),
+    new ResourceObject(id: 2)
+]);
+
+// Uploading an attachment
+$response = $perscom->users()->attachments(id: 1)->create(data: [
+    'name' => 'Attachment 1',
+    'file' => fopen('/../file.pdf', 'r')
+]);
+
+// Other examples
+$response = $perscom->users()->profile_photo(id: 1)->create(filePath: 'image.jpg');
+$response = $perscom->users()->assignment_records(id: 1)->delete();
+
+// Parse the response into a usable array
+$data = $response->json();
+```
