@@ -29,17 +29,93 @@ have an API key ready to log in.
 To start using the PERSCOM widget, copy and paste the following HTML snippet into your website. Make sure to **replace** `APIKEY` with your
 own API key. Replace the [widget ID](#available-widgets) with ID you'd like to display.
 
-```html Roster Widget {4-5}
+<CodeGroup>
+
+```html Roster {4-5}
 <div id="perscom_widget_wrapper">
-  <script
-    id="perscom_widget"
-    data-apikey="APIKEY"
-    data-widget="roster"
-    src="https://widget.perscom.io/widget.js"
-    type="text/javascript"
-  ></script>
+    <script
+        id="perscom_widget"
+        data-apikey="APIKEY"
+        data-widget="roster"
+        src="https://widget.perscom.io/widget.js"
+        type="text/javascript"
+    ></script>
 </div>
 ```
+
+```html Awards {4-5}
+<div id="perscom_widget_wrapper">
+    <script
+        id="perscom_widget"
+        data-apikey="APIKEY"
+        data-widget="awards"
+        src="https://widget.perscom.io/widget.js"
+        type="text/javascript"
+    ></script>
+</div>
+```
+
+```html Calendar {4-5}
+<div id="perscom_widget_wrapper">
+    <script
+        id="perscom_widget"
+        data-apikey="APIKEY"
+        data-widget="calendar"
+        src="https://widget.perscom.io/widget.js"
+        type="text/javascript"
+    ></script>
+</div>
+```
+
+```html Forms {4-5}
+<div id="perscom_widget_wrapper">
+    <script
+        id="perscom_widget"
+        data-apikey="APIKEY"
+        data-widget="forms"
+        src="https://widget.perscom.io/widget.js"
+        type="text/javascript"
+    ></script>
+</div>
+```
+
+```html Newsfeed {4-5}
+<div id="perscom_widget_wrapper">
+    <script
+        id="perscom_widget"
+        data-apikey="APIKEY"
+        data-widget="newsfeed"
+        src="https://widget.perscom.io/widget.js"
+        type="text/javascript"
+    ></script>
+</div>
+```
+
+```html Qualifications {4-5}
+<div id="perscom_widget_wrapper">
+    <script
+        id="perscom_widget"
+        data-apikey="APIKEY"
+        data-widget="qualifications"
+        src="https://widget.perscom.io/widget.js"
+        type="text/javascript"
+    ></script>
+</div>
+```
+
+```html Ranks {4-5}
+<div id="perscom_widget_wrapper">
+    <script
+        id="perscom_widget"
+        data-apikey="APIKEY"
+        data-widget="ranks"
+        src="https://widget.perscom.io/widget.js"
+        type="text/javascript"
+    ></script>
+</div>
+```
+
+</CodeGroup>
 
 <Note>
   To avoid leaking sensitive data, it is recommended to create an API key with only `view` permissions. Your API key will be publicly
