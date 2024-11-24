@@ -171,6 +171,13 @@
               ]
             },
             {
+              "group": "Cache",
+              "icon": "database",
+              "pages": [
+                "api-reference/endpoints/cache/clear-cache"
+              ]
+            },
+            {
               "group": "Calendars",
               "icon": "calendar",
               "pages": [
