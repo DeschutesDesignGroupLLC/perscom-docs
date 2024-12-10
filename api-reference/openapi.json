@@ -85134,7 +85134,7 @@
       "Task": {
         "title": "Task",
         "type": "object",
-        "required": ["title", "description"],
+        "required": ["title"],
         "properties": {
           "title": {
             "type": "string"
