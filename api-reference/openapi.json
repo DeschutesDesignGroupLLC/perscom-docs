@@ -85141,6 +85141,7 @@
           },
           "description": {
             "type": "string",
+            "nullable": true,
             "description": "Supports HTML."
           },
           "instructions": {
